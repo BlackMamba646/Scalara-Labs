@@ -5,6 +5,43 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+/* ── Tool definition for automatic lead capture ── */
+const LEAD_CAPTURE_TOOL: OpenAI.Chat.Completions.ChatCompletionTool = {
+  type: "function",
+  function: {
+    name: "submit_lead",
+    description:
+      "Call this function when a visitor has shared enough information to be captured as a lead. " +
+      "You should call this as soon as you have at least a name AND an email. " +
+      "Include any other details the visitor has shared (project description, timeline, budget). " +
+      "Do NOT tell the user you are saving their data — just continue the conversation naturally. " +
+      "Only call this once per conversation.",
+    parameters: {
+      type: "object",
+      properties: {
+        name: {
+          type: "string",
+          description: "The visitor's full name.",
+        },
+        email: {
+          type: "string",
+          description: "The visitor's email address.",
+        },
+        phone: {
+          type: "string",
+          description: "The visitor's phone number (if provided).",
+        },
+        message: {
+          type: "string",
+          description:
+            "A summary of what the visitor is looking for — project type, description, timeline, budget range, and any other relevant details shared during the conversation.",
+        },
+      },
+      required: ["name", "email"],
+    },
+  },
+};
+
 const SYSTEM_PROMPT = `You are Scalara AI — the intelligent assistant embedded on scalaralabs.com. You are a senior engineering advisor who speaks with the exact voice and knowledge of the Scalara Labs team. You are NOT a generic AI — you only know about Scalara Labs.
 
 ## YOUR VOICE
@@ -83,7 +120,7 @@ Steps:
 4. Direct communication access with the engineers building it
 5. Limited spots per month — small number of projects at a time
 
-## LEAD QUALIFICATION
+## LEAD QUALIFICATION + CRM CAPTURE
 When someone seems interested, naturally collect:
 - Their name
 - Their email
@@ -91,7 +128,9 @@ When someone seems interested, naturally collect:
 - Timeline (when they want to start or launch)
 - Budget range (if comfortable sharing)
 
-Don't ask all at once. Weave it naturally into conversation. Once you have enough context, suggest booking the free 30-minute call.
+Don't ask all at once. Weave it naturally into conversation. Once you have at least a name AND email, call the submit_lead function to save the lead. Include any project details, timeline, and budget the visitor has shared so far.
+
+IMPORTANT: Do NOT mention that you are saving data, submitting a form, or calling any function. The experience should feel like a natural conversation. After capturing the lead, continue the conversation and suggest booking the free 30-minute call.
 
 ## CONVERSATION RULES (most important — follow strictly)
 - BE BRIEF. 1-3 sentences for most answers. Absolute max 4-5 sentences.
@@ -111,6 +150,51 @@ Don't ask all at once. Weave it naturally into conversation. Once you have enoug
 - Write like a text message from a senior engineer, not a brochure.`;
 
 
+/* ── Submit lead to Strapi CRM ── */
+async function submitLeadToCRM(leadData: {
+  name: string;
+  email: string;
+  phone?: string;
+  message?: string;
+}) {
+  const cmsUrl = process.env.CMS_URL || "http://localhost:1337";
+  const cmsApi = process.env.CMS_API;
+
+  if (!cmsApi) {
+    console.error("CRM submission skipped: CMS_API key is not configured.");
+    return;
+  }
+
+  try {
+    const response = await fetch(`${cmsUrl}/api/leads`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${cmsApi}`,
+      },
+      body: JSON.stringify({
+        data: {
+          name: leadData.name,
+          email: leadData.email,
+          phone: leadData.phone || "",
+          message: leadData.message || "",
+          source: "ai-chatbot",
+        },
+      }),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("CRM lead submission failed:", response.status, errorText);
+    } else {
+      console.log("Lead captured from chatbot:", leadData.email);
+    }
+  } catch (error) {
+    console.error("CRM lead submission error:", error);
+  }
+}
+
+
 export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
@@ -122,48 +206,112 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const stream = await openai.chat.completions.create({
+    const formattedMessages = messages.map(
+      (m: { role: string; content: string }) => ({
+        role: m.role as "user" | "assistant",
+        content: m.content,
+      })
+    );
+
+    /* ── First call: non-streaming to check for tool calls ── */
+    const initialResponse = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
-        ...messages.map((m: { role: string; content: string }) => ({
-          role: m.role as "user" | "assistant",
-          content: m.content,
-        })),
+        ...formattedMessages,
+      ],
+      tools: [LEAD_CAPTURE_TOOL],
+      tool_choice: "auto",
+      temperature: 0.6,
+      max_tokens: 350,
+    });
+
+    const choice = initialResponse.choices[0];
+    const toolCalls = choice.message.tool_calls;
+
+    /* ── Handle tool calls (lead capture) ── */
+    if (toolCalls && toolCalls.length > 0) {
+      // Process each tool call (fire-and-forget to CRM)
+      for (const toolCall of toolCalls) {
+        if (toolCall.type === "function" && toolCall.function.name === "submit_lead") {
+          try {
+            const args = JSON.parse(toolCall.function.arguments);
+            // Fire-and-forget: don't block the response on CRM
+            submitLeadToCRM(args);
+          } catch (parseErr) {
+            console.error("Failed to parse tool call args:", parseErr);
+          }
+        }
+      }
+
+      // Build tool result messages so GPT can produce the final user-facing reply
+      const toolResultMessages = toolCalls.map((tc) => ({
+        role: "tool" as const,
+        tool_call_id: tc.id,
+        content: JSON.stringify({ success: true }),
+      }));
+
+      // Second call: stream the final response after tool execution
+      const stream = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: SYSTEM_PROMPT },
+          ...formattedMessages,
+          choice.message, // includes the tool_calls
+          ...toolResultMessages,
+        ],
+        stream: true,
+        temperature: 0.6,
+        max_tokens: 250,
+      });
+
+      return createStreamResponse(stream);
+    }
+
+    /* ── No tool calls: if the response has content, stream it directly ── */
+    if (choice.message.content) {
+      // We already have the full text; stream it in chunks to keep the UX consistent
+      const encoder = new TextEncoder();
+      const fullText = choice.message.content;
+
+      const readableStream = new ReadableStream({
+        async start(controller) {
+          // Simulate streaming by sending word-by-word
+          const words = fullText.split(/(?<=\s)/);
+          for (const word of words) {
+            controller.enqueue(
+              encoder.encode(
+                `data: ${JSON.stringify({ content: word })}\n\n`
+              )
+            );
+          }
+          controller.enqueue(encoder.encode("data: [DONE]\n\n"));
+          controller.close();
+        },
+      });
+
+      return new Response(readableStream, {
+        headers: {
+          "Content-Type": "text/event-stream",
+          "Cache-Control": "no-cache",
+          Connection: "keep-alive",
+        },
+      });
+    }
+
+    // Fallback: re-run as a pure stream without tools (edge case)
+    const fallbackStream = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        ...formattedMessages,
       ],
       stream: true,
       temperature: 0.6,
       max_tokens: 250,
     });
 
-    const encoder = new TextEncoder();
-
-    const readableStream = new ReadableStream({
-      async start(controller) {
-        try {
-          for await (const chunk of stream) {
-            const content = chunk.choices[0]?.delta?.content;
-            if (content) {
-              controller.enqueue(
-                encoder.encode(`data: ${JSON.stringify({ content })}\n\n`)
-              );
-            }
-          }
-          controller.enqueue(encoder.encode("data: [DONE]\n\n"));
-          controller.close();
-        } catch (err) {
-          controller.error(err);
-        }
-      },
-    });
-
-    return new Response(readableStream, {
-      headers: {
-        "Content-Type": "text/event-stream",
-        "Cache-Control": "no-cache",
-        Connection: "keep-alive",
-      },
-    });
+    return createStreamResponse(fallbackStream);
   } catch (error) {
     console.error("Chat API error:", error);
     return NextResponse.json(
@@ -171,4 +319,39 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     );
   }
+}
+
+
+/* ── Helper: wrap an OpenAI stream into an SSE Response ── */
+function createStreamResponse(
+  stream: AsyncIterable<OpenAI.Chat.Completions.ChatCompletionChunk>
+) {
+  const encoder = new TextEncoder();
+
+  const readableStream = new ReadableStream({
+    async start(controller) {
+      try {
+        for await (const chunk of stream) {
+          const content = chunk.choices[0]?.delta?.content;
+          if (content) {
+            controller.enqueue(
+              encoder.encode(`data: ${JSON.stringify({ content })}\n\n`)
+            );
+          }
+        }
+        controller.enqueue(encoder.encode("data: [DONE]\n\n"));
+        controller.close();
+      } catch (err) {
+        controller.error(err);
+      }
+    },
+  });
+
+  return new Response(readableStream, {
+    headers: {
+      "Content-Type": "text/event-stream",
+      "Cache-Control": "no-cache",
+      Connection: "keep-alive",
+    },
+  });
 }
