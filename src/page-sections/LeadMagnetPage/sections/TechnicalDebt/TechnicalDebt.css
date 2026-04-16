@@ -1,0 +1,282 @@
+/* ===== TechnicalDebt Section ===== */
+
+/* Section wrapper — full width */
+.leadmagnetpage-technical-debt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--leadmagnetpage-technical-debt-bg);
+  position: relative;
+}
+
+/* Inner container — max-width centered */
+.leadmagnetpage-technical-debt__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--leadmagnetpage-technical-debt-section-gap);
+  padding: var(--leadmagnetpage-technical-debt-section-padding-y) var(--leadmagnetpage-technical-debt-section-padding-x);
+  width: 100%;
+  position: relative;
+}
+
+/* ===== Decorative pattern (absolute) ===== */
+.leadmagnetpage-technical-debt__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.leadmagnetpage-technical-debt__pattern-item {
+  position: absolute;
+  opacity: var(--leadmagnetpage-technical-debt-pattern-opacity);
+}
+
+/* Pattern fade-in animation */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes technicalDebtPatternFadeIn {
+    from { opacity: 0; }
+    to { opacity: var(--leadmagnetpage-technical-debt-pattern-opacity); }
+  }
+
+  .leadmagnetpage-technical-debt__pattern-item {
+    animation: technicalDebtPatternFadeIn 0.8s ease 0.2s both;
+  }
+}
+
+/* Desktop positions derived from Figma insets */
+.leadmagnetpage-technical-debt__pattern-item--group15 {
+  width: 163px;
+  height: 152px;
+  top: 20.81%;
+  left: 77.01%;
+}
+
+.leadmagnetpage-technical-debt__pattern-item--group14 {
+  width: 163px;
+  height: 152px;
+  top: 38.26%;
+  left: 41.81%;
+}
+
+.leadmagnetpage-technical-debt__pattern-item--code {
+  width: 214px;
+  height: 200px;
+  top: 12.08%;
+  left: 6.32%;
+}
+
+.leadmagnetpage-technical-debt__pattern-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ===== Heading area ===== */
+.leadmagnetpage-technical-debt__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--leadmagnetpage-technical-debt-heading-gap);
+  padding-left: var(--leadmagnetpage-technical-debt-heading-padding-x);
+  padding-right: var(--leadmagnetpage-technical-debt-heading-padding-x);
+  width: 100%;
+  position: relative;
+}
+
+/* ===== Badge — nested border layers =====
+   Negative margin-left pulls the outermost glow layer left by the full glow
+   thickness, so the inner red square (not the halo) aligns with the title
+   below. Glow extends freely into the section's horizontal padding. */
+.leadmagnetpage-technical-debt__badge-layer-1 {
+  display: flex;
+  align-items: center;
+  padding: var(--leadmagnetpage-technical-debt-badge-layer-padding);
+  background-color: var(--leadmagnetpage-technical-debt-badge-border-outer);
+  border-radius: var(--leadmagnetpage-technical-debt-badge-radius-1);
+  flex-shrink: 0;
+  margin-left: calc(-1 * var(--leadmagnetpage-technical-debt-badge-glow-offset));
+}
+
+.leadmagnetpage-technical-debt__badge-layer-2 {
+  display: flex;
+  align-items: center;
+  padding: var(--leadmagnetpage-technical-debt-badge-layer-padding);
+  background-color: var(--leadmagnetpage-technical-debt-badge-border-outer);
+  border-radius: var(--leadmagnetpage-technical-debt-badge-radius-2);
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-technical-debt__badge-layer-3 {
+  display: flex;
+  align-items: center;
+  padding: var(--leadmagnetpage-technical-debt-badge-layer-padding);
+  background-color: var(--leadmagnetpage-technical-debt-badge-border-inner);
+  border-radius: var(--leadmagnetpage-technical-debt-badge-radius-3);
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-technical-debt__badge-layer-4 {
+  display: flex;
+  align-items: center;
+  padding: var(--leadmagnetpage-technical-debt-badge-layer-padding);
+  background-color: var(--leadmagnetpage-technical-debt-badge-border-inner);
+  border-radius: var(--leadmagnetpage-technical-debt-badge-radius-4);
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-technical-debt__badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--leadmagnetpage-technical-debt-icon-padding);
+  background-color: var(--leadmagnetpage-technical-debt-badge-icon-bg);
+  border-radius: var(--leadmagnetpage-technical-debt-badge-icon-radius);
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-technical-debt__badge-icon img {
+  display: block;
+  width: var(--leadmagnetpage-technical-debt-icon-size);
+  height: var(--leadmagnetpage-technical-debt-icon-size);
+}
+
+/* ===== Title ===== */
+.leadmagnetpage-technical-debt__title {
+  font-family: var(--leadmagnetpage-technical-debt-heading-font-family);
+  font-size: var(--leadmagnetpage-technical-debt-heading-font-size);
+  font-weight: var(--leadmagnetpage-technical-debt-heading-font-weight);
+  line-height: var(--leadmagnetpage-technical-debt-heading-line-height);
+  letter-spacing: var(--leadmagnetpage-technical-debt-heading-letter-spacing);
+  color: var(--leadmagnetpage-technical-debt-heading-color);
+  max-width: var(--leadmagnetpage-technical-debt-heading-max-width);
+  width: 100%;
+}
+
+/* ===== Body text container ===== */
+.leadmagnetpage-technical-debt__container {
+  display: flex;
+  align-items: center;
+  max-width: var(--leadmagnetpage-technical-debt-container-max-width);
+  width: 100%;
+}
+
+.leadmagnetpage-technical-debt__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--leadmagnetpage-technical-debt-body-gap);
+  max-width: var(--leadmagnetpage-technical-debt-body-max-width);
+  width: var(--leadmagnetpage-technical-debt-body-max-width);
+  font-family: var(--leadmagnetpage-technical-debt-body-font-family);
+  font-size: var(--leadmagnetpage-technical-debt-body-font-size);
+  font-weight: var(--leadmagnetpage-technical-debt-body-font-weight);
+  line-height: var(--leadmagnetpage-technical-debt-body-line-height);
+  color: var(--leadmagnetpage-technical-debt-body-color);
+}
+
+.leadmagnetpage-technical-debt__body p {
+  width: 100%;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  .leadmagnetpage-technical-debt__inner {
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .leadmagnetpage-technical-debt__heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Pattern adjustments for tablet */
+  .leadmagnetpage-technical-debt__pattern-item--group15 {
+    top: 16.15%;
+    left: 142.44%;
+  }
+
+  .leadmagnetpage-technical-debt__pattern-item--group14 {
+    top: 33.54%;
+    left: 74.3%;
+  }
+
+  .leadmagnetpage-technical-debt__pattern-item--code {
+    top: 11.85%;
+    left: 11.62%;
+  }
+
+  .leadmagnetpage-technical-debt__body {
+    flex: 1 0 0;
+    width: auto;
+    min-height: 1px;
+    min-width: 1px;
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  .leadmagnetpage-technical-debt__inner {
+    align-items: flex-start;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .leadmagnetpage-technical-debt__heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Remove outermost badge layer on mobile.
+     Reset its desktop negative margin (display:contents ignores margin anyway,
+     but make intent explicit) and shift badge-layer-2 — the new outermost
+     visible layer — left by the mobile glow offset. */
+  .leadmagnetpage-technical-debt__badge-layer-1 {
+    display: contents;
+    margin-left: 0;
+  }
+
+  .leadmagnetpage-technical-debt__badge-layer-2 {
+    margin-left: calc(-1 * var(--leadmagnetpage-technical-debt-badge-glow-offset-mobile));
+  }
+
+  /* Adjust icon size on mobile */
+  .leadmagnetpage-technical-debt__badge-icon {
+    padding: 12px;
+  }
+
+  .leadmagnetpage-technical-debt__badge-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .leadmagnetpage-technical-debt__title {
+    font-size: 24px;
+  }
+
+  /* Hide patterns on mobile (not present in mobile design) */
+  .leadmagnetpage-technical-debt__pattern {
+    display: none;
+  }
+
+  .leadmagnetpage-technical-debt__body {
+    flex: 1 0 0;
+    width: auto;
+    min-height: 1px;
+    min-width: 1px;
+  }
+}

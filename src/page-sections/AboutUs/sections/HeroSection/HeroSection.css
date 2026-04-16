@@ -1,0 +1,349 @@
+/* ===== HeroSection — Desktop-first ===== */
+
+.aboutus-hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
+  /* padding-top is set via inline style in HeroSection.tsx to bypass Tailwind v4 preflight cascade */
+  background-color: var(--aboutus-hero-section-bg-primary);
+  background-image:
+    radial-gradient(
+      ellipse at right center,
+      var(--aboutus-hero-section-bg-gradient-start) 36%,
+      var(--aboutus-hero-section-bg-gradient-end) 48%
+    );
+}
+
+/* ---- Background decorations ---- */
+
+.aboutus-hero-section__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aboutus-hero-section__code-pattern {
+  position: absolute;
+  top: -281px;
+  left: calc(50% - 720px + 759px); /* 629 + 130 */
+  width: 696px;
+  height: 547px;
+  opacity: 0.6;
+  animation: hero-drift-diagonal 18s ease-in-out infinite;
+}
+
+.aboutus-hero-section__s-logo {
+  position: absolute;
+  top: -152px; /* -281 + 129 */
+  left: calc(50% - 720px + 629px);
+  width: 882px;
+  height: 960px;
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+  animation: hero-drift-vertical 22s ease-in-out infinite;
+}
+
+@keyframes hero-drift-vertical {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
+
+@keyframes hero-drift-diagonal {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-8px, 6px); }
+}
+
+/* ---- Content area ---- */
+
+.aboutus-hero-section__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--aboutus-hero-section-content-padding);
+}
+
+.aboutus-hero-section__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--aboutus-hero-section-heading-gap);
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 1px;
+  padding-top: var(--aboutus-hero-section-heading-pt);
+  border-radius: 40px;
+}
+
+.aboutus-hero-section__subtitle {
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--aboutus-hero-section-subtitle-size);
+  line-height: var(--aboutus-hero-section-subtitle-line-height);
+  letter-spacing: var(--aboutus-hero-section-subtitle-tracking);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.aboutus-hero-section__subtitle-light {
+  font-weight: 300;
+  color: var(--aboutus-hero-section-text-primary);
+  text-transform: capitalize;
+}
+
+.aboutus-hero-section__subtitle-accent {
+  font-weight: 600;
+  color: var(--aboutus-hero-section-text-accent);
+  letter-spacing: 1.68px;
+}
+
+.aboutus-hero-section__display-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.aboutus-hero-section__h1 {
+  font-family: 'Results Letter', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: var(--aboutus-hero-section-h1-size);
+  line-height: var(--aboutus-hero-section-h1-line-height);
+  color: var(--aboutus-hero-section-text-primary);
+  max-width: var(--aboutus-hero-section-h1-max-width);
+  width: 100%;
+}
+
+.aboutus-hero-section__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--aboutus-hero-section-body-gap);
+  width: 100%;
+}
+
+.aboutus-hero-section__body-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-hero-section-body-weight);
+  font-size: var(--aboutus-hero-section-body-size);
+  line-height: var(--aboutus-hero-section-body-line-height);
+  color: var(--aboutus-hero-section-text-tertiary);
+  max-width: var(--aboutus-hero-section-body-max-width);
+  min-width: 100%;
+}
+
+.aboutus-hero-section__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-hero-section-btn-gap);
+  padding: var(--aboutus-hero-section-btn-py) var(--aboutus-hero-section-btn-px);
+  background-color: var(--aboutus-hero-section-btn-primary-bg);
+  border-radius: var(--aboutus-hero-section-btn-radius);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-hero-section__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.aboutus-hero-section__cta:active {
+  transform: scale(0.97);
+}
+
+.aboutus-hero-section__cta-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-hero-section-btn-text-weight);
+  font-size: var(--aboutus-hero-section-btn-text-size);
+  line-height: var(--aboutus-hero-section-btn-text-line-height);
+  letter-spacing: var(--aboutus-hero-section-btn-text-tracking);
+  color: var(--aboutus-hero-section-btn-primary-text);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.aboutus-hero-section__cta-arrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.aboutus-hero-section__cta-arrow img {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- Hero image (Desktop — absolute positioned) ---- */
+
+.aboutus-hero-section__hero-image-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: var(--aboutus-hero-section-img-top);
+  left: calc(50% - 720px + var(--aboutus-hero-section-img-left));
+  width: var(--aboutus-hero-section-img-width);
+  height: var(--aboutus-hero-section-img-height);
+}
+
+.aboutus-hero-section__hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* ---- Hero image (Tablet/Mobile — inline, hidden on desktop) ---- */
+
+.aboutus-hero-section__hero-image-inline {
+  display: none;
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .aboutus-hero-section__content {
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px 40px 0;
+  }
+
+  .aboutus-hero-section__heading {
+    width: 100%;
+    padding-top: 20px;
+    flex: none;
+  }
+
+  .aboutus-hero-section__hero-image-wrapper {
+    display: none;
+  }
+
+  .aboutus-hero-section__hero-image-inline {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2752 / 1536;
+    flex-shrink: 0;
+  }
+
+  .aboutus-hero-section__hero-image-inline img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  .aboutus-hero-section__h1 {
+    font-size: 46px;
+  }
+
+  .aboutus-hero-section__code-pattern {
+    display: none;
+  }
+
+  .aboutus-hero-section__s-logo {
+    top: 253px;
+    left: -69px;
+  }
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .aboutus-hero-section__content {
+    padding: 48px 20px 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .aboutus-hero-section__heading {
+    gap: 24px;
+    padding-top: 0;
+  }
+
+  /* Mobile: simplified subtitle — only "BASED IN SERBIA." in accent color */
+  .aboutus-hero-section__subtitle-light {
+    display: none;
+  }
+
+  .aboutus-hero-section__subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--aboutus-hero-section-text-accent);
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+  }
+
+  .aboutus-hero-section__subtitle-accent {
+    font-weight: 600;
+    letter-spacing: 1.44px;
+  }
+
+  /* Mobile: split headline into two size groups */
+  .aboutus-hero-section__h1 {
+    font-size: 26px;
+  }
+
+  .aboutus-hero-section__h1--large {
+    font-size: 38px;
+  }
+
+  .aboutus-hero-section__display-heading {
+    gap: 4px;
+    padding-bottom: 8px;
+  }
+
+  .aboutus-hero-section__body {
+    gap: 20px;
+  }
+
+  .aboutus-hero-section__body-text {
+    font-size: 14px;
+  }
+
+  .aboutus-hero-section__hero-image-inline {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 480 / 268;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutus-hero-section__code-pattern,
+  .aboutus-hero-section__s-logo {
+    animation: none;
+  }
+
+  .aboutus-hero-section__cta {
+    transition: none;
+  }
+}

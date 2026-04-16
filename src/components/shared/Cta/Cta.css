@@ -1,0 +1,351 @@
+/* Cta — Desktop-first styles */
+
+.cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-section-gap);
+  padding-top: var(--cta-padding-top);
+  padding-bottom: var(--cta-padding-bottom);
+  width: 100%;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      var(--cta-bg-surface) 8.48%,
+      rgba(12, 27, 59, 0) 79.03%
+    ),
+    radial-gradient(
+      ellipse at center top,
+      var(--cta-bg-surface) 8.39%,
+      rgba(12, 27, 59, 0) 92.34%
+    ),
+    radial-gradient(
+      ellipse at center 14%,
+      var(--cta-bg-surface) 30%,
+      rgba(12, 27, 59, 0) 100%
+    ),
+    radial-gradient(
+      ellipse at center top,
+      rgba(10, 22, 44, 1) 0%,
+      rgba(12, 27, 59, 0) 90%
+    ),
+    linear-gradient(
+      180deg,
+      var(--cta-bg-on-surface) 13.36%,
+      rgba(12, 27, 59, 0) 86%
+    ),
+    linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+}
+
+/* ——— Content inner container ——— */
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-section-gap);
+  padding-left: var(--cta-padding-x);
+  padding-right: var(--cta-padding-x);
+}
+
+/* ——— Bottom overlay (decorative) ——— */
+.cta__bottom-overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 599px;
+  height: 163px;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.cta__bottom-overlay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ——— Heading block ——— */
+.cta__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-heading-gap);
+  padding-top: var(--cta-heading-padding-top);
+  padding-left: var(--cta-heading-padding-x);
+  padding-right: var(--cta-heading-padding-x);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Caption / label */
+.cta__caption {
+  font-family: var(--cta-caption-font-family);
+  font-size: var(--cta-caption-font-size);
+  font-weight: var(--cta-caption-font-weight);
+  line-height: var(--cta-caption-line-height);
+  letter-spacing: var(--cta-caption-letter-spacing);
+  color: var(--cta-accent);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* Display heading (h2) */
+.cta__title {
+  font-family: var(--cta-heading-font-family);
+  font-size: var(--cta-heading-font-size);
+  font-weight: 100;
+  font-style: normal;
+  line-height: var(--cta-heading-line-height);
+  color: var(--cta-text-primary);
+  text-align: center;
+  width: 100%;
+}
+
+/* Body description */
+.cta__description {
+  font-family: var(--cta-body-font-family);
+  font-size: var(--cta-body-font-size);
+  font-weight: var(--cta-body-font-weight);
+  line-height: var(--cta-body-line-height);
+  color: var(--cta-text-tertiary);
+  text-align: center;
+  max-width: var(--cta-body-max-width);
+}
+
+/* ——— Decorative patterns ——— */
+.cta__patterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cta__pattern {
+  position: absolute;
+  opacity: var(--cta-pattern-opacity);
+}
+
+.cta__pattern img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cta__pattern--group15 {
+  width: 157.78px;
+  height: 151.86px;
+  top: calc(50% - 32.07px);
+  left: calc(50% + 393.89px);
+  transform: translate(-50%, -50%);
+}
+
+.cta__pattern--group14 {
+  width: 157.8px;
+  height: 151.84px;
+  top: calc(50% + 129.92px);
+  left: calc(50% - 363.16px);
+  transform: translate(-50%, -50%);
+}
+
+.cta__pattern--code {
+  width: 196px;
+  height: 188.59px;
+  top: calc(50% - 65px);
+  left: calc(50% - 40.3px);
+  transform: translate(-50%, -50%);
+}
+
+.cta__pattern--config {
+  width: 119.3px;
+  height: 122.97px;
+  top: calc(50% - 39.51px);
+  left: calc(50% - 343.59px);
+  transform: translate(-50%, -50%);
+}
+
+/* ——— Row: CTA button + trust badges ——— */
+.cta__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-row-gap);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Primary button */
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-btn-gap);
+  padding: var(--cta-btn-padding-y) var(--cta-btn-padding-x);
+  background-color: var(--cta-btn-bg);
+  border: none;
+  border-radius: var(--cta-btn-radius);
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.cta__btn-text {
+  font-family: var(--cta-btn-font-family);
+  font-size: var(--cta-btn-font-size);
+  font-weight: var(--cta-btn-font-weight);
+  line-height: var(--cta-btn-line-height);
+  letter-spacing: var(--cta-btn-letter-spacing);
+  color: var(--cta-btn-text);
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cta__btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: var(--cta-arrow-opacity);
+  flex-shrink: 0;
+}
+
+.cta__btn-arrow img {
+  display: block;
+  width: var(--cta-arrow-size);
+  height: var(--cta-arrow-size);
+}
+
+/* ——— Button micro-interactions ——— */
+@media (prefers-reduced-motion: no-preference) {
+  .cta__btn {
+    transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  }
+
+  .cta__btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(122, 210, 254, 0.12);
+  }
+
+  .cta__btn:active {
+    transform: scale(0.97);
+    box-shadow: none;
+  }
+
+  .cta__btn-arrow {
+    transition: transform 200ms ease;
+  }
+
+  .cta__btn:hover .cta__btn-arrow {
+    transform: translate(1px, -1px);
+  }
+}
+
+/* ——— Trust badges ——— */
+.cta__badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-badges-gap);
+  width: 100%;
+}
+
+.cta__badges-label {
+  font-family: var(--cta-body-font-family);
+  font-size: var(--cta-badges-label-font-size);
+  font-weight: var(--cta-body-font-weight);
+  line-height: var(--cta-badges-label-line-height);
+  color: var(--cta-text-tertiary-dark);
+  opacity: var(--cta-badges-label-opacity);
+  text-align: center;
+  width: 100%;
+}
+
+.cta__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cta-logos-gap);
+}
+
+.cta__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cta__logo img {
+  display: block;
+  height: var(--cta-logo-height);
+  width: auto;
+}
+
+/* ——— Light variant (white background — matches Homepage CTA) ——— */
+.cta--light {
+  background:
+    linear-gradient(180deg, #ffffff 0%, rgba(12, 27, 59, 0) 100%),
+    radial-gradient(ellipse at center top, #f6f6f6 0%, rgba(129, 137, 153, 0.5) 40%, rgba(12, 27, 59, 0) 80%),
+    linear-gradient(180deg, rgba(231, 231, 231, 0.8) 13.36%, rgba(12, 27, 59, 0) 86%),
+    linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+}
+
+.cta--light .cta__caption {
+  color: #218af3;
+}
+
+.cta--light .cta__title {
+  color: #080e1b;
+}
+
+.cta--light .cta__description {
+  color: #475166;
+}
+
+.cta--light .cta__badges-label {
+  color: #475166;
+}
+
+/* ────────────────────────────────────────────
+   Tablet — max-width: 1023px
+   ──────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  .cta__pattern--group15,
+  .cta__pattern--group14,
+  .cta__pattern--code,
+  .cta__pattern--config {
+    display: none;
+  }
+}
+
+/* ────────────────────────────────────────────
+   Mobile — max-width: 767px
+   ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .cta__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cta__title {
+    font-size: 38px;
+  }
+
+  .cta__caption {
+    font-size: 10px;
+  }
+
+  .cta__description {
+    font-size: 14px;
+  }
+}

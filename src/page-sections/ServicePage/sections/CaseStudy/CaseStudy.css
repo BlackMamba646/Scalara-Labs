@@ -1,0 +1,376 @@
+/* CaseStudy — Desktop-first styles */
+
+.servicepage-case-study {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-case-study-section-gap);
+  padding: var(--servicepage-case-study-section-padding-y) var(--servicepage-case-study-section-padding-x);
+  width: 100%;
+  background-color: var(--servicepage-case-study-bg);
+}
+
+/* ——— Content inner container ——— */
+.servicepage-case-study__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* ——— Background patterns (desktop only) ——— */
+.servicepage-case-study__patterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.servicepage-case-study__pattern {
+  position: absolute;
+  opacity: var(--servicepage-case-study-pattern-opacity);
+}
+
+.servicepage-case-study__pattern--group15 {
+  width: 158px;
+  height: 152px;
+  top: 27.93%;
+  right: 11.7%;
+}
+
+.servicepage-case-study__pattern--group14 {
+  width: 158px;
+  height: 152px;
+  top: 51.35%;
+  left: 41.81%;
+}
+
+.servicepage-case-study__pattern--code {
+  width: 196px;
+  height: 189px;
+  top: 11.26%;
+  left: 17.78%;
+}
+
+/* ——— Banner card ——— */
+.servicepage-case-study__banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--servicepage-case-study-banner-gap);
+  padding: var(--servicepage-case-study-banner-padding-y) var(--servicepage-case-study-banner-padding-x);
+  border-radius: var(--servicepage-case-study-banner-radius);
+  width: 100%;
+  overflow: clip;
+  z-index: 1;
+  min-height: 415px;
+}
+
+/* ——— Animated background layer ——— */
+.servicepage-case-study__banner-bg-layer {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ——— Hand image (decorative) ——— */
+.servicepage-case-study__banner-hand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -120px;
+  width: 740px;
+  height: 650px;
+  max-width: 80%;
+  pointer-events: none;
+}
+
+/* ——— Text content (left side) ——— */
+.servicepage-case-study__text-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--servicepage-case-study-text-gap);
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 0;
+  padding-top: 20px;
+  border-radius: var(--servicepage-case-study-banner-radius);
+  z-index: 2;
+}
+
+/* ——— CTA row (avatar + client info) ——— */
+.servicepage-case-study__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-case-study-cta-gap);
+  max-width: 600px;
+  width: 100%;
+  overflow: clip;
+  padding-top: 10px;
+}
+
+/* Avatar outline — Instagram-style gradient border */
+.servicepage-case-study__avatar-outline {
+  display: flex;
+  align-items: center;
+  padding: var(--servicepage-case-study-avatar-outline-padding);
+  border-radius: 999px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #FFCA00 0%, #FF105D 50%, #D300C5 100%);
+}
+
+.servicepage-case-study__avatar-outline > .servicepage-case-study__avatar {
+  outline: 1px solid var(--servicepage-case-study-bg, #080E1B);
+  outline-offset: 0;
+}
+
+.servicepage-case-study__avatar {
+  width: var(--servicepage-case-study-avatar-size);
+  height: var(--servicepage-case-study-avatar-size);
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.servicepage-case-study__avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Client text */
+.servicepage-case-study__client-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.servicepage-case-study__client-handle {
+  font-family: var(--servicepage-case-study-caption-font-family);
+  font-size: var(--servicepage-case-study-caption-font-size);
+  font-weight: var(--servicepage-case-study-caption-font-weight);
+  line-height: var(--servicepage-case-study-caption-line-height);
+  letter-spacing: var(--servicepage-case-study-caption-letter-spacing);
+  color: var(--servicepage-case-study-text-accent);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.servicepage-case-study__client-name {
+  font-family: var(--servicepage-case-study-subtitle-font-family);
+  font-size: var(--servicepage-case-study-subtitle-font-size);
+  font-weight: var(--servicepage-case-study-subtitle-font-weight);
+  line-height: var(--servicepage-case-study-subtitle-line-height);
+  color: var(--servicepage-case-study-text-tertiary);
+  width: 100%;
+}
+
+/* ——— Heading ——— */
+.servicepage-case-study__heading {
+  font-family: var(--servicepage-case-study-heading-font-family);
+  font-size: var(--servicepage-case-study-heading-font-size);
+  font-weight: var(--servicepage-case-study-heading-font-weight);
+  font-style: normal;
+  line-height: var(--servicepage-case-study-heading-line-height);
+  color: var(--servicepage-case-study-text-primary);
+  width: 100%;
+}
+
+/* ——— Primary button ——— */
+.servicepage-case-study__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-case-study-btn-gap);
+  padding: var(--servicepage-case-study-btn-padding-y) var(--servicepage-case-study-btn-padding-x);
+  background-color: var(--servicepage-case-study-btn-bg);
+  border: none;
+  border-radius: var(--servicepage-case-study-btn-radius);
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.servicepage-case-study__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.servicepage-case-study__btn:active {
+  transform: scale(0.97);
+}
+
+.servicepage-case-study__btn-text {
+  font-family: var(--servicepage-case-study-btn-font-family);
+  font-size: var(--servicepage-case-study-btn-font-size);
+  font-weight: var(--servicepage-case-study-btn-font-weight);
+  line-height: var(--servicepage-case-study-btn-line-height);
+  letter-spacing: var(--servicepage-case-study-btn-letter-spacing);
+  color: var(--servicepage-case-study-btn-text);
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.servicepage-case-study__btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: var(--servicepage-case-study-arrow-opacity);
+  flex-shrink: 0;
+}
+
+.servicepage-case-study__btn-arrow img {
+  display: block;
+  width: var(--servicepage-case-study-arrow-size);
+  height: var(--servicepage-case-study-arrow-size);
+}
+
+/* ——— Items row ——— */
+.servicepage-case-study__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-case-study-items-gap);
+  padding-top: var(--servicepage-case-study-items-padding-top);
+  max-width: 600px;
+  width: 600px;
+  align-self: stretch;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* ——— Single item ——— */
+.servicepage-case-study__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--servicepage-case-study-item-gap);
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Check icon container */
+.servicepage-case-study__item-icon {
+  display: flex;
+  align-items: center;
+  padding: var(--servicepage-case-study-check-padding);
+  border: 1px solid var(--servicepage-case-study-check-border);
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.servicepage-case-study__item-icon img {
+  display: block;
+  width: var(--servicepage-case-study-check-size);
+  height: var(--servicepage-case-study-check-size);
+}
+
+/* Item text */
+.servicepage-case-study__item-text {
+  font-family: var(--servicepage-case-study-item-font-family);
+  font-size: var(--servicepage-case-study-item-font-size);
+  font-weight: var(--servicepage-case-study-item-font-weight);
+  line-height: var(--servicepage-case-study-item-line-height);
+  color: var(--servicepage-case-study-text-secondary);
+  width: 100%;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1023px) {
+  /* Banner becomes vertical layout */
+  .servicepage-case-study__banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hide background decorative patterns */
+  .servicepage-case-study__patterns {
+    display: none;
+  }
+
+  /* Hide hand image on tablet */
+  .servicepage-case-study__banner-hand {
+    display: none;
+  }
+
+  /* Text content: remove top padding */
+  .servicepage-case-study__text-content {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  /* Items: full width, still row */
+  .servicepage-case-study__items {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  /* Remove fixed min-height so content adapts */
+  .servicepage-case-study__banner {
+    min-height: auto;
+  }
+
+  /* Let text content use its natural height instead of flex-basis: 0 */
+  .servicepage-case-study__text-content {
+    flex: none;
+    width: 100%;
+    min-height: auto;
+  }
+
+  /* Items stack vertically */
+  .servicepage-case-study__items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .servicepage-case-study__item {
+    flex: none;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+/* ===== Decorative pattern float ===== */
+
+@keyframes sp-cs-pattern-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.servicepage-case-study__pattern--group15 { animation: sp-cs-pattern-float 6s ease-in-out infinite; }
+.servicepage-case-study__pattern--group14 { animation: sp-cs-pattern-float 6s ease-in-out 1.5s infinite; }
+.servicepage-case-study__pattern--code { animation: sp-cs-pattern-float 7s ease-in-out 0.75s infinite; }
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .servicepage-case-study__btn { transition: none; }
+  .servicepage-case-study__pattern--group15,
+  .servicepage-case-study__pattern--group14,
+  .servicepage-case-study__pattern--code { animation: none; }
+}

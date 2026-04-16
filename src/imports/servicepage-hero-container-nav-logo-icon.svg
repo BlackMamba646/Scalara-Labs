@@ -1,0 +1,12 @@
+<svg width="35" height="38" overflow="visible" style="display: block;" viewBox="0 0 185.5 201.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="LOGO">
+<path id="Rectangle 1" d="M97.5 0L185.5 40.5L138 63.5L97.5 45V0Z" fill="var(--fill-0, #7FCCF8)"/>
+<path id="Rectangle 2" d="M13.5 40L97.5 0V45L63.5 62L13.5 40Z" fill="var(--fill-0, #4099ED)"/>
+<path id="Rectangle 3" d="M13.5 40L63.5 62V112.5L13.5 91V40Z" fill="var(--fill-0, #0E65CC)"/>
+<path id="Rectangle 4" d="M63.5 62L118 85.5V135L63.5 112.5V62Z" fill="var(--fill-0, #74C6FB)"/>
+<path id="Rectangle 5" d="M118 85.5L182 116.5V160.5L118 135V85.5Z" fill="var(--fill-0, #2F6FD5)"/>
+<path id="Rectangle 6" d="M99 155L182 116.5V162.5L99 201.5V155Z" fill="var(--fill-0, #123587)"/>
+<path id="Rectangle 7" d="M54.5 134L99 155V201.5L0 159L54.5 134Z" fill="var(--fill-0, #3F95E8)"/>
+<path id="Intersect" d="M182 162.5L131.076 140.21L182 116.5V162.5Z" fill="var(--fill-0, #1A4BAA)"/>
+</g>
+</svg>

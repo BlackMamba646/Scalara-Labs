@@ -1,0 +1,374 @@
+/* ============================================================
+   WhatMakesUsDifferent — Desktop-first styles
+   ============================================================ */
+
+.aboutus-what-makes-us-different {
+  position: relative;
+  width: 100%;
+  background-color: var(--aboutus-what-makes-us-different-bg);
+  overflow: hidden;
+}
+
+.aboutus-what-makes-us-different__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-what-makes-us-different-section-gap);
+  padding: var(--aboutus-what-makes-us-different-section-py)
+    var(--aboutus-what-makes-us-different-section-px);
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Background patterns ---- */
+
+.aboutus-what-makes-us-different__patterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.aboutus-what-makes-us-different__pattern {
+  position: absolute;
+  opacity: var(--aboutus-what-makes-us-different-pattern-opacity);
+}
+
+.aboutus-what-makes-us-different__pattern--group15 {
+  top: 15.46%;
+  left: 11.7%;
+  width: 163px;
+  height: 152px;
+  animation: wmud-drift-a 20s ease-in-out infinite;
+}
+
+.aboutus-what-makes-us-different__pattern--group14 {
+  top: 17.71%;
+  left: 42.57%;
+  width: 163px;
+  height: 152px;
+  animation: wmud-drift-b 18s ease-in-out infinite;
+}
+
+.aboutus-what-makes-us-different__pattern--code {
+  top: 6.23%;
+  left: 17.78%;
+  width: 214px;
+  height: 200px;
+  animation: wmud-drift-a 22s ease-in-out infinite;
+  animation-delay: -6s;
+}
+
+@keyframes wmud-drift-a {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes wmud-drift-b {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-6px); }
+}
+
+.aboutus-what-makes-us-different__pattern img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Heading area ---- */
+
+.aboutus-what-makes-us-different__heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-what-makes-us-different-heading-gap);
+  padding-left: var(--aboutus-what-makes-us-different-cta-gap);
+  padding-right: var(--aboutus-what-makes-us-different-cta-gap);
+  width: 100%;
+}
+
+/* CTA row (logo + avatars) */
+
+.aboutus-what-makes-us-different__cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-what-makes-us-different-cta-gap);
+  max-width: var(--aboutus-what-makes-us-different-cta-max-width);
+  padding-top: var(--aboutus-what-makes-us-different-cta-py);
+  padding-bottom: var(--aboutus-what-makes-us-different-cta-py);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Logo */
+
+.aboutus-what-makes-us-different__logo {
+  position: relative;
+  width: var(--aboutus-what-makes-us-different-logo-width);
+  height: var(--aboutus-what-makes-us-different-logo-height);
+  flex-shrink: 0;
+}
+
+.aboutus-what-makes-us-different__logo-scalara {
+  position: absolute;
+  top: 23.56%;
+  right: 0;
+  bottom: 44.73%;
+  left: 30.99%;
+}
+
+.aboutus-what-makes-us-different__logo-scalara img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutus-what-makes-us-different__logo-icon {
+  position: absolute;
+  top: 0;
+  right: 73.96%;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutus-what-makes-us-different__logo-icon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutus-what-makes-us-different__logo-labs {
+  position: absolute;
+  top: 67.99%;
+  right: 49.42%;
+  bottom: 18.27%;
+  left: 31.03%;
+}
+
+.aboutus-what-makes-us-different__logo-labs img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Avatars */
+
+.aboutus-what-makes-us-different__avatars {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+
+.aboutus-what-makes-us-different__avatar {
+  position: relative;
+  width: var(--aboutus-what-makes-us-different-avatar-size);
+  height: var(--aboutus-what-makes-us-different-avatar-size);
+  border-radius: 999px;
+  border: var(--aboutus-what-makes-us-different-avatar-border-width) solid
+    var(--aboutus-what-makes-us-different-avatar-border);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.aboutus-what-makes-us-different__avatar + .aboutus-what-makes-us-different__avatar {
+  margin-left: var(--aboutus-what-makes-us-different-avatar-overlap);
+}
+
+.aboutus-what-makes-us-different__avatar-img {
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 999px;
+}
+
+/* H2 title */
+
+.aboutus-what-makes-us-different__title {
+  font-family: var(--aboutus-what-makes-us-different-heading-font);
+  font-size: var(--aboutus-what-makes-us-different-heading-size);
+  font-weight: var(--aboutus-what-makes-us-different-heading-weight);
+  line-height: var(--aboutus-what-makes-us-different-heading-lh);
+  letter-spacing: var(--aboutus-what-makes-us-different-heading-ls);
+  color: var(--aboutus-what-makes-us-different-heading-color);
+  text-align: center;
+  max-width: var(--aboutus-what-makes-us-different-heading-max-width);
+  width: 100%;
+}
+
+/* Caption */
+
+.aboutus-what-makes-us-different__caption {
+  font-family: var(--aboutus-what-makes-us-different-caption-font);
+  font-size: var(--aboutus-what-makes-us-different-caption-size);
+  font-weight: var(--aboutus-what-makes-us-different-caption-weight);
+  line-height: var(--aboutus-what-makes-us-different-caption-lh);
+  letter-spacing: var(--aboutus-what-makes-us-different-caption-ls);
+  color: var(--aboutus-what-makes-us-different-caption-color);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* ---- Cards row ---- */
+
+.aboutus-what-makes-us-different__row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: var(--aboutus-what-makes-us-different-row-gap);
+  align-items: flex-start;
+  width: 100%;
+  line-height: var(--aboutus-what-makes-us-different-body-lh);
+}
+
+/* ---- Card ---- */
+
+.aboutus-what-makes-us-different__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-what-makes-us-different-card-gap);
+  align-items: flex-start;
+  flex: 1 0 0;
+  min-width: 0;
+  max-width: 600px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.aboutus-what-makes-us-different__card:hover {
+  transform: translateY(-4px);
+}
+
+.aboutus-what-makes-us-different__card-number {
+  font-family: var(--aboutus-what-makes-us-different-feature-font);
+  font-size: var(--aboutus-what-makes-us-different-feature-size);
+  font-weight: var(--aboutus-what-makes-us-different-feature-weight);
+  line-height: var(--aboutus-what-makes-us-different-feature-lh);
+  letter-spacing: var(--aboutus-what-makes-us-different-feature-ls);
+  color: var(--aboutus-what-makes-us-different-number-color);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.aboutus-what-makes-us-different__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-what-makes-us-different-card-text-gap);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.aboutus-what-makes-us-different__card-title {
+  font-family: var(--aboutus-what-makes-us-different-feature-font);
+  font-size: var(--aboutus-what-makes-us-different-feature-size);
+  font-weight: var(--aboutus-what-makes-us-different-feature-weight);
+  line-height: var(--aboutus-what-makes-us-different-feature-lh);
+  letter-spacing: var(--aboutus-what-makes-us-different-feature-ls);
+  color: var(--aboutus-what-makes-us-different-title-color);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.aboutus-what-makes-us-different__card-body {
+  font-family: var(--aboutus-what-makes-us-different-body-font);
+  font-size: var(--aboutus-what-makes-us-different-body-size);
+  font-weight: var(--aboutus-what-makes-us-different-body-weight);
+  line-height: var(--aboutus-what-makes-us-different-body-lh);
+  color: var(--aboutus-what-makes-us-different-body-color);
+  width: 100%;
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .aboutus-what-makes-us-different__row {
+    flex-wrap: wrap;
+  }
+
+  .aboutus-what-makes-us-different__card {
+    flex: 1 0 calc(50% - var(--aboutus-what-makes-us-different-row-gap) / 2);
+    max-width: none;
+  }
+
+  /* Hide background patterns on tablet */
+  .aboutus-what-makes-us-different__patterns {
+    display: none;
+  }
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .aboutus-what-makes-us-different {
+    --aboutus-what-makes-us-different-section-px: 20px;
+  }
+
+  .aboutus-what-makes-us-different__heading {
+    padding-left: 0;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+
+  .aboutus-what-makes-us-different__cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aboutus-what-makes-us-different__title {
+    text-align: left;
+  }
+
+  .aboutus-what-makes-us-different__caption {
+    text-align: left;
+  }
+
+  .aboutus-what-makes-us-different__row {
+    flex-direction: column;
+  }
+
+  .aboutus-what-makes-us-different__card {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .aboutus-what-makes-us-different__title {
+    font-size: 30px;
+  }
+
+  .aboutus-what-makes-us-different__card-number {
+    font-size: 16px;
+  }
+
+  .aboutus-what-makes-us-different__card-title {
+    font-size: 16px;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutus-what-makes-us-different__pattern--group15,
+  .aboutus-what-makes-us-different__pattern--group14,
+  .aboutus-what-makes-us-different__pattern--code {
+    animation: none;
+  }
+
+  .aboutus-what-makes-us-different__card {
+    transition: none;
+  }
+}

@@ -1,0 +1,180 @@
+/* =============================================
+   ServicePage — ServiceFeatures
+   Desktop-first with tablet/mobile overrides
+   ============================================= */
+
+/* ---------- SECTION ROOT ---------- */
+
+.servicepage-service-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--servicepage-service-features-bg);
+  background-image:
+    radial-gradient(
+      ellipse at 19.76% 100%,
+      var(--servicepage-service-features-gradient-bottom) 0%,
+      var(--servicepage-service-features-gradient-bottom-mid) 50%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse at 21.7% 0%,
+      var(--servicepage-service-features-gradient-top) 0%,
+      var(--servicepage-service-features-gradient-top-mid) 50%,
+      transparent 100%
+    ),
+    linear-gradient(
+      90deg,
+      var(--servicepage-service-features-bg) 0%,
+      var(--servicepage-service-features-bg) 100%
+    );
+}
+
+/* ---------- INNER (content-container) ---------- */
+
+.servicepage-service-features__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-service-features-section-gap);
+  padding: var(--servicepage-service-features-section-padding-y)
+    var(--servicepage-service-features-section-padding-x);
+}
+
+/* ---------- HEADING ---------- */
+
+.servicepage-service-features__heading {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-service-features-heading-weight);
+  font-size: var(--servicepage-service-features-heading-size);
+  line-height: var(--servicepage-service-features-heading-line-height);
+  letter-spacing: var(--servicepage-service-features-heading-letter-spacing);
+  color: var(--servicepage-service-features-text-primary);
+  max-width: var(--servicepage-service-features-heading-max-width);
+  flex: 1 0 0;
+  min-width: 1px;
+  min-height: 1px;
+}
+
+/* ---------- CONTAINER (feature items area) ---------- */
+
+.servicepage-service-features__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--servicepage-service-features-container-max-width);
+  flex: 1 0 0;
+  min-width: 1px;
+  min-height: 1px;
+  opacity: 1;
+}
+
+/* ---------- GRID (3-column on desktop, 2-column on mobile) ---------- */
+
+.servicepage-service-features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--servicepage-service-features-items-gap);
+  row-gap: 0;
+  max-width: var(--servicepage-service-features-items-max-width);
+  width: 100%;
+}
+
+/* ---------- ITEM ---------- */
+
+.servicepage-service-features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--servicepage-service-features-item-gap);
+  padding-top: var(--servicepage-service-features-items-pt);
+  min-width: 0;
+}
+
+/* ---------- ICON (circle with check) ---------- */
+
+.servicepage-service-features__icon {
+  display: flex;
+  align-items: center;
+  padding: var(--servicepage-service-features-icon-container-padding);
+  border: 1px solid var(--servicepage-service-features-stroke);
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.servicepage-service-features__icon img {
+  width: var(--servicepage-service-features-icon-size);
+  height: var(--servicepage-service-features-icon-size);
+  display: block;
+}
+
+/* ---------- ITEM TEXT ---------- */
+
+.servicepage-service-features__item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-service-features-body-weight);
+  font-size: var(--servicepage-service-features-body-size);
+  line-height: var(--servicepage-service-features-body-line-height);
+  color: var(--servicepage-service-features-text-secondary);
+  width: 100%;
+}
+
+/* ---------- STAGGER REVEAL GRID COMPAT ---------- */
+
+.servicepage-service-features__item-stagger {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  .servicepage-service-features__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .servicepage-service-features__heading {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-service-features__container {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  .servicepage-service-features__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicepage-service-features__heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .servicepage-service-features__container {
+    width: 100%;
+  }
+
+  .servicepage-service-features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicepage-service-features__item {
+    max-width: 150px;
+  }
+}

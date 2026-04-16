@@ -1,0 +1,617 @@
+/* ======================================
+   Scalara Labs — Contact Hub + AI Chat
+   Savante-Inspired Premium Design
+   ====================================== */
+
+/* ===== Hub Trigger (Circular FAB) ===== */
+
+.scalara-hub-trigger {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 198;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0C1B3B;
+  border: none;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.scalara-hub-trigger:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 6px 28px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.scalara-hub-trigger:active {
+  transform: scale(0.96);
+}
+
+.scalara-hub-trigger svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+/* ===== Hub Panel (Savante-style welcome card) ===== */
+
+.scalara-hub-panel {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 199;
+  width: 380px;
+  max-width: calc(100vw - 40px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Dark header section with logo + greeting */
+.scalara-hub-panel-header {
+  background: #0C1B3B;
+  padding: 32px 28px 28px;
+  position: relative;
+}
+
+.scalara-hub-panel-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.scalara-hub-panel-close:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.scalara-hub-panel-close svg {
+  width: 14px;
+  height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scalara-hub-panel-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.scalara-hub-panel-logo-icon {
+  width: 30px;
+  height: 33px;
+  flex-shrink: 0;
+}
+
+.scalara-hub-panel-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.scalara-hub-panel-logo-text-scalara {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.scalara-hub-panel-logo-text-labs {
+  font-size: 8.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 5.2px;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.scalara-hub-panel-greeting {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+/* White cards section */
+.scalara-hub-panel-cards {
+  background: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scalara-hub-panel-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.scalara-hub-panel-card:hover {
+  background: #F8F9FB;
+  border-color: rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.scalara-hub-panel-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.scalara-hub-panel-card-icon-chat {
+  background: rgba(12, 27, 59, 0.06);
+}
+
+.scalara-hub-panel-card-icon-chat svg {
+  width: 18px;
+  height: 18px;
+  color: #0C1B3B;
+}
+
+.scalara-hub-panel-card-icon-wa {
+  background: rgba(37, 211, 102, 0.08);
+}
+
+.scalara-hub-panel-card-icon-wa svg {
+  width: 20px;
+  height: 20px;
+  color: #25D366;
+}
+
+.scalara-hub-panel-card-label {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1A1A1A;
+  letter-spacing: -0.2px;
+}
+
+.scalara-hub-panel-card-arrow svg {
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.25);
+  transition: color 0.2s;
+}
+
+.scalara-hub-panel-card:hover .scalara-hub-panel-card-arrow svg {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Chat Panel ===== */
+
+.scalara-chat-panel {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 200;
+  width: 400px;
+  max-width: calc(100vw - 40px);
+  height: 580px;
+  max-height: calc(100vh - 80px);
+  border-radius: 20px;
+  background: #080E1B;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 32px 80px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* ===== Chat Header ===== */
+
+.scalara-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: #0C1B3B;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  flex-shrink: 0;
+}
+
+.scalara-chat-header-logo {
+  width: 28px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.scalara-chat-header-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.scalara-chat-header-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F6F6F6;
+  line-height: 1.2;
+}
+
+.scalara-chat-header-status {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1px;
+}
+
+.scalara-chat-header-status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #22C55E;
+  flex-shrink: 0;
+}
+
+.scalara-chat-back-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.scalara-chat-back-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.scalara-chat-back-btn svg {
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scalara-chat-close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.scalara-chat-close-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.scalara-chat-close-btn svg {
+  width: 14px;
+  height: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== Messages ===== */
+
+.scalara-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.05) transparent;
+}
+
+.scalara-chat-messages::-webkit-scrollbar { width: 3px; }
+.scalara-chat-messages::-webkit-scrollbar-track { background: transparent; }
+.scalara-chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+/* Welcome */
+.scalara-chat-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 16px;
+  gap: 12px;
+}
+
+.scalara-chat-welcome-logo {
+  width: 42px;
+  height: 46px;
+}
+
+.scalara-chat-welcome h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #F6F6F6;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.scalara-chat-welcome p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1.7;
+  max-width: 280px;
+  margin: 0;
+}
+
+/* Messages */
+.scalara-msg {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scalara-msg-user { align-self: flex-end; }
+.scalara-msg-agent { align-self: flex-start; }
+
+.scalara-msg-bubble {
+  padding: 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #E2E8F0;
+  word-break: break-word;
+}
+
+.scalara-msg-user .scalara-msg-bubble {
+  background: #1A3A7A;
+  border-radius: 14px 14px 4px 14px;
+  color: #F0F4FA;
+}
+
+.scalara-msg-agent .scalara-msg-bubble {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px 14px 14px 4px;
+}
+
+/* Rendered markdown inside agent bubbles */
+.scalara-msg-agent .scalara-msg-bubble strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.scalara-msg-agent .scalara-msg-bubble p {
+  margin: 0 0 8px;
+}
+
+.scalara-msg-agent .scalara-msg-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.scalara-msg-agent .scalara-msg-bubble ol,
+.scalara-msg-agent .scalara-msg-bubble ul {
+  margin: 6px 0;
+  padding-left: 18px;
+}
+
+.scalara-msg-agent .scalara-msg-bubble li {
+  margin-bottom: 5px;
+}
+
+.scalara-msg-agent .scalara-msg-bubble li:last-child {
+  margin-bottom: 0;
+}
+
+.scalara-msg-time {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.15);
+  padding: 0 4px;
+}
+
+.scalara-msg-user .scalara-msg-time { text-align: right; }
+
+/* Typing */
+.scalara-chat-typing {
+  align-self: flex-start;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px 14px 14px 4px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.scalara-typing-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  animation: scalara-typ 1.3s ease-in-out infinite;
+}
+
+.scalara-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.scalara-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes scalara-typ {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.3; }
+  30% { transform: translateY(-4px); opacity: 0.8; }
+}
+
+/* Quick Actions */
+.scalara-chat-qas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 16px 12px;
+  flex-shrink: 0;
+}
+
+.scalara-chat-qa {
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11.5px;
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.scalara-chat-qa:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input */
+.scalara-chat-input-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 12px 16px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  flex-shrink: 0;
+}
+
+.scalara-chat-input {
+  flex: 1;
+  min-height: 38px;
+  max-height: 96px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: #F6F6F6;
+  font-size: 13.5px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.scalara-chat-input::placeholder {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+.scalara-chat-input:focus {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.scalara-chat-send {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  background: #218AF3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.scalara-chat-send:hover {
+  background: #2B96FF;
+}
+
+.scalara-chat-send:active {
+  transform: scale(0.95);
+}
+
+.scalara-chat-send:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.scalara-chat-send svg {
+  width: 15px;
+  height: 15px;
+  color: #ffffff;
+}
+
+.scalara-chat-footer {
+  text-align: center;
+  padding: 0 16px 10px;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 480px) {
+  .scalara-chat-panel {
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+  }
+
+  .scalara-hub-panel {
+    left: 20px;
+    right: 20px;
+    bottom: 92px;
+    width: auto;
+    max-width: none;
+  }
+
+  .scalara-hub-trigger {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}

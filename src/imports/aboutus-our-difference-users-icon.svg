@@ -1,0 +1,18 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head circle (left person) -->
+  <g transform="translate(2.5, 4.376)">
+    <path d="M4.6625 8.725C6.90616 8.725 8.725 6.90616 8.725 4.6625C8.725 2.41884 6.90616 0.6 4.6625 0.6C2.41884 0.6 0.6 2.41884 0.6 4.6625C0.6 6.90616 2.41884 8.725 4.6625 8.725Z" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Body arc (left person) -->
+  <g transform="translate(0.8, 12.498)">
+    <path d="M0.60007 3.72664C1.22436 2.76676 2.0785 1.97802 3.08496 1.432C4.09142 0.885989 5.21832 0.6 6.36335 0.6C7.50838 0.6 8.63528 0.885989 9.64174 1.432C10.6482 1.97802 11.5023 2.76676 12.1266 3.72664" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Small arc (right person body) -->
+  <g transform="translate(13.438, 12.5)">
+    <path d="M0.6 0.600001C1.74497 0.599329 2.87195 0.884857 3.87848 1.43062C4.88501 1.97639 5.73917 2.76508 6.36328 3.725" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Half circle (right person head) -->
+  <g transform="translate(11.928, 4.376)">
+    <path d="M0.60016 0.889062C1.15588 0.667418 1.75369 0.571252 2.35088 0.607438C2.94807 0.643623 3.5299 0.811265 4.05478 1.09838C4.57967 1.38551 5.03467 1.78502 5.38725 2.26837C5.73984 2.75172 5.98131 3.30698 6.09441 3.89448C6.20752 4.48198 6.18947 5.08721 6.04155 5.66692C5.89363 6.24663 5.61949 6.78651 5.23872 7.24799C4.85796 7.70947 4.37996 8.08115 3.83889 8.33648C3.29782 8.5918 2.70704 8.72447 2.10875 8.725" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

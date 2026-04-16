@@ -1,0 +1,370 @@
+/* OurStack section — Desktop-first */
+
+.aboutus-our-stack {
+  width: 100%;
+  background-color: var(--aboutus-our-stack-bg);
+}
+
+.aboutus-our-stack__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--aboutus-our-stack-padding-y) var(--aboutus-our-stack-padding-x);
+}
+
+/* ── Heading column ── */
+.aboutus-our-stack__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--aboutus-our-stack-heading-gap);
+  flex: 1 0 0;
+  max-width: var(--aboutus-our-stack-heading-max-width);
+  min-width: 0;
+  padding-top: var(--aboutus-our-stack-heading-padding-top);
+  padding-left: var(--aboutus-our-stack-heading-padding-x);
+  padding-right: var(--aboutus-our-stack-heading-padding-x);
+}
+
+.aboutus-our-stack__title {
+  font-family: var(--aboutus-our-stack-heading-font);
+  font-size: var(--aboutus-our-stack-heading-size);
+  font-weight: var(--aboutus-our-stack-heading-weight);
+  line-height: var(--aboutus-our-stack-heading-line-height);
+  letter-spacing: var(--aboutus-our-stack-heading-letter-spacing);
+  color: var(--aboutus-our-stack-heading-color);
+  margin: 0;
+}
+
+.aboutus-our-stack__caption {
+  font-family: var(--aboutus-our-stack-caption-font);
+  font-size: var(--aboutus-our-stack-caption-size);
+  font-weight: var(--aboutus-our-stack-caption-weight);
+  line-height: var(--aboutus-our-stack-caption-line-height);
+  letter-spacing: var(--aboutus-our-stack-caption-letter-spacing);
+  color: var(--aboutus-our-stack-caption-color);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ── Logos column ── */
+.aboutus-our-stack__logos-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  max-width: var(--aboutus-our-stack-logos-max-width);
+  min-width: 0;
+  padding-left: var(--aboutus-our-stack-logos-padding-x);
+  padding-right: var(--aboutus-our-stack-logos-padding-x);
+  border-left: var(--aboutus-our-stack-divider-width) solid var(--aboutus-our-stack-divider-color);
+}
+
+.aboutus-our-stack__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: var(--aboutus-our-stack-logos-gap);
+}
+
+/* ── Individual logo items ── */
+.aboutus-our-stack__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.aboutus-our-stack__logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.aboutus-our-stack__logo img {
+  display: block;
+}
+
+/* ── Per-logo desktop sizes (from Figma design context) ── */
+.aboutus-our-stack__logo--docker img {
+  width: 32.963px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--google-cloud img {
+  width: 32.286px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--kubernetes img {
+  width: 26.792px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--langgraph img {
+  width: 50.951px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--angular img {
+  width: 24.561px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--flutter img {
+  width: 21.007px;
+  height: 23px;
+}
+
+.aboutus-our-stack__logo--nextjs img {
+  width: 89px;
+  height: 18px;
+}
+
+.aboutus-our-stack__logo--react img {
+  width: 29px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--springboot img {
+  width: 26px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--aws img {
+  width: 43px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--java img {
+  width: 58.87px;
+  height: 34px;
+}
+
+.aboutus-our-stack__logo--kafka img {
+  width: 20.944px;
+  height: 34px;
+}
+
+.aboutus-our-stack__logo--postgresql img {
+  width: 32.797px;
+  height: 34px;
+}
+
+.aboutus-our-stack__logo--typescript img {
+  width: 26px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--python img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Swift — composite of icon + text */
+.aboutus-our-stack__logo--swift {
+  gap: 0;
+  position: relative;
+  width: 83px;
+  height: 26px;
+  overflow: hidden;
+}
+
+.aboutus-our-stack__swift-icon {
+  width: 25.784px;
+  height: 26px;
+}
+
+.aboutus-our-stack__swift-text {
+  width: 49.765px;
+  height: 17.813px;
+}
+
+.aboutus-our-stack__logo--pixijs img {
+  width: 61px;
+  height: 24px;
+}
+
+.aboutus-our-stack__logo--kotlin img {
+  width: 94px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--redis img {
+  width: 81px;
+  height: 26px;
+}
+
+.aboutus-our-stack__logo--fastapi img {
+  width: 108px;
+  height: 20px;
+}
+
+/* ===== Tablet: max-width 1023px ===== */
+@media (max-width: 1023px) {
+  .aboutus-our-stack__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+  }
+
+  .aboutus-our-stack__heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .aboutus-our-stack__logos-container {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .aboutus-our-stack__logos {
+    width: 100%;
+  }
+}
+
+/* ===== Mobile: max-width 767px ===== */
+@media (max-width: 767px) {
+  .aboutus-our-stack__inner {
+    padding: var(--aboutus-our-stack-padding-y) 20px;
+    gap: 40px;
+  }
+
+  .aboutus-our-stack__title {
+    font-size: 30px;
+  }
+
+  .aboutus-our-stack__logos {
+    gap: 26px;
+  }
+
+  /* Mobile logo sizes (from Figma mobile design context) */
+  .aboutus-our-stack__logo--docker img {
+    width: 30.427px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--google-cloud img {
+    width: 29.802px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--kubernetes img {
+    width: 24.731px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--langgraph img {
+    width: 47.031px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--angular img {
+    width: 22.672px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--flutter img {
+    width: 19.391px;
+    height: 21.232px;
+  }
+
+  .aboutus-our-stack__logo--nextjs img {
+    width: 79px;
+    height: 16px;
+  }
+
+  .aboutus-our-stack__logo--react img {
+    width: 27px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--springboot img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--aws img {
+    width: 40px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--java img {
+    width: 58.87px;
+    height: 34px;
+  }
+
+  .aboutus-our-stack__logo--kafka img {
+    width: 17.248px;
+    height: 28px;
+  }
+
+  .aboutus-our-stack__logo--postgresql img {
+    width: 30.866px;
+    height: 32px;
+  }
+
+  .aboutus-our-stack__logo--typescript img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--python img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__logo--swift {
+    width: 77px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__swift-icon {
+    width: 23.796px;
+    height: 24px;
+  }
+
+  .aboutus-our-stack__swift-text {
+    width: 45.938px;
+    height: 16.443px;
+  }
+
+  .aboutus-our-stack__logo--pixijs img {
+    width: 51px;
+    height: 20px;
+  }
+
+  .aboutus-our-stack__logo--kotlin img {
+    width: 80px;
+    height: 22px;
+  }
+
+  .aboutus-our-stack__logo--redis img {
+    width: 63px;
+    height: 20px;
+  }
+
+  .aboutus-our-stack__logo--fastapi img {
+    width: 87px;
+    height: 16px;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutus-our-stack__logo {
+    transition: none;
+  }
+}

@@ -1,0 +1,54 @@
+.legal-content {
+  background: #ffffff;
+  color: #1a1a2e;
+  padding: 120px 40px 80px;
+}
+
+.legal-content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.legal-content__title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a2e;
+}
+
+.legal-content__updated {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.legal-content__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.legal-content__body a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.legal-content__body a:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 767px) {
+  .legal-content {
+    padding: 100px 20px 60px;
+  }
+
+  .legal-content__title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,536 @@
+/* ==========================================================================
+   Team Section
+   Desktop-first — tablet ≤ 1023px — mobile ≤ 767px
+   ========================================================================== */
+
+/* ── Section wrapper ── */
+.team {
+  width: 100%;
+  background: var(--team-bg);
+  position: relative;
+  isolation: isolate;
+}
+
+.team__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--team-gap);
+  padding: var(--team-padding-y) var(--team-padding-x);
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Heading block ── */
+.team__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.team__title {
+  font-family: var(--team-title-font);
+  font-size: var(--team-title-size);
+  font-weight: var(--team-title-weight);
+  line-height: var(--team-title-line-height);
+  letter-spacing: var(--team-title-letter-spacing);
+  color: var(--team-title-color);
+  font-style: normal;
+  margin: 0;
+}
+
+.team__subtitle {
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-subtitle-size);
+  font-weight: var(--team-subtitle-weight);
+  line-height: var(--team-subtitle-line-height);
+  color: var(--team-subtitle-color);
+  margin: 0;
+  width: 100%;
+}
+
+/* ── Cards container ── */
+.team__cards {
+  display: flex;
+  gap: var(--team-cards-gap);
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.team__cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Individual card ── */
+.team__card {
+  position: relative;
+  flex: 0 0 calc((100% - 3 * var(--team-cards-gap)) / 4);
+  min-width: calc((100% - 3 * var(--team-cards-gap)) / 4);
+  height: var(--team-card-height);
+  min-height: var(--team-card-height);
+  border-radius: var(--team-card-radius);
+  overflow: hidden;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+/* ── Card: Active state (default — with photo) ── */
+.team__card-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--team-card-padding);
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.35s ease;
+}
+
+.team__card:hover .team__card-active {
+  opacity: 0;
+}
+
+/* Photo background */
+.team__card-photo-wrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: var(--team-card-radius);
+}
+
+.team__card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--team-card-radius);
+}
+
+.team__card-overlay {
+  position: absolute;
+  inset: 0 0 -1px 0;
+  border-radius: var(--team-card-radius);
+  background-image:
+    linear-gradient(180deg, rgba(12, 27, 59, 0) 20%, rgba(10, 22, 44, 0.4) 90%),
+    linear-gradient(180deg, rgba(10, 22, 44, 0) 50%, rgb(8, 14, 27) 100%);
+}
+
+/* Active heading info */
+.team__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--team-card-heading-gap);
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.team__card-name {
+  font-family: 'Results Letter', sans-serif;
+  font-size: var(--team-card-name-size);
+  line-height: var(--team-card-name-line-height);
+  letter-spacing: var(--team-card-name-letter-spacing);
+  color: var(--team-card-name-color);
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0;
+  width: 100%;
+}
+
+.team__card-role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--team-card-role-py) var(--team-card-role-px);
+  background: var(--team-card-role-bg);
+  backdrop-filter: blur(var(--team-card-role-blur));
+  -webkit-backdrop-filter: blur(var(--team-card-role-blur));
+  border-radius: var(--team-card-role-radius);
+}
+
+.team__card-role-text {
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-card-role-size);
+  font-weight: var(--team-card-role-weight);
+  line-height: var(--team-card-role-line-height);
+  letter-spacing: var(--team-card-role-letter-spacing);
+  color: var(--team-card-role-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* ── Card: Hover state ── */
+.team__card-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--team-card-padding);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--team-card-hover-bg-from), var(--team-card-hover-bg-to));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.team__card:hover .team__card-hover {
+  opacity: 1;
+}
+
+/* SLOGO watermark */
+.team__card-slogo {
+  position: absolute;
+  top: -105px;
+  left: -111px;
+  width: 642.456px;
+  height: 700px;
+  pointer-events: none;
+}
+
+.team__card-slogo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hover heading */
+.team__card-hover-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--team-card-hover-heading-gap);
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.team__card-hover-name {
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-card-hover-name-size);
+  font-weight: var(--team-card-hover-name-weight);
+  line-height: var(--team-card-hover-name-line-height);
+  letter-spacing: var(--team-card-hover-name-letter-spacing);
+  color: var(--team-card-hover-name-color);
+  text-transform: capitalize;
+  margin: 0;
+  width: 100%;
+}
+
+.team__card-hover-role {
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-card-hover-role-size);
+  font-weight: var(--team-card-hover-role-weight);
+  line-height: var(--team-card-hover-role-line-height);
+  letter-spacing: var(--team-card-hover-role-letter-spacing);
+  color: var(--team-card-hover-role-color);
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+/* Hover bottom section (linkedin + bio) */
+.team__card-hover-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--team-card-hover-bottom-gap);
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.team__card-linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--team-card-linkedin-size);
+  height: var(--team-card-linkedin-size);
+  background: var(--team-card-linkedin-bg);
+  border-radius: var(--team-card-linkedin-radius);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.team__card-linkedin img {
+  width: var(--team-card-linkedin-icon-size);
+  height: var(--team-card-linkedin-icon-size);
+  display: block;
+}
+
+.team__card-bio {
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-card-bio-size);
+  font-weight: var(--team-card-bio-weight);
+  line-height: var(--team-card-bio-line-height);
+  color: var(--team-card-bio-color);
+  margin: 0;
+  max-width: 260px;
+  width: 100%;
+}
+
+/* ── Mobile card (hidden on desktop) ── */
+.team__card--mobile {
+  display: none;
+}
+
+/* ── Carousel navigation ── */
+.team__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.team__nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--team-nav-color);
+  font-family: var(--team-subtitle-font);
+  font-size: var(--team-nav-size);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+.team__nav-btn:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.team__nav-chevron {
+  width: 8px;
+  height: 14px;
+  display: block;
+}
+
+/* ==========================================================================
+   Tablet — max-width: 1023px
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .team__inner {
+    padding: var(--team-padding-y) var(--team-padding-x);
+  }
+
+  .team__cards {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+
+  .team__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team__card {
+    flex: 0 0 calc(50% - var(--team-cards-gap) / 2);
+    min-width: calc(50% - var(--team-cards-gap) / 2);
+    scroll-snap-align: start;
+  }
+
+  .team__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .team__nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--team-nav-color);
+    font-family: var(--team-subtitle-font);
+    font-size: var(--team-nav-size);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0;
+  }
+
+  .team__nav-btn:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .team__nav-chevron {
+    width: 8px;
+    height: 14px;
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Mobile — max-width: 767px
+   ========================================================================== */
+@media (max-width: 767px) {
+  .team__inner {
+    padding: var(--team-padding-y) 20px;
+  }
+
+  .team__title {
+    font-size: 26px;
+    letter-spacing: -0.96px;
+  }
+
+  .team__subtitle {
+    font-size: 15px;
+  }
+
+  /* Let mobile cards grow with content — the base .team__card height/overflow
+     locks the desktop card at a fixed 400px and clips overflow, which hides
+     the mobile info block + LinkedIn action button. */
+  .team__card {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  /* ── Hide desktop card, show mobile card ── */
+  .team__card--desktop {
+    display: none;
+  }
+
+  .team__card--mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+    overflow: clip;
+    position: relative;
+  }
+
+  /* ── Cards: single column, no carousel ── */
+  .team__cards {
+    flex-direction: column;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    gap: 32px;
+  }
+
+  .team__nav {
+    display: none;
+  }
+
+  /* ── Mobile card background shape ── */
+  .team__card-mobile-bg {
+    position: absolute;
+    height: 260px;
+    left: 19px;
+    top: 0;
+    width: calc(100% - 19px);
+    pointer-events: none;
+  }
+
+  .team__card-mobile-bg svg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ── Mobile card image ── */
+  .team__card-mobile-image {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .team__card-mobile-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    border-radius: 16px;
+  }
+
+  .team__card-mobile-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .team__card-mobile-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--team-card-linkedin-size);
+    height: var(--team-card-linkedin-size);
+    background: var(--team-card-linkedin-bg);
+    border-radius: var(--team-card-linkedin-radius);
+    text-decoration: none;
+  }
+
+  .team__card-mobile-linkedin img {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  /* ── Mobile card info ── */
+  .team__card-mobile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .team__card-mobile-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .team__card-mobile-role {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    line-height: 2;
+    color: #218af3;
+  }
+
+  .team__card-mobile-bio {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    line-height: 2;
+    color: #8899B4;
+    max-width: 260px;
+  }
+}

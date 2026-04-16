@@ -1,0 +1,2169 @@
+:root {
+  /* Content Max Width */
+  --content-max-width: 1440px;
+
+  /* Colors */
+
+  /* Typography */
+
+  /* Spacing */
+
+  /* Radius */
+
+  /* Shadows */
+}
+
+/* ========================================
+   AboutUs — SHARED: HEADER
+   ======================================== */
+:root {
+  /* Colors */
+  --header-bg: #0F1729;
+  --header-text-primary: #f6f6f6;
+  --header-text-secondary: #f6f6f6;
+  --header-text-terciary: #e7e7e7cc;
+  --header-accent-foreground: #ffffff;
+
+  /* Typography */
+  --header-font-family: 'Manrope', sans-serif;
+  --header-font-size: 15px;
+  --header-font-weight: 400;
+  --header-line-height: 1.8;
+  --header-cta-line-height: 0.95;
+
+  /* Spacing */
+  --header-padding-x: 64px;
+  --header-padding-y: 8px;
+  --header-links-gap: 26px;
+  --header-nav-item-padding-y: 16px;
+  --header-cta-gap: 8px;
+  --header-dropdown-icon-gap: 4px;
+
+  /* Sizing */
+  --header-logo-width: 134px;
+  --header-logo-height: 38px;
+  --header-caret-size: 14px;
+  --header-arrow-size: 20px;
+  --header-hamburger-btn-size: 32px;
+
+  /* Layout */
+  --header-max-width: 1440px;
+  --header-height: 54px;
+}
+
+/* ========================================
+   AboutUs — PAGE: HEROSECTION
+   ======================================== */
+:root {
+  /* Background */
+  --aboutus-hero-section-bg-primary: #080E1B;
+  --aboutus-hero-section-bg-gradient-start: rgba(10, 22, 44, 1);
+  --aboutus-hero-section-bg-gradient-end: rgba(8, 14, 27, 1);
+
+  /* Text */
+  --aboutus-hero-section-text-primary: #FFFFFF;
+  --aboutus-hero-section-text-secondary: #F6F6F6;
+  --aboutus-hero-section-text-tertiary: rgba(231, 231, 231, 0.8);
+  --aboutus-hero-section-text-accent: #218af3;
+  --aboutus-hero-section-nav-text: #F6F6F6;
+
+  /* Buttons */
+  --aboutus-hero-section-btn-primary-bg: #FFFFFF;
+  --aboutus-hero-section-btn-primary-text: #0C1B3B;
+
+  /* Typography — Desktop */
+  --aboutus-hero-section-subtitle-size: 14px;
+  --aboutus-hero-section-subtitle-weight: 300;
+  --aboutus-hero-section-subtitle-line-height: 1.8;
+  --aboutus-hero-section-subtitle-tracking: 1.12px;
+
+  --aboutus-hero-section-h1-size: 48px;
+  --aboutus-hero-section-h1-line-height: 1.2;
+
+  --aboutus-hero-section-body-size: 15px;
+  --aboutus-hero-section-body-weight: 400;
+  --aboutus-hero-section-body-line-height: 1.8;
+
+  --aboutus-hero-section-btn-text-size: 10px;
+  --aboutus-hero-section-btn-text-weight: 500;
+  --aboutus-hero-section-btn-text-tracking: 0.8px;
+  --aboutus-hero-section-btn-text-line-height: 1.4;
+
+  --aboutus-hero-section-nav-text-size: 15px;
+  --aboutus-hero-section-nav-text-weight: 400;
+  --aboutus-hero-section-nav-text-line-height: 1.8;
+
+  /* Spacing — Desktop */
+  --aboutus-hero-section-nav-px: 64px;
+  --aboutus-hero-section-nav-py: 8px;
+  --aboutus-hero-section-nav-gap: 26px;
+  --aboutus-hero-section-content-padding: 64px;
+  --aboutus-hero-section-heading-pt: 20px;
+  --aboutus-hero-section-heading-gap: 34px;
+  --aboutus-hero-section-body-gap: 12px;
+  --aboutus-hero-section-body-max-width: 430px;
+  --aboutus-hero-section-h1-max-width: 640px;
+  --aboutus-hero-section-btn-px: 24px;
+  --aboutus-hero-section-btn-py: 14px;
+  --aboutus-hero-section-btn-gap: 6px;
+
+  /* Radius */
+  --aboutus-hero-section-btn-radius: 999px;
+
+  /* Image — Desktop */
+  --aboutus-hero-section-img-width: 828px;
+  --aboutus-hero-section-img-height: 462px;
+  --aboutus-hero-section-img-top: 97px;
+  --aboutus-hero-section-img-left: 656px;
+}
+
+/* ========================================
+   AboutUs — PAGE: BODYTEXTBADGES
+   ======================================== */
+:root {
+  /* Colors */
+  --aboutus-body-text-badges-bg: #080E1B;
+  --aboutus-body-text-badges-border-color: rgba(255, 255, 255, 0.12);
+  --aboutus-body-text-badges-text-color: #ffffff;
+
+  /* Typography — Body Text */
+  --aboutus-body-text-badges-body-font-family: 'Manrope', sans-serif;
+  --aboutus-body-text-badges-body-font-size: 14px;
+  --aboutus-body-text-badges-body-font-weight: 400;
+  --aboutus-body-text-badges-body-line-height: 1.8;
+
+  /* Typography — Badge Label */
+  --aboutus-body-text-badges-label-font-size: 12px;
+  --aboutus-body-text-badges-label-line-height: 2;
+
+  /* Spacing — Desktop */
+  --aboutus-body-text-badges-padding-x: 64px;
+  --aboutus-body-text-badges-padding-y: 34px;
+  --aboutus-body-text-badges-gap: 112px;
+  --aboutus-body-text-badges-text-max-width: 460px;
+  --aboutus-body-text-badges-text-container-max-width: 900px;
+  --aboutus-body-text-badges-badges-gap: 8px;
+  --aboutus-body-text-badges-logos-gap: 20px;
+}
+
+/* ========================================
+   AboutUs — PAGE: OURDIFFERENCE
+   ======================================== */
+:root {
+  /* Colors */
+  --aboutus-our-difference-bg: #080E1B;
+  --aboutus-our-difference-accent: #7AD2FE;
+  --aboutus-our-difference-foreground: #ffffff;
+  --aboutus-our-difference-text-secondary: #f6f6f6;
+  --aboutus-our-difference-text-tertiary: rgba(231, 231, 231, 0.8);
+  --aboutus-our-difference-surface-container: #0A162C;
+  --aboutus-our-difference-on-surface: #0c1b3b;
+
+  /* Typography */
+  --aboutus-our-difference-caption-size: 16px;
+  --aboutus-our-difference-caption-weight: 800;
+  --aboutus-our-difference-caption-line-height: 1.8;
+  --aboutus-our-difference-caption-letter-spacing: 1.28px;
+
+  --aboutus-our-difference-h3-size: 40px;
+  --aboutus-our-difference-h3-weight: 400;
+  --aboutus-our-difference-h3-line-height: 1.4;
+  --aboutus-our-difference-h3-letter-spacing: -1.2px;
+
+  --aboutus-our-difference-h5-size: 26px;
+  --aboutus-our-difference-h5-line-height: 1.6;
+
+  --aboutus-our-difference-quote-size: 20px;
+  --aboutus-our-difference-quote-weight: 600;
+  --aboutus-our-difference-quote-line-height: 1.8;
+  --aboutus-our-difference-quote-letter-spacing: -0.4px;
+
+  --aboutus-our-difference-body-size: 15px;
+  --aboutus-our-difference-body-weight: 400;
+  --aboutus-our-difference-body-line-height: 1.8;
+
+  --aboutus-our-difference-accent-body-size: 16px;
+  --aboutus-our-difference-accent-body-letter-spacing: 0.32px;
+
+  /* Spacing */
+  --aboutus-our-difference-section-gap: 80px;
+  --aboutus-our-difference-section-padding-x: 40px;
+  --aboutus-our-difference-section-padding-y: 56px;
+  --aboutus-our-difference-heading-gap: 10px;
+  --aboutus-our-difference-heading-pt: 26px;
+  --aboutus-our-difference-container-gap: 40px;
+  --aboutus-our-difference-card-gap: 64px;
+  --aboutus-our-difference-text-gap: 24px;
+  --aboutus-our-difference-card-text-pt: 64px;
+  --aboutus-our-difference-content-gap: 20px;
+  --aboutus-our-difference-content-pb: 80px;
+  --aboutus-our-difference-avatar-size: 40px;
+  --aboutus-our-difference-icon-padding: 16px;
+  --aboutus-our-difference-icon-size: 20px;
+  --aboutus-our-difference-icon-radius: 8px;
+
+  /* Layout */
+  --aboutus-our-difference-card-max-width: 380px;
+  --aboutus-our-difference-content-max-width: 700px;
+  --aboutus-our-difference-heading-max-width: 700px;
+  --aboutus-our-difference-subtitle-max-width: 550px;
+  --aboutus-our-difference-cta-max-width: 600px;
+}
+
+/* ========================================
+   AboutUs — PAGE: OURSTACK
+   ======================================== */
+:root {
+  /* Background */
+  --aboutus-our-stack-bg: #0c1524;
+
+  /* Typography */
+  --aboutus-our-stack-heading-font: 'Manrope', sans-serif;
+  --aboutus-our-stack-heading-size: 44px;
+  --aboutus-our-stack-heading-weight: 600;
+  --aboutus-our-stack-heading-line-height: 1.2;
+  --aboutus-our-stack-heading-letter-spacing: -1.32px;
+  --aboutus-our-stack-heading-color: #ffffff;
+
+  --aboutus-our-stack-caption-font: 'Manrope', sans-serif;
+  --aboutus-our-stack-caption-size: 10px;
+  --aboutus-our-stack-caption-weight: 500;
+  --aboutus-our-stack-caption-line-height: 1.8;
+  --aboutus-our-stack-caption-letter-spacing: 0.6px;
+  --aboutus-our-stack-caption-color: #8a94a6;
+
+  /* Spacing */
+  --aboutus-our-stack-padding-x: 64px;
+  --aboutus-our-stack-padding-y: 96px;
+  --aboutus-our-stack-heading-padding-top: 26px;
+  --aboutus-our-stack-heading-padding-x: 26px;
+  --aboutus-our-stack-heading-gap: 10px;
+  --aboutus-our-stack-logos-padding-x: 40px;
+  --aboutus-our-stack-logos-gap: 40px;
+
+  /* Layout */
+  --aboutus-our-stack-heading-max-width: 500px;
+  --aboutus-our-stack-logos-max-width: 900px;
+
+  /* Border */
+  --aboutus-our-stack-divider-color: rgba(255, 255, 255, 0.12);
+  --aboutus-our-stack-divider-width: 1px;
+
+  /* Logo sizes */
+  --aboutus-our-stack-logo-height: 26px;
+  --aboutus-our-stack-logo-height-lg: 34px;
+  --aboutus-our-stack-logo-height-sm: 18px;
+}
+
+/* ========================================
+   AboutUs — PAGE: WHATMAKESUSDIFFERENT
+   ======================================== */
+:root {
+  /* WhatMakesUsDifferent — Colors */
+  --aboutus-what-makes-us-different-bg: #ffffff;
+  --aboutus-what-makes-us-different-heading-color: #080e1b;
+  --aboutus-what-makes-us-different-caption-color: #0c1b3b;
+  --aboutus-what-makes-us-different-number-color: #218af3;
+  --aboutus-what-makes-us-different-title-color: #1f2228;
+  --aboutus-what-makes-us-different-body-color: #475166;
+  --aboutus-what-makes-us-different-avatar-border: #ffffff;
+
+  /* WhatMakesUsDifferent — Typography */
+  --aboutus-what-makes-us-different-heading-font: 'Manrope', sans-serif;
+  --aboutus-what-makes-us-different-heading-size: 44px;
+  --aboutus-what-makes-us-different-heading-weight: 600;
+  --aboutus-what-makes-us-different-heading-lh: 1.2;
+  --aboutus-what-makes-us-different-heading-ls: -1.32px;
+
+  --aboutus-what-makes-us-different-caption-font: 'Manrope', sans-serif;
+  --aboutus-what-makes-us-different-caption-size: 12px;
+  --aboutus-what-makes-us-different-caption-weight: 700;
+  --aboutus-what-makes-us-different-caption-lh: 1.8;
+  --aboutus-what-makes-us-different-caption-ls: 1.68px;
+
+  --aboutus-what-makes-us-different-feature-font: 'Manrope', sans-serif;
+  --aboutus-what-makes-us-different-feature-size: 20px;
+  --aboutus-what-makes-us-different-feature-weight: 600;
+  --aboutus-what-makes-us-different-feature-lh: 1.8;
+  --aboutus-what-makes-us-different-feature-ls: -0.4px;
+
+  --aboutus-what-makes-us-different-body-font: 'Manrope', sans-serif;
+  --aboutus-what-makes-us-different-body-size: 15px;
+  --aboutus-what-makes-us-different-body-weight: 400;
+  --aboutus-what-makes-us-different-body-lh: 1.8;
+
+  /* WhatMakesUsDifferent — Spacing */
+  --aboutus-what-makes-us-different-section-gap: 64px;
+  --aboutus-what-makes-us-different-section-px: 40px;
+  --aboutus-what-makes-us-different-section-py: 56px;
+  --aboutus-what-makes-us-different-heading-gap: 20px;
+  --aboutus-what-makes-us-different-cta-gap: 26px;
+  --aboutus-what-makes-us-different-cta-py: 16px;
+  --aboutus-what-makes-us-different-row-gap: 34px;
+  --aboutus-what-makes-us-different-card-gap: 64px;
+  --aboutus-what-makes-us-different-card-text-gap: 20px;
+
+  /* WhatMakesUsDifferent — Sizing */
+  --aboutus-what-makes-us-different-avatar-size: 44px;
+  --aboutus-what-makes-us-different-avatar-border-width: 4px;
+  --aboutus-what-makes-us-different-avatar-overlap: -10px;
+  --aboutus-what-makes-us-different-logo-width: 120px;
+  --aboutus-what-makes-us-different-logo-height: 34px;
+  --aboutus-what-makes-us-different-heading-max-width: 700px;
+  --aboutus-what-makes-us-different-cta-max-width: 600px;
+
+  /* WhatMakesUsDifferent — Pattern opacity */
+  --aboutus-what-makes-us-different-pattern-opacity: 0.1;
+}
+
+/* ========================================
+   AboutUs — SHARED: TEAM
+   ======================================== */
+:root {
+  /* Section */
+  --team-bg: #080e1b;
+  --team-padding-x: 40px;
+  --team-padding-y: 56px;
+  --team-gap: 40px;
+
+  /* Heading */
+  --team-title-font: 'Manrope', sans-serif;
+  --team-title-size: 40px;
+  --team-title-weight: 400;
+  --team-title-line-height: 1.4;
+  --team-title-letter-spacing: -1.2px;
+  --team-title-color: #ffffff;
+
+  /* Subtitle */
+  --team-subtitle-font: 'Manrope', sans-serif;
+  --team-subtitle-size: 15px;
+  --team-subtitle-weight: 400;
+  --team-subtitle-line-height: 1.8;
+  --team-subtitle-color: rgba(231, 231, 231, 0.8);
+
+  /* Cards grid */
+  --team-cards-gap: 16px;
+
+  /* Card dimensions */
+  --team-card-height: 400px;
+  --team-card-radius: 16px;
+  --team-card-padding: 34px;
+
+  /* Card Active — name */
+  --team-card-name-size: 20px;
+  --team-card-name-line-height: 1.2;
+  --team-card-name-letter-spacing: 2px;
+  --team-card-name-color: #ffffff;
+
+  /* Card Active — role badge */
+  --team-card-role-bg: rgba(12, 27, 59, 0.5);
+  --team-card-role-blur: 10px;
+  --team-card-role-px: 12px;
+  --team-card-role-py: 8px;
+  --team-card-role-size: 10px;
+  --team-card-role-weight: 500;
+  --team-card-role-line-height: 1.8;
+  --team-card-role-letter-spacing: 0.6px;
+  --team-card-role-color: #ffffff;
+  --team-card-role-radius: 16px;
+
+  /* Card Active — name-role gap */
+  --team-card-heading-gap: 26px;
+
+  /* Card Hover — background */
+  --team-card-hover-bg-from: #080e1b;
+  --team-card-hover-bg-to: #0a162c;
+
+  /* Card Hover — name */
+  --team-card-hover-name-size: 20px;
+  --team-card-hover-name-weight: 600;
+  --team-card-hover-name-line-height: 1.8;
+  --team-card-hover-name-letter-spacing: -0.4px;
+  --team-card-hover-name-color: #ffffff;
+
+  /* Card Hover — role */
+  --team-card-hover-role-size: 12px;
+  --team-card-hover-role-weight: 700;
+  --team-card-hover-role-line-height: 1.8;
+  --team-card-hover-role-letter-spacing: 1.68px;
+  --team-card-hover-role-color: #7ad2fe;
+
+  /* Card Hover — LinkedIn button */
+  --team-card-linkedin-bg: #0A66C2;
+  --team-card-linkedin-size: 42px;
+  --team-card-linkedin-icon-size: 18px;
+  --team-card-linkedin-radius: 1000px;
+
+  /* Card Hover — bio text */
+  --team-card-bio-size: 12px;
+  --team-card-bio-weight: 400;
+  --team-card-bio-line-height: 2;
+  --team-card-bio-color: rgba(231, 231, 231, 0.8);
+
+  /* Card Hover — spacing */
+  --team-card-hover-heading-gap: 4px;
+  --team-card-hover-bottom-gap: 20px;
+
+  /* Carousel nav */
+  --team-nav-color: rgba(255, 255, 255, 0.4);
+  --team-nav-size: 14px;
+}
+
+/* ========================================
+   AboutUs — SHARED: SERVICES
+   ======================================== */
+:root {
+  /* Colors - Light card */
+  --services-bg: #ffffff;
+  --services-accent: #218af3;
+  --services-text-primary: #080e1b;
+  --services-text-secondary: #1f2228;
+  --services-text-tertiary: #475166;
+  --services-stroke: rgba(231, 231, 231, 0.8);
+  --services-card-actions-bg: rgba(231, 231, 231, 0.8);
+  --services-icon-bg: #0c1b3b;
+
+  /* Colors - Dark (featured) card */
+  --services-dark-bg: #0a162c;
+  --services-dark-stroke: rgba(12, 27, 59, 0.2);
+  --services-dark-text-secondary: #f6f6f6;
+  --services-dark-text-tertiary: rgba(231, 231, 231, 0.8);
+  --services-dark-icon-bg: #218af3;
+  --services-dark-icon-link-bg: #0c1b3b;
+  --services-dark-actions-bg: #0c1b3b;
+
+  /* Typography */
+  --services-heading-font: 'Manrope', sans-serif;
+  --services-accent-font: 'Results Letter', sans-serif;
+  --services-body-font: 'Manrope', sans-serif;
+
+  /* Spacing */
+  --services-section-padding-x: 40px;
+  --services-section-padding-y: 56px;
+  --services-section-gap: 40px;
+  --services-heading-gap: 20px;
+  --services-cards-gap: 12px;
+  --services-card-content-padding-x: 34px;
+  --services-card-content-padding-y: 40px;
+  --services-card-content-gap: 20px;
+  --services-card-actions-padding-x: 34px;
+  --services-card-actions-padding-y: 20px;
+  --services-icon-padding: 16px;
+  --services-items-gap: 16px;
+  --services-item-gap: 4px;
+  --services-button-gap: 8px;
+
+  /* Radius */
+  --services-card-radius: 24px;
+  --services-icon-radius: 8px;
+
+  /* Font sizes */
+  --services-caption-size: 16px;
+  --services-subcaption-size: 12px;
+  --services-title-size: 36px;
+  --services-card-title-size: 20px;
+  --services-body-size: 15px;
+  --services-tag-size: 12px;
+  --services-button-size: 15px;
+}
+
+/* ========================================
+   AboutUs — SHARED: FOOTER
+   ======================================== */
+:root {
+  /* Footer Colors */
+  --footer-bg-surface: #080e1b;
+  --footer-bg-on-surface: #0c1b3b;
+  --footer-text-primary: #ffffff;
+  --footer-text-terciary: rgba(231, 231, 231, 0.8);
+  --footer-text-secondary: #1f2228;
+  --footer-btn-bg: #ffffff;
+  --footer-btn-text: #0c1b3b;
+
+  /* Footer Typography */
+  --footer-font-body: 'Manrope', sans-serif;
+  --footer-font-headings: 'Manrope', sans-serif;
+
+  /* Footer Spacing */
+  --footer-padding-x: 40px;
+  --footer-section-pt: 64px;
+  --footer-content-pt: 80px;
+  --footer-content-pb: 34px;
+  --footer-column-gap: 10px;
+  --footer-column-pt: 64px;
+  --footer-column-pb: 34px;
+  --footer-column-pl: 20px;
+  --footer-column-pr: 40px;
+  --footer-link-gap: 12px;
+  --footer-social-icon-size: 14px;
+  --footer-social-padding: 10px;
+  --footer-heading-gap: 26px;
+  --footer-contact-gap: 40px;
+  --footer-contact-info-gap: 16px;
+  --footer-bottom-py: 12px;
+  --footer-policy-gap: 16px;
+
+  /* Footer Typography Sizes */
+  --footer-body-normal-size: 15px;
+  --footer-body-small-size: 14px;
+  --footer-body-xs-size: 12px;
+  --footer-caption-small-size: 12px;
+  --footer-caption-xs-size: 10px;
+  --footer-h5-size: 26px;
+
+  /* Footer Button */
+  --footer-btn-padding-x: 24px;
+  --footer-btn-padding-y: 14px;
+  --footer-btn-gap: 6px;
+  --footer-btn-radius: 999px;
+}
+
+/* ========================================
+   ServicesPagesListing — PAGE: HEROSECTION
+   ======================================== */
+:root {
+  /* Background */
+  --servicespageslisting-hero-section-bg: #ffffff;
+  --servicespageslisting-hero-section-gradient-start: rgba(10, 22, 44, 1);
+  --servicespageslisting-hero-section-gradient-mid-1: rgba(25, 37, 57, 1);
+  --servicespageslisting-hero-section-gradient-mid-2: rgba(41, 51, 70, 1);
+  --servicespageslisting-hero-section-gradient-mid-3: rgba(71, 80, 97, 1);
+  --servicespageslisting-hero-section-gradient-mid-4: rgba(102, 109, 123, 1);
+  --servicespageslisting-hero-section-gradient-mid-5: rgba(133, 139, 150, 1);
+  --servicespageslisting-hero-section-gradient-mid-6: rgba(163, 168, 176, 1);
+  --servicespageslisting-hero-section-gradient-mid-7: rgba(194, 197, 202, 1);
+  --servicespageslisting-hero-section-gradient-end: rgba(255, 255, 255, 1);
+
+  /* Text colors */
+  --servicespageslisting-hero-section-text-primary: #080e1b;
+  --servicespageslisting-hero-section-text-tertiary: #475166;
+
+  /* Typography — Heading */
+  --servicespageslisting-hero-section-h1-font: 'Results Letter', sans-serif;
+  --servicespageslisting-hero-section-h1-size: 48px;
+  --servicespageslisting-hero-section-h1-weight: 100;
+  --servicespageslisting-hero-section-h1-line-height: 1.2;
+  --servicespageslisting-hero-section-h1-max-width: 500px;
+
+  /* Typography — Body */
+  --servicespageslisting-hero-section-body-font: 'Manrope', sans-serif;
+  --servicespageslisting-hero-section-body-size: 15px;
+  --servicespageslisting-hero-section-body-weight: 400;
+  --servicespageslisting-hero-section-body-line-height: 1.8;
+  --servicespageslisting-hero-section-body-max-width: 340px;
+
+  /* Typography — Badge label */
+  --servicespageslisting-hero-section-badge-label-size: 12px;
+  --servicespageslisting-hero-section-badge-label-line-height: 2;
+
+  /* Spacing — Desktop */
+  --servicespageslisting-hero-section-content-padding: 64px;
+  --servicespageslisting-hero-section-content-gap: 64px;
+  --servicespageslisting-hero-section-badges-gap: 8px;
+  --servicespageslisting-hero-section-logos-gap: 20px;
+  --servicespageslisting-hero-section-heading-gap: 16px;
+  --servicespageslisting-hero-section-heading-pb: 8px;
+
+  /* Logo sizes — Desktop */
+  --servicespageslisting-hero-section-logo-docker-w: 30.427px;
+  --servicespageslisting-hero-section-logo-docker-h: 24px;
+  --servicespageslisting-hero-section-logo-google-cloud-w: 24.836px;
+  --servicespageslisting-hero-section-logo-google-cloud-h: 20px;
+  --servicespageslisting-hero-section-logo-langgraph-w: 39.193px;
+  --servicespageslisting-hero-section-logo-langgraph-h: 20px;
+  --servicespageslisting-hero-section-logo-angular-w: 18.893px;
+  --servicespageslisting-hero-section-logo-angular-h: 20px;
+  --servicespageslisting-hero-section-logo-flutter-w: 16.159px;
+  --servicespageslisting-hero-section-logo-flutter-h: 20px;
+  --servicespageslisting-hero-section-logo-react-w: 22px;
+  --servicespageslisting-hero-section-logo-react-h: 20px;
+  --servicespageslisting-hero-section-logo-spring-boot-size: 20px;
+  --servicespageslisting-hero-section-logo-aws-w: 33px;
+  --servicespageslisting-hero-section-logo-aws-h: 20px;
+
+  /* Hero image — Desktop */
+  --servicespageslisting-hero-section-graphic-top: 82px;
+  --servicespageslisting-hero-section-graphic-width: 805px;
+  --servicespageslisting-hero-section-graphic-height: 449px;
+
+  /* Alignment */
+  --servicespageslisting-hero-section-text-align: left;
+  --servicespageslisting-hero-section-align-items: flex-start;
+}
+
+/* ============================================================
+   ServicesPagesListing — HeroSection — Tablet overrides
+   ============================================================ */
+@media (max-width: 1023px) {
+  :root {
+    --servicespageslisting-hero-section-h1-size: 46px;
+    --servicespageslisting-hero-section-h1-max-width: none;
+    --servicespageslisting-hero-section-body-max-width: 340px;
+
+    --servicespageslisting-hero-section-content-padding: 40px;
+    --servicespageslisting-hero-section-content-gap: 64px;
+
+    --servicespageslisting-hero-section-text-align: center;
+    --servicespageslisting-hero-section-align-items: center;
+  }
+}
+
+/* ============================================================
+   ServicesPagesListing — HeroSection — Mobile overrides
+   ============================================================ */
+@media (max-width: 767px) {
+  :root {
+    --servicespageslisting-hero-section-h1-size: 38px;
+    --servicespageslisting-hero-section-h1-max-width: 500px;
+
+    --servicespageslisting-hero-section-content-padding: 0px;
+    --servicespageslisting-hero-section-content-gap: 40px;
+    --servicespageslisting-hero-section-logos-gap: 16px;
+
+    --servicespageslisting-hero-section-logo-docker-w: 22.82px;
+    --servicespageslisting-hero-section-logo-docker-h: 18px;
+    --servicespageslisting-hero-section-logo-google-cloud-w: 22.352px;
+    --servicespageslisting-hero-section-logo-google-cloud-h: 18px;
+    --servicespageslisting-hero-section-logo-angular-w: 17.004px;
+    --servicespageslisting-hero-section-logo-angular-h: 18px;
+    --servicespageslisting-hero-section-logo-flutter-w: 14.543px;
+    --servicespageslisting-hero-section-logo-flutter-h: 18px;
+    --servicespageslisting-hero-section-logo-react-w: 20.231px;
+    --servicespageslisting-hero-section-logo-react-h: 18px;
+    --servicespageslisting-hero-section-logo-spring-boot-size: 18px;
+    --servicespageslisting-hero-section-logo-aws-w: 30.066px;
+    --servicespageslisting-hero-section-logo-aws-h: 18px;
+
+    --servicespageslisting-hero-section-text-align: left;
+    --servicespageslisting-hero-section-align-items: flex-start;
+  }
+}
+
+/* =============================================
+   ServicesPagesListing — PAGE: SERVICESGRID
+   ============================================= */
+:root {
+  /* Background */
+  --servicespageslisting-services-grid-bg: #ffffff;
+  --servicespageslisting-services-grid-dark-bg: #0a162c;
+  --servicespageslisting-services-grid-actions-bg: rgba(231, 231, 231, 0.8);
+  --servicespageslisting-services-grid-dark-actions-bg: #0c1b3b;
+
+  /* Text */
+  --servicespageslisting-services-grid-text-secondary: #1f2228;
+  --servicespageslisting-services-grid-text-tertiary: #475166;
+  --servicespageslisting-services-grid-dark-text-secondary: #f6f6f6;
+  --servicespageslisting-services-grid-dark-text-tertiary: rgba(231, 231, 231, 0.8);
+
+  /* Stroke */
+  --servicespageslisting-services-grid-stroke: rgba(231, 231, 231, 0.8);
+  --servicespageslisting-services-grid-img-tag-border: rgba(255, 255, 255, 0.2);
+
+  /* Typography — Card Title */
+  --servicespageslisting-services-grid-title-font: 'Manrope', sans-serif;
+  --servicespageslisting-services-grid-title-size: 20px;
+  --servicespageslisting-services-grid-title-weight: 600;
+  --servicespageslisting-services-grid-title-line-height: 1.8;
+  --servicespageslisting-services-grid-title-letter-spacing: -0.4px;
+
+  /* Typography — Body */
+  --servicespageslisting-services-grid-body-font: 'Manrope', sans-serif;
+  --servicespageslisting-services-grid-body-size: 15px;
+  --servicespageslisting-services-grid-body-weight: 400;
+  --servicespageslisting-services-grid-body-line-height: 1.8;
+
+  /* Typography — Tag */
+  --servicespageslisting-services-grid-tag-size: 12px;
+  --servicespageslisting-services-grid-tag-line-height: 1.4;
+
+  /* Typography — Button */
+  --servicespageslisting-services-grid-button-size: 15px;
+  --servicespageslisting-services-grid-button-line-height: 0.95;
+
+  /* Spacing — Section */
+  --servicespageslisting-services-grid-section-padding-x: 40px;
+  --servicespageslisting-services-grid-section-padding-y: 56px;
+
+  /* Spacing — Grid */
+  --servicespageslisting-services-grid-row-gap: 12px;
+  --servicespageslisting-services-grid-col-gap: 12px;
+
+  /* Spacing — Card */
+  --servicespageslisting-services-grid-content-padding: 26px;
+  --servicespageslisting-services-grid-content-gap: 20px;
+  --servicespageslisting-services-grid-actions-padding: 26px;
+  --servicespageslisting-services-grid-img-padding-x: 34px;
+  --servicespageslisting-services-grid-img-padding-y: 20px;
+  --servicespageslisting-services-grid-img-height: 240px;
+
+  /* Spacing — Tags */
+  --servicespageslisting-services-grid-tags-gap: 16px;
+  --servicespageslisting-services-grid-tag-item-gap: 4px;
+  --servicespageslisting-services-grid-tags-pt: 12px;
+
+  /* Spacing — Button */
+  --servicespageslisting-services-grid-button-gap: 8px;
+
+  /* Sizing — Icons */
+  --servicespageslisting-services-grid-dot-size: 6px;
+  --servicespageslisting-services-grid-separator-size: 14px;
+  --servicespageslisting-services-grid-caret-size: 20px;
+
+  /* Radius */
+  --servicespageslisting-services-grid-card-radius: 24px;
+}
+
+/* ========================================
+   ServicesPagesListing — PAGE: CTASECTION
+   ======================================== */
+:root {
+  /* Background */
+  --servicespageslisting-cta-section-bg: #ffffff;
+
+  /* Colors */
+  --servicespageslisting-cta-section-accent: #218af3;
+  --servicespageslisting-cta-section-text-primary: #080e1b;
+  --servicespageslisting-cta-section-text-tertiary: #475166;
+  --servicespageslisting-cta-section-btn-bg: #0c1b3b;
+  --servicespageslisting-cta-section-btn-text: #ffffff;
+
+  /* Typography — Caption */
+  --servicespageslisting-cta-section-caption-font-family: 'Manrope', sans-serif;
+  --servicespageslisting-cta-section-caption-font-size: 16px;
+  --servicespageslisting-cta-section-caption-font-weight: 800;
+  --servicespageslisting-cta-section-caption-line-height: 1.8;
+  --servicespageslisting-cta-section-caption-letter-spacing: 1.28px;
+
+  /* Typography — Display Heading */
+  --servicespageslisting-cta-section-heading-font-family: 'Results Letter', serif;
+  --servicespageslisting-cta-section-heading-font-size: 60px;
+  --servicespageslisting-cta-section-heading-line-height: 1.2;
+
+  /* Typography — Body */
+  --servicespageslisting-cta-section-body-font-family: 'Manrope', sans-serif;
+  --servicespageslisting-cta-section-body-font-size: 15px;
+  --servicespageslisting-cta-section-body-font-weight: 400;
+  --servicespageslisting-cta-section-body-line-height: 1.8;
+  --servicespageslisting-cta-section-body-max-width: 600px;
+
+  /* Typography — Button */
+  --servicespageslisting-cta-section-btn-font-family: 'Manrope', sans-serif;
+  --servicespageslisting-cta-section-btn-font-size: 10px;
+  --servicespageslisting-cta-section-btn-font-weight: 500;
+  --servicespageslisting-cta-section-btn-line-height: 1.4;
+  --servicespageslisting-cta-section-btn-letter-spacing: 0.8px;
+
+  /* Typography — Trust Badge Label */
+  --servicespageslisting-cta-section-badges-label-font-size: 12px;
+  --servicespageslisting-cta-section-badges-label-line-height: 2;
+  --servicespageslisting-cta-section-badges-label-opacity: 0.8;
+
+  /* Spacing */
+  --servicespageslisting-cta-section-padding-top: 80px;
+  --servicespageslisting-cta-section-padding-bottom: 20px;
+  --servicespageslisting-cta-section-padding-x: 40px;
+  --servicespageslisting-cta-section-section-gap: 80px;
+  --servicespageslisting-cta-section-heading-gap: 34px;
+  --servicespageslisting-cta-section-heading-padding-top: 26px;
+  --servicespageslisting-cta-section-heading-padding-x: 26px;
+  --servicespageslisting-cta-section-row-gap: 34px;
+  --servicespageslisting-cta-section-badges-gap: 12px;
+  --servicespageslisting-cta-section-logos-gap: 16px;
+
+  /* Button */
+  --servicespageslisting-cta-section-btn-padding-x: 24px;
+  --servicespageslisting-cta-section-btn-padding-y: 14px;
+  --servicespageslisting-cta-section-btn-gap: 6px;
+  --servicespageslisting-cta-section-btn-radius: 999px;
+
+  /* Icon sizes */
+  --servicespageslisting-cta-section-arrow-size: 14px;
+  --servicespageslisting-cta-section-arrow-opacity: 0.6;
+  --servicespageslisting-cta-section-logo-height: 18px;
+
+  /* Decorative patterns */
+  --servicespageslisting-cta-section-pattern-opacity: 0.1;
+}
+
+/* ========================================
+   ServicePage — PAGE: HEROCONTAINER
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-hero-container-bg-overlay-darken: rgba(18, 70, 154, 1);
+  --servicepage-hero-container-bg-overlay-darken-end: rgba(4, 97, 215, 0);
+  --servicepage-hero-container-bg-overlay-vignette-start: rgba(0, 4, 28, 1);
+  --servicepage-hero-container-bg-overlay-vignette-end: rgba(10, 22, 44, 0);
+
+  /* Text */
+  --servicepage-hero-container-text-primary: #ffffff;
+  --servicepage-hero-container-text-secondary: #f6f6f6;
+  --servicepage-hero-container-text-tertiary: rgba(231, 231, 231, 0.8);
+  --servicepage-hero-container-text-accent: #7ad2fe;
+  --servicepage-hero-container-nav-text: #f6f6f6;
+
+  /* Buttons */
+  --servicepage-hero-container-btn-primary-bg: #ffffff;
+  --servicepage-hero-container-btn-primary-text: #0c1b3b;
+
+  /* Typography — Subtitle */
+  --servicepage-hero-container-subtitle-size: 14px;
+  --servicepage-hero-container-subtitle-line-height: 1.8;
+  --servicepage-hero-container-subtitle-tracking: 1.12px;
+  --servicepage-hero-container-subtitle-accent-tracking: 1.68px;
+
+  /* Typography — Display Heading */
+  --servicepage-hero-container-h1-size: 60px;
+  --servicepage-hero-container-h1-line-height: 1.2;
+
+  /* Typography — Sub-heading / Quote */
+  --servicepage-hero-container-quote-size: 20px;
+  --servicepage-hero-container-quote-line-height: 1.2;
+
+  /* Typography — Body */
+  --servicepage-hero-container-body-size: 15px;
+  --servicepage-hero-container-body-weight: 400;
+  --servicepage-hero-container-body-line-height: 1.8;
+
+  /* Typography — Button */
+  --servicepage-hero-container-btn-text-size: 10px;
+  --servicepage-hero-container-btn-text-weight: 500;
+  --servicepage-hero-container-btn-text-line-height: 1.4;
+  --servicepage-hero-container-btn-text-tracking: 0.8px;
+
+  /* Typography — Nav */
+  --servicepage-hero-container-nav-text-size: 15px;
+  --servicepage-hero-container-nav-text-weight: 400;
+  --servicepage-hero-container-nav-text-line-height: 1.8;
+
+  /* Spacing — Desktop */
+  --servicepage-hero-container-nav-px: 64px;
+  --servicepage-hero-container-nav-py: 8px;
+  --servicepage-hero-container-nav-gap: 26px;
+
+  --servicepage-hero-container-content-px: 64px;
+  --servicepage-hero-container-content-pt: 64px;
+  --servicepage-hero-container-content-pb: 180px;
+  --servicepage-hero-container-content-gap: 40px;
+
+  --servicepage-hero-container-heading-gap: 40px;
+  --servicepage-hero-container-display-gap: 8px;
+  --servicepage-hero-container-display-pb: 8px;
+
+  --servicepage-hero-container-body-gap: 26px;
+  --servicepage-hero-container-body-max-width: 430px;
+  --servicepage-hero-container-body-container-max-width: 500px;
+
+  --servicepage-hero-container-btn-px: 24px;
+  --servicepage-hero-container-btn-py: 14px;
+  --servicepage-hero-container-btn-gap: 6px;
+
+  /* Sizing */
+  --servicepage-hero-container-subtitle-max-width: 400px;
+  --servicepage-hero-container-quote-max-width: 520px;
+
+  /* Radius */
+  --servicepage-hero-container-btn-radius: 999px;
+  --servicepage-hero-container-heading-radius: 40px;
+
+  /* Sizing — Nav */
+  --servicepage-hero-container-logo-width: 134px;
+  --servicepage-hero-container-logo-height: 38px;
+  --servicepage-hero-container-caret-size: 14px;
+  --servicepage-hero-container-arrow-size: 20px;
+  --servicepage-hero-container-btn-arrow-size: 14px;
+  --servicepage-hero-container-hamburger-size: 48px;
+}
+
+/* ========================================
+   ServicePage — PAGE: BODYTEXT
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-body-text-bg: #080E1B;
+
+  /* Border */
+  --servicepage-body-text-border-color: rgba(231, 231, 231, 0.8);
+
+  /* Text colors */
+  --servicepage-body-text-title-color: #F6F6F6;
+  --servicepage-body-text-item-color: #E7E7E7;
+
+  /* Icon */
+  --servicepage-body-text-icon-border-color: rgba(231, 231, 231, 0.2);
+  --servicepage-body-text-icon-fill: #475166;
+  --servicepage-body-text-icon-size: 10px;
+  --servicepage-body-text-icon-padding: 6px;
+
+  /* Typography — Title */
+  --servicepage-body-text-title-font-family: 'Manrope', sans-serif;
+  --servicepage-body-text-title-font-size: 12px;
+  --servicepage-body-text-title-font-weight: 700;
+  --servicepage-body-text-title-line-height: 1.8;
+  --servicepage-body-text-title-letter-spacing: 1.68px;
+
+  /* Typography — Item */
+  --servicepage-body-text-item-font-family: 'Manrope', sans-serif;
+  --servicepage-body-text-item-font-size: 14px;
+  --servicepage-body-text-item-font-weight: 400;
+  --servicepage-body-text-item-line-height: 1.6;
+
+  /* Spacing — Desktop */
+  --servicepage-body-text-padding-x: 64px;
+  --servicepage-body-text-padding-y: 34px;
+  --servicepage-body-text-section-gap: 20px;
+  --servicepage-body-text-items-gap: 20px;
+  --servicepage-body-text-items-pt: 24px;
+  --servicepage-body-text-items-max-width: 700px;
+  --servicepage-body-text-item-gap: 12px;
+}
+
+/* ========================================
+   ServicePage — PAGE: WHYCHOOSEBUILTBEYOND
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-why-choose-built-beyond-bg: #080e1b;
+
+  /* Colors */
+  --servicepage-why-choose-built-beyond-accent: #7AD2FE;
+  --servicepage-why-choose-built-beyond-foreground: #f6f6f6;
+  --servicepage-why-choose-built-beyond-text-tertiary: rgba(231, 231, 231, 0.8);
+
+  /* Typography — Caption */
+  --servicepage-why-choose-built-beyond-caption-size: 16px;
+  --servicepage-why-choose-built-beyond-caption-weight: 800;
+  --servicepage-why-choose-built-beyond-caption-line-height: 1.8;
+  --servicepage-why-choose-built-beyond-caption-letter-spacing: 1.28px;
+
+  /* Typography — H4 Heading */
+  --servicepage-why-choose-built-beyond-h4-size: 36px;
+  --servicepage-why-choose-built-beyond-h4-weight: 400;
+  --servicepage-why-choose-built-beyond-h4-line-height: 1.2;
+  --servicepage-why-choose-built-beyond-h4-letter-spacing: -1.08px;
+
+  /* Typography — Body */
+  --servicepage-why-choose-built-beyond-body-size: 15px;
+  --servicepage-why-choose-built-beyond-body-weight: 400;
+  --servicepage-why-choose-built-beyond-body-line-height: 1.8;
+
+  /* Spacing — Desktop */
+  --servicepage-why-choose-built-beyond-padding-x: 40px;
+  --servicepage-why-choose-built-beyond-padding-y: 56px;
+  --servicepage-why-choose-built-beyond-section-gap: 40px;
+  --servicepage-why-choose-built-beyond-heading-gap: 34px;
+  --servicepage-why-choose-built-beyond-heading-padding: 26px;
+
+  /* Image */
+  --servicepage-why-choose-built-beyond-img-radius: 12px;
+
+  /* Heading max-width */
+  --servicepage-why-choose-built-beyond-h4-max-width: 700px;
+
+  /* Pattern */
+  --servicepage-why-choose-built-beyond-pattern-width: 214px;
+  --servicepage-why-choose-built-beyond-pattern-height: 200px;
+  --servicepage-why-choose-built-beyond-pattern-opacity: 0.9;
+}
+
+/* ============================================================
+   ServicePage — WhyChooseBuiltBeyond — Tablet overrides
+   ============================================================ */
+@media (max-width: 1023px) {
+  :root {
+    --servicepage-why-choose-built-beyond-img-height: 400px;
+  }
+}
+
+/* ============================================================
+   ServicePage — WhyChooseBuiltBeyond — Mobile overrides
+   ============================================================ */
+@media (max-width: 767px) {
+  :root {
+    --servicepage-why-choose-built-beyond-caption-size: 12px;
+    --servicepage-why-choose-built-beyond-caption-weight: 700;
+    --servicepage-why-choose-built-beyond-caption-letter-spacing: 1.68px;
+    --servicepage-why-choose-built-beyond-heading-padding: 0px;
+    --servicepage-why-choose-built-beyond-img-height: 400px;
+    --servicepage-why-choose-built-beyond-pattern-width: 102px;
+    --servicepage-why-choose-built-beyond-pattern-height: 95px;
+  }
+}
+
+/* ========================================
+   ServicePage — PAGE: WhyChooseNativeCrossPlatform
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-why-choose-native-cross-platform-bg: #080E1B;
+
+  /* Colors */
+  --servicepage-why-choose-native-cross-platform-accent: #7AD2FE;
+  --servicepage-why-choose-native-cross-platform-heading-color: #f6f6f6;
+  --servicepage-why-choose-native-cross-platform-body-color: rgba(231, 231, 231, 0.8);
+
+  /* Section Spacing — Desktop */
+  --servicepage-why-choose-native-cross-platform-padding-x: 40px;
+  --servicepage-why-choose-native-cross-platform-padding-y: 56px;
+  --servicepage-why-choose-native-cross-platform-gap: 40px;
+
+  /* Text Content Spacing — Desktop */
+  --servicepage-why-choose-native-cross-platform-text-gap: 34px;
+  --servicepage-why-choose-native-cross-platform-text-padding: 26px;
+
+  /* Caption — Desktop */
+  --servicepage-why-choose-native-cross-platform-caption-font: 'Manrope', sans-serif;
+  --servicepage-why-choose-native-cross-platform-caption-size: 16px;
+  --servicepage-why-choose-native-cross-platform-caption-weight: 800;
+  --servicepage-why-choose-native-cross-platform-caption-lh: 1.8;
+  --servicepage-why-choose-native-cross-platform-caption-ls: 1.28px;
+
+  /* Heading — Desktop */
+  --servicepage-why-choose-native-cross-platform-heading-font: 'Manrope', sans-serif;
+  --servicepage-why-choose-native-cross-platform-heading-size: 36px;
+  --servicepage-why-choose-native-cross-platform-heading-weight: 400;
+  --servicepage-why-choose-native-cross-platform-heading-lh: 1.2;
+  --servicepage-why-choose-native-cross-platform-heading-ls: -1.08px;
+  --servicepage-why-choose-native-cross-platform-heading-max-width: 700px;
+
+  /* Body — Desktop */
+  --servicepage-why-choose-native-cross-platform-body-font: 'Manrope', sans-serif;
+  --servicepage-why-choose-native-cross-platform-body-size: 15px;
+  --servicepage-why-choose-native-cross-platform-body-weight: 400;
+  --servicepage-why-choose-native-cross-platform-body-lh: 1.8;
+
+  /* Image */
+  --servicepage-why-choose-native-cross-platform-img-radius: 12px;
+
+  /* Pattern */
+  --servicepage-why-choose-native-cross-platform-pattern-width: 214px;
+  --servicepage-why-choose-native-cross-platform-pattern-height: 200px;
+  --servicepage-why-choose-native-cross-platform-pattern-opacity: 0.9;
+}
+
+/* ========================================
+   ServicePage — PAGE: WHYCHOOSEREALWORLD
+   ======================================== */
+:root {
+  /* Colors */
+  --servicepage-why-choose-real-world-bg: #080e1b;
+  --servicepage-why-choose-real-world-accent: #7AD2FE;
+  --servicepage-why-choose-real-world-foreground: #f6f6f6;
+  --servicepage-why-choose-real-world-text-tertiary: rgba(231, 231, 231, 0.8);
+
+  /* Typography — Caption */
+  --servicepage-why-choose-real-world-caption-size: 16px;
+  --servicepage-why-choose-real-world-caption-weight: 800;
+  --servicepage-why-choose-real-world-caption-line-height: 1.8;
+  --servicepage-why-choose-real-world-caption-letter-spacing: 1.28px;
+
+  /* Typography — H4 Heading */
+  --servicepage-why-choose-real-world-h4-size: 36px;
+  --servicepage-why-choose-real-world-h4-weight: 400;
+  --servicepage-why-choose-real-world-h4-line-height: 1.2;
+  --servicepage-why-choose-real-world-h4-letter-spacing: -1.08px;
+
+  /* Typography — Body */
+  --servicepage-why-choose-real-world-body-size: 15px;
+  --servicepage-why-choose-real-world-body-weight: 400;
+  --servicepage-why-choose-real-world-body-line-height: 1.8;
+
+  /* Spacing */
+  --servicepage-why-choose-real-world-padding-x: 40px;
+  --servicepage-why-choose-real-world-padding-y: 56px;
+  --servicepage-why-choose-real-world-section-gap: 40px;
+  --servicepage-why-choose-real-world-heading-gap: 34px;
+  --servicepage-why-choose-real-world-heading-padding: 26px;
+
+  /* Image */
+  --servicepage-why-choose-real-world-img-radius: 12px;
+  --servicepage-why-choose-real-world-img-height: auto;
+
+  /* Heading max-width */
+  --servicepage-why-choose-real-world-h4-max-width: 700px;
+
+  /* Pattern */
+  --servicepage-why-choose-real-world-pattern-opacity: 0.9;
+}
+
+/* ============================================================
+   ServicePage — WhyChooseRealWorld — Tablet overrides
+   ============================================================ */
+@media (max-width: 1023px) {
+  :root {
+    --servicepage-why-choose-real-world-img-height: 374px;
+  }
+}
+
+/* ============================================================
+   ServicePage — WhyChooseRealWorld — Mobile overrides
+   ============================================================ */
+@media (max-width: 767px) {
+  :root {
+    --servicepage-why-choose-real-world-caption-size: 12px;
+    --servicepage-why-choose-real-world-caption-weight: 700;
+    --servicepage-why-choose-real-world-caption-letter-spacing: 1.68px;
+    --servicepage-why-choose-real-world-heading-padding: 0px;
+    --servicepage-why-choose-real-world-img-height: 374px;
+  }
+}
+
+/* ========================================
+   ServicePage — PAGE: SERVICEFEATURES
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-service-features-bg: #0A162C;
+  --servicepage-service-features-gradient-bottom: rgba(10, 22, 44, 1);
+  --servicepage-service-features-gradient-bottom-mid: rgba(5, 11, 22, 0.5);
+  --servicepage-service-features-gradient-top: rgba(12, 27, 59, 1);
+  --servicepage-service-features-gradient-top-mid: rgba(6, 14, 30, 0.5);
+
+  /* Text */
+  --servicepage-service-features-text-primary: #f6f6f6;
+  --servicepage-service-features-text-secondary: #F6F6F6;
+
+  /* Stroke */
+  --servicepage-service-features-stroke: rgba(231, 231, 231, 0.2);
+
+  /* Icon */
+  --servicepage-service-features-icon-fill: #475166;
+
+  /* Typography — Heading */
+  --servicepage-service-features-heading-size: 26px;
+  --servicepage-service-features-heading-weight: 400;
+  --servicepage-service-features-heading-line-height: 1.2;
+  --servicepage-service-features-heading-letter-spacing: -0.78px;
+  --servicepage-service-features-heading-max-width: 340px;
+
+  /* Typography — Body */
+  --servicepage-service-features-body-size: 14px;
+  --servicepage-service-features-body-weight: 400;
+  --servicepage-service-features-body-line-height: 1.6;
+
+  /* Spacing — Desktop */
+  --servicepage-service-features-section-padding-x: 64px;
+  --servicepage-service-features-section-padding-y: 34px;
+  --servicepage-service-features-section-gap: 64px;
+  --servicepage-service-features-items-gap: 20px;
+  --servicepage-service-features-items-pt: 24px;
+  --servicepage-service-features-item-gap: 12px;
+  --servicepage-service-features-container-gap: 20px;
+  --servicepage-service-features-items-max-width: 600px;
+  --servicepage-service-features-container-max-width: 700px;
+
+  /* Icon sizing */
+  --servicepage-service-features-icon-container-padding: 6px;
+  --servicepage-service-features-icon-size: 10px;
+}
+
+/* ========================================
+   ServicePage — ServiceFeatures — Tablet overrides
+   ======================================== */
+@media (max-width: 1023px) {
+  :root {
+    --servicepage-service-features-section-padding-x: 64px;
+    --servicepage-service-features-section-padding-y: 80px;
+    --servicepage-service-features-section-gap: 64px;
+  }
+}
+
+/* ========================================
+   ServicePage — ServiceFeatures — Mobile overrides
+   ======================================== */
+@media (max-width: 767px) {
+  :root {
+    --servicepage-service-features-section-padding-x: 40px;
+    --servicepage-service-features-section-padding-y: 80px;
+    --servicepage-service-features-section-gap: 40px;
+    --servicepage-service-features-heading-max-width: 280px;
+    --servicepage-service-features-container-gap: 24px;
+    --servicepage-service-features-items-pt: 12px;
+  }
+}
+
+/* ========================================
+   ServicePage — PAGE: CASESTUDY
+   ======================================== */
+:root {
+  /* Background */
+  --servicepage-case-study-bg: transparent;
+  --servicepage-case-study-banner-bg: #F6F6F6;
+
+  /* Text */
+  --servicepage-case-study-text-primary: #FFFFFF;
+  --servicepage-case-study-text-secondary: #F6F6F6;
+  --servicepage-case-study-text-tertiary: rgba(231, 231, 231, 0.6);
+  --servicepage-case-study-text-accent: #7AD2FE;
+  --servicepage-case-study-client-border: #FFCA00;
+
+  /* Button */
+  --servicepage-case-study-btn-bg: #FFFFFF;
+  --servicepage-case-study-btn-text: #0C1B3B;
+  --servicepage-case-study-btn-font-family: 'Manrope', sans-serif;
+  --servicepage-case-study-btn-font-size: 10px;
+  --servicepage-case-study-btn-font-weight: 500;
+  --servicepage-case-study-btn-line-height: 1.4;
+  --servicepage-case-study-btn-letter-spacing: 0.8px;
+  --servicepage-case-study-btn-padding-x: 24px;
+  --servicepage-case-study-btn-padding-y: 14px;
+  --servicepage-case-study-btn-radius: 999px;
+  --servicepage-case-study-btn-gap: 6px;
+  --servicepage-case-study-arrow-size: 14px;
+  --servicepage-case-study-arrow-opacity: 0.6;
+
+  /* Icon (check) */
+  --servicepage-case-study-check-size: 10px;
+  --servicepage-case-study-check-border: rgba(231, 231, 231, 0.2);
+  --servicepage-case-study-check-padding: 6px;
+
+  /* Typography — Caption */
+  --servicepage-case-study-caption-font-family: 'Manrope', sans-serif;
+  --servicepage-case-study-caption-font-size: 12px;
+  --servicepage-case-study-caption-font-weight: 700;
+  --servicepage-case-study-caption-line-height: 1.8;
+  --servicepage-case-study-caption-letter-spacing: 1.68px;
+
+  /* Typography — Subtitle */
+  --servicepage-case-study-subtitle-font-family: 'Manrope', sans-serif;
+  --servicepage-case-study-subtitle-font-size: 10px;
+  --servicepage-case-study-subtitle-font-weight: 400;
+  --servicepage-case-study-subtitle-line-height: 2;
+
+  /* Typography — Heading (Desktop) */
+  --servicepage-case-study-heading-font-family: 'Results Letter', sans-serif;
+  --servicepage-case-study-heading-font-size: 36px;
+  --servicepage-case-study-heading-font-weight: 100;
+  --servicepage-case-study-heading-line-height: 1.2;
+
+  /* Typography — Item text */
+  --servicepage-case-study-item-font-family: 'Manrope', sans-serif;
+  --servicepage-case-study-item-font-size: 14px;
+  --servicepage-case-study-item-font-weight: 400;
+  --servicepage-case-study-item-line-height: 1.6;
+
+  /* Spacing — Desktop */
+  --servicepage-case-study-section-padding-x: 40px;
+  --servicepage-case-study-section-padding-y: 56px;
+  --servicepage-case-study-section-gap: 80px;
+  --servicepage-case-study-banner-padding-x: 64px;
+  --servicepage-case-study-banner-padding-y: 40px;
+  --servicepage-case-study-banner-radius: 40px;
+  --servicepage-case-study-banner-gap: 64px;
+  --servicepage-case-study-text-gap: 26px;
+  --servicepage-case-study-cta-gap: 12px;
+  --servicepage-case-study-items-gap: 20px;
+  --servicepage-case-study-items-padding-top: 24px;
+  --servicepage-case-study-item-gap: 12px;
+
+  /* Avatar */
+  --servicepage-case-study-avatar-size: 38px;
+  --servicepage-case-study-avatar-outline-padding: 1px;
+
+  /* Patterns */
+  --servicepage-case-study-pattern-opacity: 0.9;
+}
+
+/* ===== ServicePage — CaseStudy — Tablet overrides ===== */
+@media (max-width: 1023px) {
+  :root {
+    --servicepage-case-study-heading-font-size: 30px;
+    --servicepage-case-study-banner-padding-x: 40px;
+    --servicepage-case-study-banner-padding-y: 40px;
+    --servicepage-case-study-banner-gap: 34px;
+  }
+}
+
+/* ===== ServicePage — CaseStudy — Mobile overrides ===== */
+@media (max-width: 767px) {
+  :root {
+    --servicepage-case-study-heading-font-size: 24px;
+    --servicepage-case-study-section-gap: 0px;
+    --servicepage-case-study-section-padding-x: 20px;
+    --servicepage-case-study-banner-padding-x: 20px;
+  }
+}
+
+/* ========================================
+   ServicePage — SHARED: CTA
+   ======================================== */
+:root {
+  /* Colors */
+  --cta-bg-surface: #080E1B;
+  --cta-bg-on-surface: #0C1B3B;
+  --cta-accent: #218af3;
+  --cta-text-primary: #FFFFFF;
+  --cta-text-tertiary: rgba(231, 231, 231, 0.8);
+  --cta-text-tertiary-dark: #475166;
+  --cta-btn-bg: #0C1B3B;
+  --cta-btn-text: #FFFFFF;
+
+  /* Typography — Caption */
+  --cta-caption-font-family: 'Manrope', sans-serif;
+  --cta-caption-font-size: 16px;
+  --cta-caption-font-weight: 800;
+  --cta-caption-line-height: 1.8;
+  --cta-caption-letter-spacing: 1.28px;
+
+  /* Typography — Heading */
+  --cta-heading-font-family: 'Results Letter', serif;
+  --cta-heading-font-size: 60px;
+  --cta-heading-line-height: 1.2;
+
+  /* Typography — Body */
+  --cta-body-font-family: 'Manrope', sans-serif;
+  --cta-body-font-size: 15px;
+  --cta-body-font-weight: 400;
+  --cta-body-line-height: 1.8;
+  --cta-body-max-width: 600px;
+
+  /* Typography — Button */
+  --cta-btn-font-family: 'Manrope', sans-serif;
+  --cta-btn-font-size: 10px;
+  --cta-btn-font-weight: 500;
+  --cta-btn-line-height: 1.4;
+  --cta-btn-letter-spacing: 0.8px;
+
+  /* Typography — Badges label */
+  --cta-badges-label-font-size: 12px;
+  --cta-badges-label-line-height: 2;
+  --cta-badges-label-opacity: 0.8;
+
+  /* Spacing */
+  --cta-padding-top: 80px;
+  --cta-padding-bottom: 20px;
+  --cta-padding-x: 40px;
+  --cta-section-gap: 80px;
+  --cta-heading-gap: 34px;
+  --cta-heading-padding-top: 26px;
+  --cta-heading-padding-x: 26px;
+  --cta-row-gap: 34px;
+  --cta-badges-gap: 12px;
+  --cta-logos-gap: 16px;
+
+  /* Button sizing */
+  --cta-btn-padding-x: 24px;
+  --cta-btn-padding-y: 14px;
+  --cta-btn-gap: 6px;
+  --cta-btn-radius: 999px;
+
+  /* Icon / Logo sizing */
+  --cta-arrow-size: 14px;
+  --cta-arrow-opacity: 0.6;
+  --cta-logo-height: 18px;
+
+  /* Decorative */
+  --cta-pattern-opacity: 0.1;
+
+  /* Layout */
+  --cta-max-width: 1440px;
+}
+
+/* ========================================
+   BlogListing — PAGE: BLOGHERO
+   ======================================== */
+:root {
+  /* Background */
+  --bloglisting-blog-hero-bg-primary: #080E1B;
+  --bloglisting-blog-hero-bg-gradient-start: rgba(10, 22, 44, 1);
+  --bloglisting-blog-hero-bg-gradient-end: rgba(8, 14, 27, 1);
+
+  /* Text Colors */
+  --bloglisting-blog-hero-text-primary: #FFFFFF;
+  --bloglisting-blog-hero-text-tertiary: rgba(231, 231, 231, 0.8);
+
+  /* Typography — Caption */
+  --bloglisting-blog-hero-caption-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-hero-caption-font-size: 12px;
+  --bloglisting-blog-hero-caption-font-weight: 700;
+  --bloglisting-blog-hero-caption-line-height: 1.8;
+  --bloglisting-blog-hero-caption-letter-spacing: 1.68px;
+  --bloglisting-blog-hero-caption-max-width: 340px;
+
+  /* Typography — Heading */
+  --bloglisting-blog-hero-heading-light-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-hero-heading-light-font-weight: 200;
+  --bloglisting-blog-hero-heading-accent-font-family: 'Results Letter', sans-serif;
+  --bloglisting-blog-hero-heading-accent-font-weight: 100;
+  --bloglisting-blog-hero-heading-font-size: 44px;
+  --bloglisting-blog-hero-heading-line-height: 1.2;
+  --bloglisting-blog-hero-heading-max-width: 500px;
+
+  /* Typography — Subtitle */
+  --bloglisting-blog-hero-subtitle-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-hero-subtitle-font-size: 15px;
+  --bloglisting-blog-hero-subtitle-font-weight: 400;
+  --bloglisting-blog-hero-subtitle-line-height: 1.8;
+  --bloglisting-blog-hero-subtitle-max-width: 500px;
+
+  /* Spacing */
+  --bloglisting-blog-hero-content-padding: 64px;
+  --bloglisting-blog-hero-content-height: 381px;
+  --bloglisting-blog-hero-display-gap: 16px;
+  --bloglisting-blog-hero-display-pt: 24px;
+  --bloglisting-blog-hero-display-pb: 8px;
+}
+
+/* Tablet overrides */
+@media (max-width: 1023px) {
+  :root {
+    --bloglisting-blog-hero-heading-font-size: 42px;
+    --bloglisting-blog-hero-content-height: 375px;
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  :root {
+    --bloglisting-blog-hero-heading-font-size: 30px;
+    --bloglisting-blog-hero-caption-font-size: 10px;
+    --bloglisting-blog-hero-content-height: 528px;
+    --bloglisting-blog-hero-content-padding: 64px;
+  }
+}
+
+/* ========================================
+   BlogListing — PAGE: BLOGCARDS
+   ======================================== */
+:root {
+  /* Background */
+  --bloglisting-blog-cards-bg: white;
+
+  /* Text Colors */
+  --bloglisting-blog-cards-text-accent: #218af3;
+  --bloglisting-blog-cards-text-primary: #080e1b;
+  --bloglisting-blog-cards-text-secondary: #1f2228;
+  --bloglisting-blog-cards-text-tertiary: #475166;
+  --bloglisting-blog-cards-text-pagination-active: white;
+
+  /* Typography — Date */
+  --bloglisting-blog-cards-date-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-cards-date-font-size: 14px;
+  --bloglisting-blog-cards-date-font-weight: 400;
+  --bloglisting-blog-cards-date-line-height: 1.8;
+
+  /* Typography — Card Title */
+  --bloglisting-blog-cards-title-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-cards-title-font-size: 20px;
+  --bloglisting-blog-cards-title-font-weight: 600;
+  --bloglisting-blog-cards-title-line-height: 1.8;
+  --bloglisting-blog-cards-title-letter-spacing: -0.4px;
+
+  /* Typography — Card Description */
+  --bloglisting-blog-cards-desc-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-cards-desc-font-size: 15px;
+  --bloglisting-blog-cards-desc-font-weight: 400;
+  --bloglisting-blog-cards-desc-line-height: 1.8;
+
+  /* Typography — Button */
+  --bloglisting-blog-cards-button-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-cards-button-font-size: 15px;
+  --bloglisting-blog-cards-button-font-weight: 400;
+  --bloglisting-blog-cards-button-line-height: 0.95;
+
+  /* Typography — Pagination */
+  --bloglisting-blog-cards-pagination-font-family: 'Manrope', sans-serif;
+  --bloglisting-blog-cards-pagination-font-size: 14px;
+  --bloglisting-blog-cards-pagination-font-weight: 400;
+  --bloglisting-blog-cards-pagination-line-height: 1.8;
+
+  /* Spacing — Section */
+  --bloglisting-blog-cards-section-padding-x: 40px;
+  --bloglisting-blog-cards-section-padding-y: 56px;
+  --bloglisting-blog-cards-section-gap: 40px;
+
+  /* Spacing — Grid */
+  --bloglisting-blog-cards-grid-column-gap: 12px;
+  --bloglisting-blog-cards-grid-row-gap: 64px;
+
+  /* Spacing — Card */
+  --bloglisting-blog-cards-card-gap: 20px;
+  --bloglisting-blog-cards-heading-gap: 8px;
+  --bloglisting-blog-cards-heading-pb: 12px;
+
+  /* Spacing — Button */
+  --bloglisting-blog-cards-button-gap: 8px;
+
+  /* Spacing — Pagination */
+  --bloglisting-blog-cards-pagination-px: 10px;
+  --bloglisting-blog-cards-pagination-numbers-gap: 4px;
+  --bloglisting-blog-cards-pagination-content-gap: 24px;
+  --bloglisting-blog-cards-pagination-content-padding: 10px;
+
+  /* Spacing — Dropdown */
+  --bloglisting-blog-cards-dropdown-px: 16px;
+  --bloglisting-blog-cards-dropdown-py: 10px;
+  --bloglisting-blog-cards-dropdown-gap: 8px;
+  --bloglisting-blog-cards-dropdown-min-width: 110px;
+
+  /* Sizing */
+  --bloglisting-blog-cards-image-height: 240px;
+  --bloglisting-blog-cards-icon-size: 20px;
+  --bloglisting-blog-cards-caret-down-size: 12px;
+  --bloglisting-blog-cards-pagination-item-padding: 12px;
+
+  /* Radius */
+  --bloglisting-blog-cards-image-radius: 12px;
+  --bloglisting-blog-cards-dropdown-radius: 8px;
+  --bloglisting-blog-cards-pagination-item-radius: 999px;
+
+  /* Stroke */
+  --bloglisting-blog-cards-stroke: rgba(231, 231, 231, 0.8);
+
+  /* Pagination Active */
+  --bloglisting-blog-cards-pagination-active-bg: #0c1b3b;
+}
+
+/* Tablet overrides */
+@media (max-width: 1023px) {
+  :root {
+    /* No value changes needed — layout shifts to 2 columns via CSS grid */
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  :root {
+    --bloglisting-blog-cards-section-padding-x: 20px;
+    --bloglisting-blog-cards-section-padding-y: 40px;
+    --bloglisting-blog-cards-title-font-size: 16px;
+  }
+}
+
+/* ========================================
+   NotFound — PAGE: HERO
+   ======================================== */
+:root {
+  /* Background */
+  --notfound-hero-bg: #080E1B;
+
+  /* Text */
+  --notfound-hero-text-primary: #ffffff;
+  --notfound-hero-text-tertiary: rgba(231, 231, 231, 0.8);
+  --notfound-hero-btn-text-color: #ffffff;
+
+  /* Button */
+  --notfound-hero-btn-border-color: rgba(255, 255, 255, 0.24);
+  --notfound-hero-btn-border-radius: 999px;
+  --notfound-hero-btn-padding-y: 12px;
+  --notfound-hero-btn-padding-x: 24px;
+  --notfound-hero-btn-gap: 6px;
+
+  /* Typography — Heading */
+  --notfound-hero-heading-font-family: 'Manrope', sans-serif;
+  --notfound-hero-heading-font-size: 20px;
+  --notfound-hero-heading-font-weight: 600;
+  --notfound-hero-heading-line-height: 1.8;
+  --notfound-hero-heading-letter-spacing: -0.4px;
+
+  /* Typography — Body */
+  --notfound-hero-body-font-family: 'Manrope', sans-serif;
+  --notfound-hero-body-font-size: 14px;
+  --notfound-hero-body-font-weight: 400;
+  --notfound-hero-body-line-height: 1.8;
+
+  /* Typography — Button text */
+  --notfound-hero-btn-font-family: 'Manrope', sans-serif;
+  --notfound-hero-btn-font-size: 10px;
+  --notfound-hero-btn-font-weight: 500;
+  --notfound-hero-btn-line-height: 1.4;
+  --notfound-hero-btn-letter-spacing: 0.8px;
+
+  /* Spacing */
+  --notfound-hero-padding-top: 64px;
+  --notfound-hero-padding-bottom: 112px;
+  --notfound-hero-padding-x: 40px;
+  --notfound-hero-content-padding-top: 64px;
+  --notfound-hero-content-gap: 40px;
+  --notfound-hero-text-gap: 4px;
+
+  /* Sizing */
+  --notfound-hero-error-image-width: 276px;
+  --notfound-hero-error-image-height: 54px;
+  --notfound-hero-icon-size: 18px;
+}
+
+/* ========================================
+   NotFound — PAGE: ERROR404BACKGROUND
+   ======================================== */
+:root {
+  /* Background */
+  --notfound-error404background-bg: transparent;
+
+  /* Section dimensions — desktop */
+  --notfound-error404background-height: 281px;
+
+  /* SVG fill color (matches Figma var(--fill-0)) */
+  --notfound-error404background-fill: #0C1B3B;
+
+  /* Opacity per breakpoint */
+  --notfound-error404background-opacity: 0.2;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  :root {
+    --notfound-error404background-height: 137px;
+    --notfound-error404background-opacity: 0.4;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root {
+    --notfound-error404background-height: 78px;
+    --notfound-error404background-opacity: 0.5;
+  }
+}
+
+/* ========================================
+   LeadMagnetPage — PAGE: HEROCONTAINER
+   ======================================== */
+:root {
+  /* Background */
+  --leadmagnetpage-hero-container-bg-primary: #080E1B;
+  --leadmagnetpage-hero-container-bg-gradient-start: rgba(10, 22, 44, 1);
+  --leadmagnetpage-hero-container-bg-gradient-end: rgba(8, 14, 27, 1);
+
+  /* Text */
+  --leadmagnetpage-hero-container-text-primary: #FFFFFF;
+  --leadmagnetpage-hero-container-text-secondary: #f6f6f6;
+  --leadmagnetpage-hero-container-text-terciary: rgba(231, 231, 231, 0.8);
+  --leadmagnetpage-hero-container-text-placeholder: rgba(231, 231, 231, 0.8);
+
+  /* Form card */
+  --leadmagnetpage-hero-container-form-bg-start: rgba(10, 22, 44, 0.4);
+  --leadmagnetpage-hero-container-form-bg-end: rgba(10, 22, 44, 0);
+  --leadmagnetpage-hero-container-form-border: rgba(18, 36, 85, 0.2);
+  --leadmagnetpage-hero-container-form-blur: 20px;
+  --leadmagnetpage-hero-container-form-radius: 24px;
+  --leadmagnetpage-hero-container-form-content-pt: 64px;
+  --leadmagnetpage-hero-container-form-content-pb: 40px;
+  --leadmagnetpage-hero-container-form-content-px: 40px;
+  --leadmagnetpage-hero-container-form-content-gap: 40px;
+
+  /* Form actions bar */
+  --leadmagnetpage-hero-container-actions-bg: rgba(10, 22, 44, 0.4);
+  --leadmagnetpage-hero-container-actions-px: 34px;
+  --leadmagnetpage-hero-container-actions-py: 20px;
+
+  /* Input fields */
+  --leadmagnetpage-hero-container-input-border: rgba(255, 255, 255, 0.24);
+  --leadmagnetpage-hero-container-input-gap: 8px;
+  --leadmagnetpage-hero-container-input-label-gap: 4px;
+  --leadmagnetpage-hero-container-input-pb: 8px;
+  --leadmagnetpage-hero-container-input-px: 4px;
+
+  /* Button */
+  --leadmagnetpage-hero-container-btn-bg: white;
+  --leadmagnetpage-hero-container-btn-text: #0c1b3b;
+  --leadmagnetpage-hero-container-btn-radius: 999px;
+  --leadmagnetpage-hero-container-btn-px: 24px;
+  --leadmagnetpage-hero-container-btn-py: 14px;
+  --leadmagnetpage-hero-container-btn-gap: 6px;
+
+  /* Typography — Desktop */
+  --leadmagnetpage-hero-container-heading-font: 'Results Letter', sans-serif;
+  --leadmagnetpage-hero-container-heading-size: 44px;
+  --leadmagnetpage-hero-container-heading-weight: 100;
+  --leadmagnetpage-hero-container-heading-line-height: 1.2;
+
+  --leadmagnetpage-hero-container-body-font: 'Manrope', sans-serif;
+  --leadmagnetpage-hero-container-body-size: 15px;
+  --leadmagnetpage-hero-container-body-weight: 400;
+  --leadmagnetpage-hero-container-body-line-height: 1.8;
+
+  --leadmagnetpage-hero-container-form-title-size: 20px;
+  --leadmagnetpage-hero-container-form-title-weight: 600;
+  --leadmagnetpage-hero-container-form-title-line-height: 1.8;
+  --leadmagnetpage-hero-container-form-title-tracking: -0.4px;
+
+  --leadmagnetpage-hero-container-label-size: 15px;
+  --leadmagnetpage-hero-container-label-weight: 400;
+  --leadmagnetpage-hero-container-label-line-height: 1.8;
+
+  --leadmagnetpage-hero-container-placeholder-size: 15px;
+  --leadmagnetpage-hero-container-placeholder-opacity: 0.7;
+
+  --leadmagnetpage-hero-container-btn-text-size: 10px;
+  --leadmagnetpage-hero-container-btn-text-weight: 500;
+  --leadmagnetpage-hero-container-btn-text-line-height: 1.4;
+  --leadmagnetpage-hero-container-btn-text-tracking: 0.8px;
+
+  --leadmagnetpage-hero-container-phone-prefix-size: 14px;
+
+  /* Spacing — Desktop */
+  --leadmagnetpage-hero-container-content-px: 64px;
+  --leadmagnetpage-hero-container-content-py: 40px;
+  --leadmagnetpage-hero-container-content-gap: 40px;
+
+  --leadmagnetpage-hero-container-text-pt: 24px;
+  --leadmagnetpage-hero-container-text-pb: 8px;
+  --leadmagnetpage-hero-container-text-pl: 20px;
+  --leadmagnetpage-hero-container-text-gap: 16px;
+  --leadmagnetpage-hero-container-text-max-width: 500px;
+
+  /* Icon sizes */
+  --leadmagnetpage-hero-container-envelope-size: 20px;
+  --leadmagnetpage-hero-container-phone-icon-size: 20px;
+  --leadmagnetpage-hero-container-flag-size: 16px;
+  --leadmagnetpage-hero-container-caret-size: 14px;
+  --leadmagnetpage-hero-container-btn-arrow-size: 14px;
+  --leadmagnetpage-hero-container-btn-arrow-opacity: 0.6;
+}
+
+/* ========================================
+   LeadMagnetPage — PAGE: TECHNICALDEBT
+   ======================================== */
+:root {
+  /* Background */
+  --leadmagnetpage-technical-debt-bg: #080E1B;
+
+  /* Text */
+  --leadmagnetpage-technical-debt-heading-color: #FFFFFF;
+  --leadmagnetpage-technical-debt-body-color: rgba(231, 231, 231, 0.8);
+
+  /* Badge / Icon */
+  --leadmagnetpage-technical-debt-badge-border-outer: rgba(230, 0, 35, 0.06);
+  --leadmagnetpage-technical-debt-badge-border-inner: rgba(230, 0, 35, 0.1);
+  --leadmagnetpage-technical-debt-badge-icon-bg: #e60023;
+  --leadmagnetpage-technical-debt-badge-icon-radius: 12px;
+
+  /* Typography — Heading */
+  --leadmagnetpage-technical-debt-heading-font-family: 'Manrope', sans-serif;
+  --leadmagnetpage-technical-debt-heading-font-size: 40px;
+  --leadmagnetpage-technical-debt-heading-font-weight: 400;
+  --leadmagnetpage-technical-debt-heading-line-height: 1.4;
+  --leadmagnetpage-technical-debt-heading-letter-spacing: -1.2px;
+  --leadmagnetpage-technical-debt-heading-max-width: 600px;
+
+  /* Typography — Body */
+  --leadmagnetpage-technical-debt-body-font-family: 'Manrope', sans-serif;
+  --leadmagnetpage-technical-debt-body-font-size: 14px;
+  --leadmagnetpage-technical-debt-body-font-weight: 400;
+  --leadmagnetpage-technical-debt-body-line-height: 1.8;
+
+  /* Spacing — Desktop */
+  --leadmagnetpage-technical-debt-section-padding-x: 40px;
+  --leadmagnetpage-technical-debt-section-padding-y: 56px;
+  --leadmagnetpage-technical-debt-section-gap: 26px;
+  --leadmagnetpage-technical-debt-heading-gap: 24px;
+  --leadmagnetpage-technical-debt-heading-padding-x: 26px;
+  --leadmagnetpage-technical-debt-body-gap: 20px;
+
+  /* Sizing */
+  --leadmagnetpage-technical-debt-container-max-width: 720px;
+  --leadmagnetpage-technical-debt-body-max-width: 500px;
+  --leadmagnetpage-technical-debt-icon-size: 20px;
+  --leadmagnetpage-technical-debt-icon-padding: 16px;
+
+  /* Badge border-layer padding & radii */
+  --leadmagnetpage-technical-debt-badge-layer-padding: 10px;
+  --leadmagnetpage-technical-debt-badge-radius-1: 52px;
+  --leadmagnetpage-technical-debt-badge-radius-2: 42px;
+  --leadmagnetpage-technical-debt-badge-radius-3: 32px;
+  --leadmagnetpage-technical-debt-badge-radius-4: 22px;
+
+  /* Badge glow offset — pulls outermost visible layer left so the red square
+     (not the glow halo) aligns with surrounding content. Derived from layer count. */
+  --leadmagnetpage-technical-debt-badge-glow-offset: calc(4 * var(--leadmagnetpage-technical-debt-badge-layer-padding));
+  --leadmagnetpage-technical-debt-badge-glow-offset-mobile: calc(3 * var(--leadmagnetpage-technical-debt-badge-layer-padding));
+
+  /* Pattern */
+  --leadmagnetpage-technical-debt-pattern-opacity: 0.9;
+}
+
+/* ========================================
+   LeadMagnetPage — PAGE: AUDITREVEALS
+   ======================================== */
+:root {
+  /* Colors */
+  --leadmagnetpage-audit-reveals-bg: #080E1B;
+  --leadmagnetpage-audit-reveals-accent: #7AD2FE;
+  --leadmagnetpage-audit-reveals-heading-color: #FFFFFF;
+  --leadmagnetpage-audit-reveals-body-color: rgba(231, 231, 231, 0.8);
+  --leadmagnetpage-audit-reveals-subtitle-color: #F6F6F6;
+  --leadmagnetpage-audit-reveals-item-color: #F6F6F6;
+  --leadmagnetpage-audit-reveals-check-border: rgba(255, 255, 255, 0.24);
+  --leadmagnetpage-audit-reveals-check-fill: rgba(231, 231, 231, 0.8);
+
+  /* Typography — Caption */
+  --leadmagnetpage-audit-reveals-caption-size: 14px;
+  --leadmagnetpage-audit-reveals-caption-weight: 800;
+  --leadmagnetpage-audit-reveals-caption-line-height: 1.8;
+  --leadmagnetpage-audit-reveals-caption-tracking: 1.12px;
+
+  /* Typography — H4 Heading */
+  --leadmagnetpage-audit-reveals-h4-size: 36px;
+  --leadmagnetpage-audit-reveals-h4-weight: 400;
+  --leadmagnetpage-audit-reveals-h4-line-height: 1.2;
+  --leadmagnetpage-audit-reveals-h4-tracking: -1.08px;
+
+  /* Typography — Body */
+  --leadmagnetpage-audit-reveals-body-size: 15px;
+  --leadmagnetpage-audit-reveals-body-weight: 400;
+  --leadmagnetpage-audit-reveals-body-line-height: 1.8;
+
+  /* Typography — Subtitle (Your Free Audit Includes) */
+  --leadmagnetpage-audit-reveals-subtitle-size: 20px;
+  --leadmagnetpage-audit-reveals-subtitle-weight: 600;
+  --leadmagnetpage-audit-reveals-subtitle-line-height: 1.8;
+  --leadmagnetpage-audit-reveals-subtitle-tracking: -0.4px;
+
+  /* Typography — Item Text */
+  --leadmagnetpage-audit-reveals-item-size: 14px;
+  --leadmagnetpage-audit-reveals-item-weight: 400;
+  --leadmagnetpage-audit-reveals-item-line-height: 1.6;
+
+  /* Spacing — Desktop */
+  --leadmagnetpage-audit-reveals-section-py: 56px;
+  --leadmagnetpage-audit-reveals-section-px: 40px;
+  --leadmagnetpage-audit-reveals-columns-gap: 40px;
+  --leadmagnetpage-audit-reveals-heading-padding: 26px;
+  --leadmagnetpage-audit-reveals-heading-gap: 34px;
+  --leadmagnetpage-audit-reveals-heading-max-width: 600px;
+  --leadmagnetpage-audit-reveals-right-gap: 64px;
+  --leadmagnetpage-audit-reveals-right-pt: 20px;
+  --leadmagnetpage-audit-reveals-right-pb: 64px;
+  --leadmagnetpage-audit-reveals-items-gap: 20px;
+  --leadmagnetpage-audit-reveals-items-pt: 24px;
+  --leadmagnetpage-audit-reveals-item-gap: 12px;
+  --leadmagnetpage-audit-reveals-item-max-width: 220px;
+  --leadmagnetpage-audit-reveals-container-opacity: 0.7;
+
+  /* Sizing */
+  --leadmagnetpage-audit-reveals-check-icon-size: 10px;
+  --leadmagnetpage-audit-reveals-check-circle-padding: 6px;
+}
+
+/* ========================================
+   LeadMagnetPage — PAGE: WHYAUDIT
+   ======================================== */
+:root {
+  /* Colors */
+  --leadmagnetpage-why-audit-bg: #080E1B;
+  --leadmagnetpage-why-audit-foreground: #FFFFFF;
+  --leadmagnetpage-why-audit-accent: #7AD2FE;
+  --leadmagnetpage-why-audit-text-secondary: #F6F6F6;
+  --leadmagnetpage-why-audit-banner-surface: #f6f6f6;
+  --leadmagnetpage-why-audit-banner-gradient-1: rgba(12, 27, 59, 1);
+  --leadmagnetpage-why-audit-banner-gradient-2: rgba(6, 14, 30, 0.5);
+  --leadmagnetpage-why-audit-banner-gradient-3: rgba(0, 0, 0, 0);
+
+  /* Typography — H2 */
+  --leadmagnetpage-why-audit-h2-size: 44px;
+  --leadmagnetpage-why-audit-h2-weight: 600;
+  --leadmagnetpage-why-audit-h2-line-height: 1.2;
+  --leadmagnetpage-why-audit-h2-letter-spacing: -1.32px;
+
+  /* Typography — Card number/text (Quote) */
+  --leadmagnetpage-why-audit-quote-size: 20px;
+  --leadmagnetpage-why-audit-quote-weight: 600;
+  --leadmagnetpage-why-audit-quote-line-height: 1.8;
+  --leadmagnetpage-why-audit-quote-letter-spacing: -0.4px;
+
+  /* Typography — Trust counter */
+  --leadmagnetpage-why-audit-trust-rating-size: 15px;
+  --leadmagnetpage-why-audit-trust-rating-weight: 500;
+  --leadmagnetpage-why-audit-trust-label-size: 14px;
+  --leadmagnetpage-why-audit-trust-label-weight: 400;
+  --leadmagnetpage-why-audit-trust-label-opacity: 0.8;
+
+  /* Spacing — Section */
+  --leadmagnetpage-why-audit-section-padding-x: 40px;
+  --leadmagnetpage-why-audit-section-padding-y: 56px;
+  --leadmagnetpage-why-audit-section-gap: 64px;
+
+  /* Spacing — Heading */
+  --leadmagnetpage-why-audit-heading-gap: 20px;
+  --leadmagnetpage-why-audit-heading-padding-x: 26px;
+  --leadmagnetpage-why-audit-title-max-width: 700px;
+
+  /* Spacing — Trust counter */
+  --leadmagnetpage-why-audit-trust-gap: 12px;
+  --leadmagnetpage-why-audit-trust-inner-gap: 4px;
+
+  /* Spacing — CTA / Logo */
+  --leadmagnetpage-why-audit-logo-width: 120px;
+  --leadmagnetpage-why-audit-logo-height: 34px;
+  --leadmagnetpage-why-audit-logo-padding-y: 16px;
+
+  /* Spacing — Banner */
+  --leadmagnetpage-why-audit-banner-radius: 40px;
+  --leadmagnetpage-why-audit-banner-padding-x: 64px;
+  --leadmagnetpage-why-audit-banner-padding-y: 40px;
+  --leadmagnetpage-why-audit-banner-gap: 64px;
+
+  /* Spacing — Card */
+  --leadmagnetpage-why-audit-card-gap: 64px;
+  --leadmagnetpage-why-audit-card-max-width: 600px;
+  --leadmagnetpage-why-audit-card-text-gap: 20px;
+  --leadmagnetpage-why-audit-card-padding-top: 24px;
+
+  /* Star icon */
+  --leadmagnetpage-why-audit-star-size: 16px;
+  --leadmagnetpage-why-audit-star-radius: 4px;
+
+  /* Google logo (desktop/tablet) */
+  --leadmagnetpage-why-audit-google-logo-width: 48.606px;
+  --leadmagnetpage-why-audit-google-logo-height: 16px;
+
+  /* Pattern */
+  --leadmagnetpage-why-audit-pattern-opacity: 0.4;
+
+  /* Banner image */
+  --leadmagnetpage-why-audit-banner-img-width: 772px;
+  --leadmagnetpage-why-audit-banner-img-height: 365px;
+}
+
+/* ========================================
+   LeadMagnetPage — PAGE: IDEALFOR
+   ======================================== */
+:root {
+  /* Background */
+  --leadmagnetpage-ideal-for-bg: #080E1B;
+
+  /* Text */
+  --leadmagnetpage-ideal-for-heading-color: #FFFFFF;
+  --leadmagnetpage-ideal-for-text-color: #F6F6F6;
+  --leadmagnetpage-ideal-for-icon-stroke: rgba(255, 255, 255, 0.24);
+
+  /* Typography — Heading */
+  --leadmagnetpage-ideal-for-heading-font-family: 'Results Letter', sans-serif;
+  --leadmagnetpage-ideal-for-heading-font-size: 36px;
+  --leadmagnetpage-ideal-for-heading-font-weight: 100;
+  --leadmagnetpage-ideal-for-heading-line-height: 1.2;
+  --leadmagnetpage-ideal-for-heading-max-width: 340px;
+
+  /* Typography — Body */
+  --leadmagnetpage-ideal-for-body-font-family: 'Manrope', sans-serif;
+  --leadmagnetpage-ideal-for-body-font-size: 14px;
+  --leadmagnetpage-ideal-for-body-font-weight: 400;
+  --leadmagnetpage-ideal-for-body-line-height: 1.6;
+
+  /* Spacing */
+  --leadmagnetpage-ideal-for-padding-x: 64px;
+  --leadmagnetpage-ideal-for-padding-y: 34px;
+  --leadmagnetpage-ideal-for-container-gap: 20px;
+  --leadmagnetpage-ideal-for-item-gap: 12px;
+  --leadmagnetpage-ideal-for-row-gap: 20px;
+
+  /* Sizing */
+  --leadmagnetpage-ideal-for-container-max-width: 700px;
+  --leadmagnetpage-ideal-for-item-max-width: 220px;
+  --leadmagnetpage-ideal-for-icon-size: 10px;
+  --leadmagnetpage-ideal-for-icon-container-padding: 6px;
+  --leadmagnetpage-ideal-for-container-opacity: 0.7;
+}
+
+/* ========================================
+   BlogPostPage — PAGE: BLOGPOSTHERO
+   ======================================== */
+:root {
+  /* Background */
+  --blogpostpage-blog-post-hero-bg: #080e1b;
+
+  /* Text */
+  --blogpostpage-blog-post-hero-text-primary: #ffffff;
+  --blogpostpage-blog-post-hero-text-accent: #7ad2fe;
+
+  /* Typography — Author meta */
+  --blogpostpage-blog-post-hero-meta-size: 14px;
+  --blogpostpage-blog-post-hero-meta-weight-light: 300;
+  --blogpostpage-blog-post-hero-meta-weight-semibold: 600;
+  --blogpostpage-blog-post-hero-meta-line-height: 1.2;
+  --blogpostpage-blog-post-hero-meta-tracking: 1.12px;
+  --blogpostpage-blog-post-hero-meta-tracking-accent: 1.68px;
+  --blogpostpage-blog-post-hero-meta-font: 'Manrope', sans-serif;
+
+  /* Typography — Title */
+  --blogpostpage-blog-post-hero-title-font: 'Results Letter', sans-serif;
+  --blogpostpage-blog-post-hero-title-size: 44px;
+  --blogpostpage-blog-post-hero-title-weight: 100;
+  --blogpostpage-blog-post-hero-title-line-height: 1.2;
+
+  /* Spacing */
+  --blogpostpage-blog-post-hero-content-padding-x: 64px;
+  --blogpostpage-blog-post-hero-content-padding-y: 40px;
+  --blogpostpage-blog-post-hero-heading-gap: 20px;
+  --blogpostpage-blog-post-hero-heading-pt: 12px;
+  --blogpostpage-blog-post-hero-display-heading-pb: 8px;
+
+  /* Image */
+  --blogpostpage-blog-post-hero-image-height: 353px;
+}
+
+/* Tablet overrides */
+@media (max-width: 1023px) {
+  :root {
+    --blogpostpage-blog-post-hero-title-size: 42px;
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  :root {
+    --blogpostpage-blog-post-hero-content-padding-x: 20px;
+    --blogpostpage-blog-post-hero-title-size: 30px;
+    --blogpostpage-blog-post-hero-image-height: 300px;
+  }
+}
+
+/* ========================================
+   BlogPostPage — PAGE: BLOGPOSTCONTENT
+   ======================================== */
+:root {
+  /* Colors */
+  --blogpostpage-blog-post-content-bg: #080e1b;
+  --blogpostpage-blog-post-content-text-secondary: #ffffff;
+  --blogpostpage-blog-post-content-text-tertiary: #a0aec0;
+  --blogpostpage-blog-post-content-accent: #7ad2fe;
+  --blogpostpage-blog-post-content-foreground: #ffffff;
+  --blogpostpage-blog-post-content-on-surface: #0c1b3b;
+  --blogpostpage-blog-post-content-surface-container: #111827;
+  --blogpostpage-blog-post-content-stroke-thin: rgba(255, 255, 255, 0.2);
+  --blogpostpage-blog-post-content-btn-bg: #ffffff;
+  --blogpostpage-blog-post-content-btn-text: #080e1b;
+
+  /* Typography — Feature Text / Lowercase */
+  --blogpostpage-blog-post-content-quote-font: 'Manrope', sans-serif;
+  --blogpostpage-blog-post-content-quote-size: 20px;
+  --blogpostpage-blog-post-content-quote-weight: 600;
+  --blogpostpage-blog-post-content-quote-line-height: 1.8;
+  --blogpostpage-blog-post-content-quote-letter-spacing: -0.4px;
+
+  /* Typography — Body Text / Normal */
+  --blogpostpage-blog-post-content-body-font: 'Manrope', sans-serif;
+  --blogpostpage-blog-post-content-body-size: 15px;
+  --blogpostpage-blog-post-content-body-weight: 400;
+  --blogpostpage-blog-post-content-body-line-height: 1.8;
+
+  /* Typography — Caption / Medium (THE KEY QUESTION) */
+  --blogpostpage-blog-post-content-caption-font: 'Manrope', sans-serif;
+  --blogpostpage-blog-post-content-caption-size: 14px;
+  --blogpostpage-blog-post-content-caption-weight: 800;
+  --blogpostpage-blog-post-content-caption-line-height: 1.8;
+  --blogpostpage-blog-post-content-caption-letter-spacing: 1.12px;
+
+  /* Typography — h5 Quote */
+  --blogpostpage-blog-post-content-h5-font: 'Results Letter', sans-serif;
+  --blogpostpage-blog-post-content-h5-size: 26px;
+  --blogpostpage-blog-post-content-h5-weight: 100;
+  --blogpostpage-blog-post-content-h5-line-height: 1.6;
+
+  /* Typography — Checklist items */
+  --blogpostpage-blog-post-content-checklist-font: 'Manrope', sans-serif;
+  --blogpostpage-blog-post-content-checklist-size: 14px;
+  --blogpostpage-blog-post-content-checklist-weight: 400;
+  --blogpostpage-blog-post-content-checklist-line-height: 1.6;
+
+  /* Typography — Card title */
+  --blogpostpage-blog-post-content-card-title-size: 20px;
+  --blogpostpage-blog-post-content-card-title-weight: 600;
+  --blogpostpage-blog-post-content-card-title-line-height: 1.8;
+
+  /* Typography — Card body */
+  --blogpostpage-blog-post-content-card-body-font: 'Results Letter', sans-serif;
+  --blogpostpage-blog-post-content-card-body-size: 16px;
+  --blogpostpage-blog-post-content-card-body-weight: 200;
+  --blogpostpage-blog-post-content-card-body-line-height: 1.8;
+  --blogpostpage-blog-post-content-card-body-letter-spacing: 0.32px;
+
+  /* Typography — Button */
+  --blogpostpage-blog-post-content-btn-font: 'Manrope', sans-serif;
+  --blogpostpage-blog-post-content-btn-size: 10px;
+  --blogpostpage-blog-post-content-btn-weight: 500;
+  --blogpostpage-blog-post-content-btn-line-height: 1.4;
+  --blogpostpage-blog-post-content-btn-letter-spacing: 0.8px;
+
+  /* Spacing */
+  --blogpostpage-blog-post-content-section-padding-x: 40px;
+  --blogpostpage-blog-post-content-section-padding-y: 56px;
+  --blogpostpage-blog-post-content-section-gap: 80px;
+  --blogpostpage-blog-post-content-heading-gap: 80px;
+  --blogpostpage-blog-post-content-heading-pt: 20px;
+  --blogpostpage-blog-post-content-heading-pb: 64px;
+  --blogpostpage-blog-post-content-heading-px: 34px;
+  --blogpostpage-blog-post-content-text-gap: 20px;
+  --blogpostpage-blog-post-content-checklist-row-gap: 20px;
+  --blogpostpage-blog-post-content-checklist-item-gap: 12px;
+  --blogpostpage-blog-post-content-checklist-pt: 24px;
+
+  /* Card / Sidebar */
+  --blogpostpage-blog-post-content-card-width: 380px;
+  --blogpostpage-blog-post-content-card-gap: 64px;
+  --blogpostpage-blog-post-content-card-text-gap: 24px;
+  --blogpostpage-blog-post-content-card-text-pt: 64px;
+
+  /* Sizing */
+  --blogpostpage-blog-post-content-icon-box-padding: 16px;
+  --blogpostpage-blog-post-content-icon-box-radius: 8px;
+  --blogpostpage-blog-post-content-icon-size: 20px;
+  --blogpostpage-blog-post-content-check-icon-size: 10px;
+  --blogpostpage-blog-post-content-check-padding: 6px;
+  --blogpostpage-blog-post-content-arrow-size: 14px;
+  --blogpostpage-blog-post-content-btn-padding-x: 24px;
+  --blogpostpage-blog-post-content-btn-padding-y: 14px;
+  --blogpostpage-blog-post-content-btn-radius: 999px;
+
+  /* Pattern positioning */
+  --blogpostpage-blog-post-content-pattern-group15-w: 163px;
+  --blogpostpage-blog-post-content-pattern-group15-h: 152px;
+  --blogpostpage-blog-post-content-pattern-group15-top: 68px;
+  --blogpostpage-blog-post-content-pattern-group15-left: 1069px;
+  --blogpostpage-blog-post-content-pattern-group14-w: 163px;
+  --blogpostpage-blog-post-content-pattern-group14-h: 152px;
+  --blogpostpage-blog-post-content-pattern-group14-top: 172px;
+  --blogpostpage-blog-post-content-pattern-group14-left: 562px;
+  --blogpostpage-blog-post-content-pattern-code-w: 214px;
+  --blogpostpage-blog-post-content-pattern-code-h: 200px;
+  --blogpostpage-blog-post-content-pattern-code-top: -6px;
+  --blogpostpage-blog-post-content-pattern-code-left: 216px;
+
+  /* Banner (tablet/mobile) */
+  --blogpostpage-blog-post-content-banner-radius: 40px;
+  --blogpostpage-blog-post-content-banner-padding-x: 64px;
+  --blogpostpage-blog-post-content-banner-padding-y: 40px;
+  --blogpostpage-blog-post-content-banner-gap: 34px;
+  --blogpostpage-blog-post-content-banner-heading-size: 30px;
+  --blogpostpage-blog-post-content-banner-heading-weight: 100;
+  --blogpostpage-blog-post-content-banner-heading-line-height: 1.2;
+  --blogpostpage-blog-post-content-banner-heading-gap: 12px;
+  --blogpostpage-blog-post-content-banner-desc-size: 16px;
+  --blogpostpage-blog-post-content-banner-desc-letter-spacing: 0.32px;
+  --blogpostpage-blog-post-content-banner-content-gap: 26px;
+  --blogpostpage-blog-post-content-banner-content-pt: 20px;
+
+  /* Checklist columns */
+  --blogpostpage-blog-post-content-checklist-cols: 3;
+  --blogpostpage-blog-post-content-checklist-max-width: 600px;
+  --blogpostpage-blog-post-content-checklist-container-max-width: 700px;
+}
+
+/* Tablet overrides */
+@media (max-width: 1023px) {
+  :root {
+    --blogpostpage-blog-post-content-h5-size: 24px;
+    --blogpostpage-blog-post-content-heading-px: 0px;
+    --blogpostpage-blog-post-content-heading-pb: 64px;
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  :root {
+    --blogpostpage-blog-post-content-section-padding-x: 20px;
+    --blogpostpage-blog-post-content-section-gap: 64px;
+    --blogpostpage-blog-post-content-heading-gap: 80px;
+    --blogpostpage-blog-post-content-h5-size: 20px;
+    --blogpostpage-blog-post-content-heading-px: 0px;
+    --blogpostpage-blog-post-content-heading-pb: 0px;
+    --blogpostpage-blog-post-content-checklist-cols: 2;
+    --blogpostpage-blog-post-content-banner-padding-x: 20px;
+    --blogpostpage-blog-post-content-banner-padding-y: 26px;
+    --blogpostpage-blog-post-content-banner-heading-size: 24px;
+    --blogpostpage-blog-post-content-banner-desc-size: 14px;
+    --blogpostpage-blog-post-content-banner-desc-letter-spacing: 0.28px;
+  }
+}
+

@@ -1,0 +1,161 @@
+/* IdealFor — Desktop-first styles */
+
+.leadmagnetpage-ideal-for {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--leadmagnetpage-ideal-for-bg);
+}
+
+.leadmagnetpage-ideal-for__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--leadmagnetpage-ideal-for-padding-y) var(--leadmagnetpage-ideal-for-padding-x);
+  width: 100%;
+}
+
+/* Heading */
+.leadmagnetpage-ideal-for__heading {
+  flex: 1 0 0;
+  max-width: var(--leadmagnetpage-ideal-for-heading-max-width);
+  font-family: var(--leadmagnetpage-ideal-for-heading-font-family);
+  font-size: var(--leadmagnetpage-ideal-for-heading-font-size);
+  font-weight: var(--leadmagnetpage-ideal-for-heading-font-weight);
+  font-style: normal;
+  line-height: var(--leadmagnetpage-ideal-for-heading-line-height);
+  color: var(--leadmagnetpage-ideal-for-heading-color);
+}
+
+/* Items container — vertical stack of rows */
+.leadmagnetpage-ideal-for__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--leadmagnetpage-ideal-for-container-gap);
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 1px;
+  max-width: var(--leadmagnetpage-ideal-for-container-max-width);
+  opacity: var(--leadmagnetpage-ideal-for-container-opacity);
+  width: 100%;
+}
+
+/* Row — horizontal flex, items distribute equally */
+.leadmagnetpage-ideal-for__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--leadmagnetpage-ideal-for-row-gap);
+  width: 100%;
+}
+
+/* Individual item */
+.leadmagnetpage-ideal-for__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--leadmagnetpage-ideal-for-item-gap);
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 1px;
+}
+
+/* Check icon */
+.leadmagnetpage-ideal-for__icon {
+  display: flex;
+  align-items: center;
+  padding: var(--leadmagnetpage-ideal-for-icon-container-padding);
+  border: 1px solid var(--leadmagnetpage-ideal-for-icon-stroke);
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-ideal-for__icon img {
+  display: block;
+  width: var(--leadmagnetpage-ideal-for-icon-size);
+  height: var(--leadmagnetpage-ideal-for-icon-size);
+}
+
+/* Item text */
+.leadmagnetpage-ideal-for__text {
+  font-family: var(--leadmagnetpage-ideal-for-body-font-family);
+  font-size: var(--leadmagnetpage-ideal-for-body-font-size);
+  font-weight: var(--leadmagnetpage-ideal-for-body-font-weight);
+  line-height: var(--leadmagnetpage-ideal-for-body-line-height);
+  color: var(--leadmagnetpage-ideal-for-text-color);
+}
+
+/* Check icon hover micro-interaction */
+@media (prefers-reduced-motion: no-preference) {
+  .leadmagnetpage-ideal-for__icon {
+    transition: transform 200ms ease, border-color 200ms ease;
+  }
+
+  .leadmagnetpage-ideal-for__item:hover .leadmagnetpage-ideal-for__icon {
+    transform: scale(1.1);
+    border-color: #7AD2FE;
+  }
+}
+
+/* ===== Tablet (max-width: 1023px) ===== */
+@media (max-width: 1023px) {
+  .leadmagnetpage-ideal-for__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 34px 40px;
+  }
+
+  .leadmagnetpage-ideal-for__heading {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .leadmagnetpage-ideal-for__container {
+    width: 100%;
+    flex: none;
+  }
+
+  .leadmagnetpage-ideal-for__row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .leadmagnetpage-ideal-for__item {
+    max-width: none;
+  }
+}
+
+/* ===== Mobile (max-width: 767px) ===== */
+@media (max-width: 767px) {
+  .leadmagnetpage-ideal-for__inner {
+    gap: 40px;
+    padding: 34px 20px;
+  }
+
+  .leadmagnetpage-ideal-for__heading {
+    font-size: 24px;
+    flex: none;
+  }
+
+  .leadmagnetpage-ideal-for__container {
+    max-width: none;
+  }
+
+  .leadmagnetpage-ideal-for__row {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0;
+  }
+
+  .leadmagnetpage-ideal-for__item {
+    flex: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 100%;
+  }
+}

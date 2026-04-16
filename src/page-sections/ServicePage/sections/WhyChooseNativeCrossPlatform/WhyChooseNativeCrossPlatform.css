@@ -1,0 +1,202 @@
+/* ============================================================
+   WhyChooseNativeCrossPlatform — Desktop-first styles
+   ============================================================ */
+
+.servicepage-why-choose-native-cross-platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--servicepage-why-choose-native-cross-platform-padding-y)
+    var(--servicepage-why-choose-native-cross-platform-padding-x);
+  background-color: var(--servicepage-why-choose-native-cross-platform-bg);
+}
+
+.servicepage-why-choose-native-cross-platform__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--servicepage-why-choose-native-cross-platform-gap);
+}
+
+/* ---- Image column ---- */
+
+.servicepage-why-choose-native-cross-platform__image-col {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.servicepage-why-choose-native-cross-platform__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 1px;
+  border-radius: var(--servicepage-why-choose-native-cross-platform-img-radius);
+  overflow: hidden;
+}
+
+.servicepage-why-choose-native-cross-platform__image {
+  object-fit: cover;
+  border-radius: var(--servicepage-why-choose-native-cross-platform-img-radius);
+  pointer-events: none;
+}
+
+/* ---- Text column ---- */
+
+.servicepage-why-choose-native-cross-platform__text-col {
+  position: relative;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-native-cross-platform-text-gap);
+  padding: var(--servicepage-why-choose-native-cross-platform-text-padding);
+  min-height: 1px;
+  min-width: 1px;
+}
+
+/* ---- Decorative pattern ---- */
+
+.servicepage-why-choose-native-cross-platform__pattern {
+  position: absolute;
+  top: 0;
+  right: 26px;
+  width: var(--servicepage-why-choose-native-cross-platform-pattern-width);
+  height: var(--servicepage-why-choose-native-cross-platform-pattern-height);
+  opacity: var(--servicepage-why-choose-native-cross-platform-pattern-opacity);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.servicepage-why-choose-native-cross-platform__pattern img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Caption ---- */
+
+.servicepage-why-choose-native-cross-platform__caption {
+  font-family: var(--servicepage-why-choose-native-cross-platform-caption-font);
+  font-size: var(--servicepage-why-choose-native-cross-platform-caption-size);
+  font-weight: var(--servicepage-why-choose-native-cross-platform-caption-weight);
+  line-height: var(--servicepage-why-choose-native-cross-platform-caption-lh);
+  letter-spacing: var(--servicepage-why-choose-native-cross-platform-caption-ls);
+  color: var(--servicepage-why-choose-native-cross-platform-accent);
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Heading ---- */
+
+.servicepage-why-choose-native-cross-platform__title {
+  font-family: var(--servicepage-why-choose-native-cross-platform-heading-font);
+  font-size: var(--servicepage-why-choose-native-cross-platform-heading-size);
+  font-weight: var(--servicepage-why-choose-native-cross-platform-heading-weight);
+  line-height: var(--servicepage-why-choose-native-cross-platform-heading-lh);
+  letter-spacing: var(--servicepage-why-choose-native-cross-platform-heading-ls);
+  color: var(--servicepage-why-choose-native-cross-platform-heading-color);
+  max-width: var(--servicepage-why-choose-native-cross-platform-heading-max-width);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Body text ---- */
+
+.servicepage-why-choose-native-cross-platform__body {
+  font-family: var(--servicepage-why-choose-native-cross-platform-body-font);
+  font-size: var(--servicepage-why-choose-native-cross-platform-body-size);
+  font-weight: var(--servicepage-why-choose-native-cross-platform-body-weight);
+  line-height: var(--servicepage-why-choose-native-cross-platform-body-lh);
+  color: var(--servicepage-why-choose-native-cross-platform-body-color);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.servicepage-why-choose-native-cross-platform__body p {
+  line-height: var(--servicepage-why-choose-native-cross-platform-body-lh);
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .servicepage-why-choose-native-cross-platform__inner {
+    flex-direction: column;
+  }
+
+  .servicepage-why-choose-native-cross-platform__image-col {
+    order: 2;
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-native-cross-platform__image-wrapper {
+    height: 400px;
+  }
+
+  .servicepage-why-choose-native-cross-platform__text-col {
+    order: 1;
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .servicepage-why-choose-native-cross-platform {
+    --servicepage-why-choose-native-cross-platform-padding-x: 20px;
+    --servicepage-why-choose-native-cross-platform-heading-size: 24px;
+  }
+
+  /* ScrollReveal wraps image-col/text-col, so `order` on the inner divs
+     has no effect — target the real flex items (direct children of __inner) */
+  .servicepage-why-choose-native-cross-platform__inner > :first-child {
+    order: 2;
+  }
+  .servicepage-why-choose-native-cross-platform__inner > :last-child {
+    order: 1;
+  }
+
+  .servicepage-why-choose-native-cross-platform__text-col {
+    padding: 0;
+  }
+
+  .servicepage-why-choose-native-cross-platform__caption {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.68px;
+  }
+
+  /* Hide pattern on mobile — too small to be meaningful */
+  .servicepage-why-choose-native-cross-platform__pattern {
+    width: 102px;
+    height: 95px;
+    right: 12px;
+    top: 52px;
+  }
+}
+
+/* ===== Decorative pattern float ===== */
+
+@keyframes sp-wc-ncp-pattern-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+
+.servicepage-why-choose-native-cross-platform__pattern {
+  animation: sp-wc-ncp-pattern-float 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicepage-why-choose-native-cross-platform__pattern { animation: none; }
+}

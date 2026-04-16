@@ -1,0 +1,212 @@
+/* ===== WhyChooseRealWorld Section ===== */
+
+/* Section root — full width */
+.servicepage-why-choose-real-world {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-real-world-section-gap);
+  padding: var(--servicepage-why-choose-real-world-padding-y) var(--servicepage-why-choose-real-world-padding-x);
+  width: 100%;
+  position: relative;
+  background-color: var(--servicepage-why-choose-real-world-bg);
+}
+
+/* Inner content-container for max-width */
+.servicepage-why-choose-real-world__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--servicepage-why-choose-real-world-section-gap);
+  width: 100%;
+}
+
+/* ===== Left — Heading area ===== */
+.servicepage-why-choose-real-world__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-real-world-heading-gap);
+  padding: var(--servicepage-why-choose-real-world-heading-padding);
+  flex: 1 0 0;
+  min-width: 1px;
+  min-height: 1px;
+  position: relative;
+}
+
+/* Decorative code pattern */
+.servicepage-why-choose-real-world__pattern {
+  position: absolute;
+  pointer-events: none;
+  opacity: var(--servicepage-why-choose-real-world-pattern-opacity);
+  /* Desktop positioning from Figma insets: -15.45% 46.49% 57.14% 21.06% */
+  top: -15.45%;
+  right: 46.49%;
+  bottom: 57.14%;
+  left: 21.06%;
+  z-index: 0;
+}
+
+.servicepage-why-choose-real-world__pattern img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Caption label */
+.servicepage-why-choose-real-world__caption {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-real-world-caption-weight);
+  font-size: var(--servicepage-why-choose-real-world-caption-size);
+  line-height: var(--servicepage-why-choose-real-world-caption-line-height);
+  letter-spacing: var(--servicepage-why-choose-real-world-caption-letter-spacing);
+  color: var(--servicepage-why-choose-real-world-accent);
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main heading (H4) */
+.servicepage-why-choose-real-world__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-real-world-h4-weight);
+  font-size: var(--servicepage-why-choose-real-world-h4-size);
+  line-height: var(--servicepage-why-choose-real-world-h4-line-height);
+  letter-spacing: var(--servicepage-why-choose-real-world-h4-letter-spacing);
+  color: var(--servicepage-why-choose-real-world-foreground);
+  max-width: var(--servicepage-why-choose-real-world-h4-max-width);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Body text */
+.servicepage-why-choose-real-world__body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-real-world-body-weight);
+  font-size: var(--servicepage-why-choose-real-world-body-size);
+  line-height: var(--servicepage-why-choose-real-world-body-line-height);
+  color: var(--servicepage-why-choose-real-world-text-tertiary);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.servicepage-why-choose-real-world__body p {
+  margin: 0;
+}
+
+/* ===== Right — Image area ===== */
+.servicepage-why-choose-real-world__image-wrapper {
+  flex: 1 0 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.servicepage-why-choose-real-world__image-container {
+  position: relative;
+  flex: 1 0 0;
+  height: 100%;
+  min-height: 1px;
+  min-width: 1px;
+  border-radius: var(--servicepage-why-choose-real-world-img-radius);
+  overflow: hidden;
+}
+
+.servicepage-why-choose-real-world__image-container img {
+  object-fit: cover;
+  border-radius: var(--servicepage-why-choose-real-world-img-radius);
+  pointer-events: none;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  .servicepage-why-choose-real-world__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicepage-why-choose-real-world__heading {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-real-world__image-wrapper {
+    flex: none;
+    width: 100%;
+    align-self: auto;
+  }
+
+  .servicepage-why-choose-real-world__image-container {
+    flex: none;
+    width: 100%;
+    height: var(--servicepage-why-choose-real-world-img-height);
+  }
+
+  /* Adjust pattern positioning for tablet */
+  .servicepage-why-choose-real-world__pattern {
+    top: -16.66%;
+    right: 46.49%;
+    bottom: 54.77%;
+    left: 21.06%;
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  .servicepage-why-choose-real-world {
+    --servicepage-why-choose-real-world-padding-x: 20px;
+    --servicepage-why-choose-real-world-h4-size: 24px;
+  }
+
+  .servicepage-why-choose-real-world__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicepage-why-choose-real-world__heading {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-real-world__image-wrapper {
+    flex: none;
+    width: 100%;
+    align-self: auto;
+  }
+
+  .servicepage-why-choose-real-world__image-container {
+    flex: none;
+    width: 100%;
+    height: var(--servicepage-why-choose-real-world-img-height);
+  }
+
+  /* Adjust pattern positioning for mobile */
+  .servicepage-why-choose-real-world__pattern {
+    top: -0.17%;
+    right: 46.49%;
+    bottom: 74.01%;
+    left: 21.06%;
+  }
+}
+
+/* ===== Decorative pattern float ===== */
+
+@keyframes sp-wc-rw-pattern-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+
+.servicepage-why-choose-real-world__pattern {
+  animation: sp-wc-rw-pattern-float 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicepage-why-choose-real-world__pattern { animation: none; }
+}

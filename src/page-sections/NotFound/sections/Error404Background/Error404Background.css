@@ -1,0 +1,76 @@
+/* ===== Error404Background — Desktop-first ===== */
+
+.notfound-error404background {
+  position: relative;
+  width: 100%;
+  background-color: var(--notfound-error404background-bg);
+  overflow: hidden;
+}
+
+.notfound-error404background__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ---------- SVG image wrappers ---------- */
+
+.notfound-error404background__image {
+  width: 100%;
+  height: auto;
+}
+
+.notfound-error404background__image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Show desktop, hide tablet/mobile by default */
+.notfound-error404background__image--desktop {
+  display: block;
+}
+
+.notfound-error404background__image--tablet {
+  display: none;
+}
+
+.notfound-error404background__image--mobile {
+  display: none;
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .notfound-error404background__image--desktop {
+    display: none;
+  }
+
+  .notfound-error404background__image--tablet {
+    display: block;
+  }
+
+  .notfound-error404background__image--mobile {
+    display: none;
+  }
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .notfound-error404background__image--desktop {
+    display: none;
+  }
+
+  .notfound-error404background__image--tablet {
+    display: none;
+  }
+
+  .notfound-error404background__image--mobile {
+    display: block;
+  }
+}

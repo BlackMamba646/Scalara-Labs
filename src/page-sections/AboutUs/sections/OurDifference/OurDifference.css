@@ -1,0 +1,493 @@
+/* ===== OurDifference Section ===== */
+
+/* Section wrapper */
+.aboutus-our-difference {
+  width: 100%;
+  background-color: var(--aboutus-our-difference-bg);
+  position: relative;
+}
+
+.aboutus-our-difference__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-our-difference-section-gap);
+  padding: var(--aboutus-our-difference-section-padding-y) var(--aboutus-our-difference-section-padding-x);
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Heading area ===== */
+.aboutus-our-difference__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-our-difference-heading-gap);
+  padding-top: var(--aboutus-our-difference-heading-pt);
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 100%;
+  position: relative;
+}
+
+/* Decorative pattern container */
+.aboutus-our-difference__pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.aboutus-our-difference__pattern-item {
+  position: absolute;
+  opacity: 0.9;
+}
+
+.aboutus-our-difference__pattern-item--group15 {
+  width: 163px;
+  height: 152px;
+  top: calc(50% - 14.57px);
+  left: calc(50% + 427.28px);
+  transform: translate(-50%, -50%);
+  animation: od-drift-a 20s ease-in-out infinite;
+}
+
+.aboutus-our-difference__pattern-item--group14 {
+  width: 163px;
+  height: 152px;
+  top: calc(50% + 89.42px);
+  left: calc(50% - 79.71px);
+  transform: translate(-50%, -50%);
+  animation: od-drift-b 16s ease-in-out infinite;
+}
+
+.aboutus-our-difference__pattern-item--code {
+  width: 214px;
+  height: 200px;
+  top: calc(50% - 64.5px);
+  left: calc(50% - 399.92px);
+  transform: translate(-50%, -50%);
+  animation: od-drift-a 24s ease-in-out infinite;
+  animation-delay: -8s;
+}
+
+@keyframes od-drift-a {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(10px); }
+}
+
+@keyframes od-drift-b {
+  0%, 100% { transform: translate(-50%, -50%) translateX(0); }
+  50% { transform: translate(-50%, -50%) translateX(-8px); }
+}
+
+.aboutus-our-difference__pattern-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Caption label ("OUR DIFFERENCE") */
+.aboutus-our-difference__caption {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-caption-weight);
+  font-size: var(--aboutus-our-difference-caption-size);
+  line-height: var(--aboutus-our-difference-caption-line-height);
+  letter-spacing: var(--aboutus-our-difference-caption-letter-spacing);
+  color: var(--aboutus-our-difference-accent);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Main heading */
+.aboutus-our-difference__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-h3-weight);
+  font-size: var(--aboutus-our-difference-h3-size);
+  line-height: var(--aboutus-our-difference-h3-line-height);
+  letter-spacing: var(--aboutus-our-difference-h3-letter-spacing);
+  color: var(--aboutus-our-difference-foreground);
+  text-align: center;
+  max-width: var(--aboutus-our-difference-heading-max-width);
+  width: 100%;
+  position: relative;
+}
+
+/* Avatars CTA area */
+.aboutus-our-difference__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--aboutus-our-difference-cta-max-width);
+  width: 100%;
+  padding: var(--aboutus-our-difference-content-gap) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Avatar group */
+.aboutus-our-difference__avatars {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--aboutus-our-difference-surface-container);
+  border-radius: 999px;
+  overflow: hidden;
+  padding-right: 2px;
+}
+
+.aboutus-our-difference__avatar {
+  width: var(--aboutus-our-difference-avatar-size);
+  height: var(--aboutus-our-difference-avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: -2px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Subtitle text */
+.aboutus-our-difference__subtitle {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-body-weight);
+  font-size: var(--aboutus-our-difference-body-size);
+  line-height: var(--aboutus-our-difference-body-line-height);
+  color: var(--aboutus-our-difference-text-tertiary);
+  text-align: center;
+  max-width: var(--aboutus-our-difference-subtitle-max-width);
+  width: 100%;
+  position: relative;
+}
+
+/* ===== Content container (two columns on desktop) ===== */
+.aboutus-our-difference__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--aboutus-our-difference-container-gap);
+  width: 100%;
+}
+
+/* ===== Left card ===== */
+.aboutus-our-difference__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-our-difference-card-gap);
+  align-items: flex-start;
+  max-width: var(--aboutus-our-difference-card-max-width);
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  padding: var(--aboutus-our-difference-content-gap) 0;
+  flex: 1 0 0;
+}
+
+/* Icon box */
+.aboutus-our-difference__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--aboutus-our-difference-icon-padding);
+  background-color: var(--aboutus-our-difference-on-surface);
+  border-radius: var(--aboutus-our-difference-icon-radius);
+  flex-shrink: 0;
+}
+
+.aboutus-our-difference__icon-box img {
+  width: var(--aboutus-our-difference-icon-size);
+  height: var(--aboutus-our-difference-icon-size);
+  display: block;
+}
+
+/* Card text block */
+.aboutus-our-difference__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-our-difference-text-gap);
+  align-items: flex-start;
+  width: 100%;
+  padding-top: var(--aboutus-our-difference-card-text-pt);
+  border-top: 1px solid var(--aboutus-our-difference-surface-container);
+  line-height: var(--aboutus-our-difference-body-line-height);
+}
+
+.aboutus-our-difference__card-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-quote-weight);
+  font-size: var(--aboutus-our-difference-quote-size);
+  line-height: var(--aboutus-our-difference-quote-line-height);
+  letter-spacing: var(--aboutus-our-difference-quote-letter-spacing);
+  color: var(--aboutus-our-difference-accent);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.aboutus-our-difference__card-body {
+  font-family: 'Results Letter', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: var(--aboutus-our-difference-accent-body-size);
+  line-height: var(--aboutus-our-difference-body-line-height);
+  letter-spacing: var(--aboutus-our-difference-accent-body-letter-spacing);
+  color: var(--aboutus-our-difference-text-tertiary);
+  width: 100%;
+}
+
+/* ===== Right content area ===== */
+.aboutus-our-difference__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-our-difference-content-gap);
+  max-width: var(--aboutus-our-difference-content-max-width);
+  width: 700px;
+  padding: var(--aboutus-our-difference-content-gap) 34px var(--aboutus-our-difference-card-gap) 34px;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* "We started with engineering" block */
+.aboutus-our-difference__engineering-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-our-difference-content-gap);
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: var(--aboutus-our-difference-content-pb);
+  line-height: var(--aboutus-our-difference-body-line-height);
+}
+
+.aboutus-our-difference__engineering-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-quote-weight);
+  font-size: var(--aboutus-our-difference-quote-size);
+  line-height: var(--aboutus-our-difference-quote-line-height);
+  letter-spacing: var(--aboutus-our-difference-quote-letter-spacing);
+  color: var(--aboutus-our-difference-text-secondary);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.aboutus-our-difference__engineering-body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-body-weight);
+  font-size: var(--aboutus-our-difference-body-size);
+  line-height: var(--aboutus-our-difference-body-line-height);
+  color: var(--aboutus-our-difference-text-tertiary);
+  width: 100%;
+}
+
+/* "Our belief was simple" label */
+.aboutus-our-difference__belief-caption {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-caption-weight);
+  font-size: var(--aboutus-our-difference-caption-size);
+  line-height: var(--aboutus-our-difference-caption-line-height);
+  letter-spacing: var(--aboutus-our-difference-caption-letter-spacing);
+  color: var(--aboutus-our-difference-accent);
+  text-transform: uppercase;
+  max-width: var(--aboutus-our-difference-content-max-width);
+  width: 100%;
+}
+
+/* "High-level engineering..." quote */
+.aboutus-our-difference__belief-quote {
+  font-family: 'Results Letter', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: var(--aboutus-our-difference-h5-size);
+  line-height: var(--aboutus-our-difference-h5-line-height);
+  color: var(--aboutus-our-difference-foreground);
+  max-width: var(--aboutus-our-difference-content-max-width);
+  width: 100%;
+}
+
+/* "That is why we built Scalara Labs." */
+.aboutus-our-difference__belief-statement {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-body-weight);
+  font-size: var(--aboutus-our-difference-body-size);
+  line-height: var(--aboutus-our-difference-body-line-height);
+  color: var(--aboutus-our-difference-foreground);
+  max-width: var(--aboutus-our-difference-content-max-width);
+  width: 100%;
+}
+
+/* Bottom text paragraphs */
+.aboutus-our-difference__closing-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--aboutus-our-difference-content-gap);
+  align-items: flex-start;
+  width: 100%;
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--aboutus-our-difference-body-weight);
+  font-size: var(--aboutus-our-difference-body-size);
+  line-height: var(--aboutus-our-difference-body-line-height);
+  color: var(--aboutus-our-difference-text-tertiary);
+}
+
+.aboutus-our-difference__closing-text p {
+  width: 100%;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  .aboutus-our-difference__heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Stack the container vertically */
+  .aboutus-our-difference__container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--aboutus-our-difference-container-gap);
+  }
+
+  .aboutus-our-difference__card {
+    max-width: none;
+    width: 100%;
+    flex: none;
+  }
+
+  .aboutus-our-difference__card-text {
+    padding-top: 40px;
+  }
+
+  .aboutus-our-difference__content {
+    width: 100%;
+    max-width: var(--aboutus-our-difference-content-max-width);
+    padding: 0;
+  }
+
+  .aboutus-our-difference__belief-quote {
+    font-size: 24px;
+  }
+
+  /* Pattern adjustments for tablet */
+  .aboutus-our-difference__pattern-item--group15 {
+    left: calc(50% + 265.28px);
+    top: calc(50% - 59.64px);
+  }
+
+  .aboutus-our-difference__pattern-item--group14 {
+    width: 128px;
+    height: 120px;
+    left: calc(50% - 88.76px);
+    top: calc(50% + 78.43px);
+  }
+
+  .aboutus-our-difference__pattern-item--code {
+    width: 193px;
+    height: 180px;
+    left: calc(50% - 354.63px);
+    top: calc(50% - 69.57px);
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  .aboutus-our-difference__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .aboutus-our-difference__heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Stack the container vertically */
+  .aboutus-our-difference__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutus-our-difference__card {
+    max-width: none;
+    width: 100%;
+  }
+
+  .aboutus-our-difference__card-text {
+    padding-top: 40px;
+  }
+
+  .aboutus-our-difference__content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .aboutus-our-difference__caption {
+    font-size: 14px;
+  }
+
+  .aboutus-our-difference__title {
+    font-size: 26px;
+  }
+
+  .aboutus-our-difference__card-title {
+    font-size: 16px;
+  }
+
+  .aboutus-our-difference__engineering-title {
+    font-size: 16px;
+  }
+
+  .aboutus-our-difference__belief-caption {
+    font-size: 14px;
+  }
+
+  /* Quote text shrinks on mobile */
+  .aboutus-our-difference__belief-quote {
+    font-size: 20px;
+  }
+
+  /* Pattern adjustments for mobile */
+  .aboutus-our-difference__pattern-item--group15 {
+    width: 96px;
+    height: 90px;
+    left: calc(50% + 124.17px);
+    top: calc(50% - 162px);
+  }
+
+  .aboutus-our-difference__pattern-item--group14 {
+    width: 96px;
+    height: 90px;
+    left: calc(50% - 42.82px);
+    top: calc(50% + 23px);
+  }
+
+  .aboutus-our-difference__pattern-item--code {
+    width: 193px;
+    height: 180px;
+    left: calc(50% - 178.63px);
+    top: calc(50% - 69px);
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutus-our-difference__pattern-item--group15,
+  .aboutus-our-difference__pattern-item--group14,
+  .aboutus-our-difference__pattern-item--code {
+    animation: none;
+  }
+}

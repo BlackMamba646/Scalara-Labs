@@ -1,0 +1,345 @@
+/* CtaSection — Desktop-first styles */
+
+.servicespageslisting-cta-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-section-gap);
+  padding-top: var(--servicespageslisting-cta-section-padding-top);
+  padding-bottom: var(--servicespageslisting-cta-section-padding-bottom);
+  background-color: var(--servicespageslisting-cta-section-bg);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ——— Content inner container ——— */
+.servicespageslisting-cta-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-section-gap);
+  padding-left: var(--servicespageslisting-cta-section-padding-x);
+  padding-right: var(--servicespageslisting-cta-section-padding-x);
+}
+
+/* ——— Bottom overlay (decorative) ——— */
+.servicespageslisting-cta-section__bottom-overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 599px;
+  height: 163px;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.servicespageslisting-cta-section__bottom-overlay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ——— Heading block ——— */
+.servicespageslisting-cta-section__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-heading-gap);
+  padding-top: var(--servicespageslisting-cta-section-heading-padding-top);
+  padding-left: var(--servicespageslisting-cta-section-heading-padding-x);
+  padding-right: var(--servicespageslisting-cta-section-heading-padding-x);
+  position: relative;
+  width: 100%;
+}
+
+/* Caption / label */
+.servicespageslisting-cta-section__caption {
+  font-family: var(--servicespageslisting-cta-section-caption-font-family);
+  font-size: var(--servicespageslisting-cta-section-caption-font-size);
+  font-weight: var(--servicespageslisting-cta-section-caption-font-weight);
+  line-height: var(--servicespageslisting-cta-section-caption-line-height);
+  letter-spacing: var(--servicespageslisting-cta-section-caption-letter-spacing);
+  color: var(--servicespageslisting-cta-section-accent);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* Display heading (h2) */
+.servicespageslisting-cta-section__title {
+  font-family: var(--servicespageslisting-cta-section-heading-font-family);
+  font-size: var(--servicespageslisting-cta-section-heading-font-size);
+  font-weight: 100;
+  font-style: normal;
+  line-height: var(--servicespageslisting-cta-section-heading-line-height);
+  color: var(--servicespageslisting-cta-section-text-primary);
+  text-align: center;
+  width: 100%;
+}
+
+/* Body description */
+.servicespageslisting-cta-section__description {
+  font-family: var(--servicespageslisting-cta-section-body-font-family);
+  font-size: var(--servicespageslisting-cta-section-body-font-size);
+  font-weight: var(--servicespageslisting-cta-section-body-font-weight);
+  line-height: var(--servicespageslisting-cta-section-body-line-height);
+  color: var(--servicespageslisting-cta-section-text-tertiary);
+  text-align: center;
+  max-width: var(--servicespageslisting-cta-section-body-max-width);
+}
+
+/* ——— Decorative patterns ——— */
+.servicespageslisting-cta-section__patterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.servicespageslisting-cta-section__pattern {
+  position: absolute;
+  opacity: var(--servicespageslisting-cta-section-pattern-opacity);
+}
+
+.servicespageslisting-cta-section__pattern img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-cta-section__pattern--group15 {
+  width: 157.78px;
+  height: 151.86px;
+  top: calc(50% - 32.07px);
+  left: calc(50% + 393.89px);
+  transform: translate(-50%, -50%);
+}
+
+.servicespageslisting-cta-section__pattern--group14 {
+  width: 157.8px;
+  height: 151.84px;
+  top: calc(50% + 129.92px);
+  left: calc(50% - 363.16px);
+  transform: translate(-50%, -50%);
+}
+
+.servicespageslisting-cta-section__pattern--code {
+  width: 196px;
+  height: 188.59px;
+  top: calc(50% - 65px);
+  left: calc(50% - 40.3px);
+  transform: translate(-50%, -50%);
+}
+
+.servicespageslisting-cta-section__pattern--config {
+  width: 119.3px;
+  height: 122.97px;
+  top: calc(50% - 39.51px);
+  left: calc(50% - 343.59px);
+  transform: translate(-50%, -50%);
+}
+
+/* ——— Row: CTA button + trust badges ——— */
+.servicespageslisting-cta-section__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-row-gap);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Primary button */
+.servicespageslisting-cta-section__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-btn-gap);
+  padding: var(--servicespageslisting-cta-section-btn-padding-y) var(--servicespageslisting-cta-section-btn-padding-x);
+  background-color: var(--servicespageslisting-cta-section-btn-bg);
+  border: none;
+  border-radius: var(--servicespageslisting-cta-section-btn-radius);
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.servicespageslisting-cta-section__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.servicespageslisting-cta-section__btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicespageslisting-cta-section__btn-text {
+  font-family: var(--servicespageslisting-cta-section-btn-font-family);
+  font-size: var(--servicespageslisting-cta-section-btn-font-size);
+  font-weight: var(--servicespageslisting-cta-section-btn-font-weight);
+  line-height: var(--servicespageslisting-cta-section-btn-line-height);
+  letter-spacing: var(--servicespageslisting-cta-section-btn-letter-spacing);
+  color: var(--servicespageslisting-cta-section-btn-text);
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.servicespageslisting-cta-section__btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: var(--servicespageslisting-cta-section-arrow-opacity);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-cta-section__btn-arrow img {
+  display: block;
+  width: var(--servicespageslisting-cta-section-arrow-size);
+  height: var(--servicespageslisting-cta-section-arrow-size);
+}
+
+/* ——— Trust badges ——— */
+.servicespageslisting-cta-section__badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-badges-gap);
+  width: 100%;
+}
+
+.servicespageslisting-cta-section__badges-label {
+  font-family: var(--servicespageslisting-cta-section-body-font-family);
+  font-size: var(--servicespageslisting-cta-section-badges-label-font-size);
+  font-weight: var(--servicespageslisting-cta-section-body-font-weight);
+  line-height: var(--servicespageslisting-cta-section-badges-label-line-height);
+  color: var(--servicespageslisting-cta-section-text-tertiary);
+  opacity: var(--servicespageslisting-cta-section-badges-label-opacity);
+  text-align: center;
+  width: 100%;
+}
+
+.servicespageslisting-cta-section__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-cta-section-logos-gap);
+}
+
+.servicespageslisting-cta-section__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.servicespageslisting-cta-section__logo img {
+  display: block;
+  height: var(--servicespageslisting-cta-section-logo-height);
+  width: auto;
+}
+
+/* Logo hover */
+.servicespageslisting-cta-section__logo {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.servicespageslisting-cta-section__logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* z-index for heading content above patterns */
+.servicespageslisting-cta-section__heading {
+  z-index: 1;
+}
+
+/* ——— Decorative pattern drift keyframes ——— */
+
+@keyframes spl-cta-drift-a {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(8px); }
+}
+
+@keyframes spl-cta-drift-b {
+  0%, 100% { transform: translate(-50%, -50%) translateX(0); }
+  50% { transform: translate(-50%, -50%) translateX(-6px); }
+}
+
+.servicespageslisting-cta-section__pattern--group15 {
+  animation: spl-cta-drift-a 20s ease-in-out infinite;
+}
+
+.servicespageslisting-cta-section__pattern--group14 {
+  animation: spl-cta-drift-b 16s ease-in-out infinite;
+}
+
+.servicespageslisting-cta-section__pattern--code {
+  animation: spl-cta-drift-a 24s ease-in-out infinite;
+  animation-delay: -8s;
+}
+
+.servicespageslisting-cta-section__pattern--config {
+  animation: spl-cta-drift-b 18s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1023px) {
+  .servicespageslisting-cta-section__pattern--group15,
+  .servicespageslisting-cta-section__pattern--group14,
+  .servicespageslisting-cta-section__pattern--code,
+  .servicespageslisting-cta-section__pattern--config {
+    display: none;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  .servicespageslisting-cta-section__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .servicespageslisting-cta-section__caption {
+    font-size: 10px;
+  }
+
+  .servicespageslisting-cta-section__title {
+    font-size: 38px;
+  }
+
+  .servicespageslisting-cta-section__description {
+    font-size: 14px;
+  }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .servicespageslisting-cta-section__pattern--group15,
+  .servicespageslisting-cta-section__pattern--group14,
+  .servicespageslisting-cta-section__pattern--code,
+  .servicespageslisting-cta-section__pattern--config {
+    animation: none;
+  }
+
+  .servicespageslisting-cta-section__btn {
+    transition: none;
+  }
+
+  .servicespageslisting-cta-section__logo {
+    transition: none;
+  }
+}

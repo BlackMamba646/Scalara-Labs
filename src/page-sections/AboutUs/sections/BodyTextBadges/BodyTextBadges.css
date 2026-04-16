@@ -1,0 +1,175 @@
+/* BodyTextBadges — Desktop-first styles */
+
+.aboutus-body-text-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--aboutus-body-text-badges-bg);
+}
+
+.aboutus-body-text-badges__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--aboutus-body-text-badges-gap);
+  padding: var(--aboutus-body-text-badges-padding-y) var(--aboutus-body-text-badges-padding-x);
+  border-top: 1px solid var(--aboutus-body-text-badges-border-color);
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+}
+
+/* Body text container */
+.aboutus-body-text-badges__text-container {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 0;
+  max-width: var(--aboutus-body-text-badges-text-container-max-width);
+}
+
+.aboutus-body-text-badges__text {
+  flex: 1 0 0;
+  max-width: var(--aboutus-body-text-badges-text-max-width);
+  font-family: var(--aboutus-body-text-badges-body-font-family);
+  font-size: var(--aboutus-body-text-badges-body-font-size);
+  font-weight: var(--aboutus-body-text-badges-body-font-weight);
+  line-height: var(--aboutus-body-text-badges-body-line-height);
+  color: var(--aboutus-body-text-badges-text-color);
+}
+
+/* Trust badges container */
+.aboutus-body-text-badges__badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--aboutus-body-text-badges-badges-gap);
+  flex-shrink: 0;
+}
+
+.aboutus-body-text-badges__badges-label {
+  font-family: var(--aboutus-body-text-badges-body-font-family);
+  font-size: var(--aboutus-body-text-badges-label-font-size);
+  font-weight: var(--aboutus-body-text-badges-body-font-weight);
+  line-height: var(--aboutus-body-text-badges-label-line-height);
+  color: var(--aboutus-body-text-badges-text-color);
+  width: 100%;
+}
+
+/* Logos row */
+.aboutus-body-text-badges__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aboutus-body-text-badges-logos-gap);
+}
+
+/* Individual logo items */
+.aboutus-body-text-badges__logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-body-text-badges__logo img {
+  display: block;
+}
+
+.aboutus-body-text-badges__logo--docker img {
+  width: 30.427px;
+  height: 24px;
+}
+
+.aboutus-body-text-badges__logo--google-cloud img {
+  width: 24.836px;
+  height: 20px;
+}
+
+.aboutus-body-text-badges__logo--langgraph img {
+  width: 39.193px;
+  height: 20px;
+}
+
+.aboutus-body-text-badges__logo--angular img {
+  width: 18.893px;
+  height: 20px;
+}
+
+.aboutus-body-text-badges__logo--flutter img {
+  width: 16.159px;
+  height: 17.693px;
+}
+
+.aboutus-body-text-badges__logo--nextjs img {
+  width: 69px;
+  height: 14px;
+}
+
+.aboutus-body-text-badges__logo--react img {
+  width: 22px;
+  height: 20px;
+}
+
+.aboutus-body-text-badges__logo--spring-boot img {
+  width: 20px;
+  height: 20px;
+}
+
+.aboutus-body-text-badges__logo--aws img {
+  width: 33px;
+  height: 20px;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1023px) {
+  .aboutus-body-text-badges__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 34px 40px;
+  }
+
+  .aboutus-body-text-badges__text-container {
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .aboutus-body-text-badges__text {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .aboutus-body-text-badges__badges {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutus-body-text-badges__badges-label {
+    text-align: center;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  .aboutus-body-text-badges__inner {
+    padding: 34px 20px;
+  }
+
+  .aboutus-body-text-badges__badges {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .aboutus-body-text-badges__logos {
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .aboutus-body-text-badges__logo {
+    flex-shrink: 1;
+  }
+}

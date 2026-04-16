@@ -1,0 +1,83 @@
+/* ===== BlogPostHero — Desktop-first ===== */
+
+.blogpostpage-blog-post-hero {
+  width: 100%;
+  padding-top: var(--header-height, 54px);
+  background-color: var(--blogpostpage-blog-post-hero-bg);
+}
+
+/* ---- Text content area ---- */
+
+.blogpostpage-blog-post-hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--blogpostpage-blog-post-hero-content-padding-y) var(--blogpostpage-blog-post-hero-content-padding-x);
+}
+
+.blogpostpage-blog-post-hero__heading {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: var(--blogpostpage-blog-post-hero-heading-gap);
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: var(--blogpostpage-blog-post-hero-heading-pt);
+  border-radius: 40px;
+}
+
+/* ---- Author meta ---- */
+
+.blogpostpage-blog-post-hero__meta {
+  width: 100%;
+  font-family: var(--blogpostpage-blog-post-hero-meta-font);
+  font-size: var(--blogpostpage-blog-post-hero-meta-size);
+  line-height: var(--blogpostpage-blog-post-hero-meta-line-height);
+  letter-spacing: var(--blogpostpage-blog-post-hero-meta-tracking);
+  text-transform: uppercase;
+  color: var(--blogpostpage-blog-post-hero-text-primary);
+}
+
+.blogpostpage-blog-post-hero__meta-author {
+  font-weight: var(--blogpostpage-blog-post-hero-meta-weight-light);
+  text-transform: capitalize;
+}
+
+.blogpostpage-blog-post-hero__meta-date {
+  font-weight: var(--blogpostpage-blog-post-hero-meta-weight-semibold);
+  color: var(--blogpostpage-blog-post-hero-text-accent);
+  letter-spacing: var(--blogpostpage-blog-post-hero-meta-tracking-accent);
+}
+
+/* ---- Display heading (title) ---- */
+
+.blogpostpage-blog-post-hero__display-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: var(--blogpostpage-blog-post-hero-display-heading-pb);
+}
+
+.blogpostpage-blog-post-hero__title {
+  width: 100%;
+  font-family: var(--blogpostpage-blog-post-hero-title-font);
+  font-size: var(--blogpostpage-blog-post-hero-title-size);
+  font-weight: var(--blogpostpage-blog-post-hero-title-weight);
+  font-style: normal;
+  line-height: var(--blogpostpage-blog-post-hero-title-line-height);
+  color: var(--blogpostpage-blog-post-hero-text-primary);
+}
+
+/* ---- Hero image ---- */
+
+.blogpostpage-blog-post-hero__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: var(--blogpostpage-blog-post-hero-image-height);
+}
+
+.blogpostpage-blog-post-hero__image {
+  object-fit: cover;
+}

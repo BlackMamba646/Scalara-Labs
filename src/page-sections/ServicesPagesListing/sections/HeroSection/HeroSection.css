@@ -1,0 +1,328 @@
+/* ===== ServicesPagesListing HeroSection — Desktop-first ===== */
+
+.servicespageslisting-hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
+  padding-top: var(--header-height, 54px);
+  background-color: var(--servicespageslisting-hero-section-bg);
+}
+
+/* ---- Inner container ---- */
+
+.servicespageslisting-hero-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Hero graphic (Desktop — absolute positioned) ---- */
+
+.servicespageslisting-hero-section__graphic {
+  position: absolute;
+  z-index: 0;
+  top: var(--servicespageslisting-hero-section-graphic-top);
+  right: 0;
+  width: var(--servicespageslisting-hero-section-graphic-width);
+  height: var(--servicespageslisting-hero-section-graphic-height);
+  pointer-events: none;
+  opacity: 0;
+  animation: spl-hero-graphic-fade 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s forwards;
+}
+
+@keyframes spl-hero-graphic-fade {
+  to { opacity: 1; }
+}
+
+.servicespageslisting-hero-section__graphic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---- Content area ---- */
+
+.servicespageslisting-hero-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--servicespageslisting-hero-section-content-gap);
+  align-items: var(--servicespageslisting-hero-section-align-items);
+  width: 100%;
+  padding: var(--servicespageslisting-hero-section-content-padding);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Trust badges ---- */
+
+.servicespageslisting-hero-section__badges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--servicespageslisting-hero-section-badges-gap);
+  align-items: var(--servicespageslisting-hero-section-align-items);
+}
+
+.servicespageslisting-hero-section__badges-label {
+  font-family: var(--servicespageslisting-hero-section-body-font);
+  font-weight: var(--servicespageslisting-hero-section-body-weight);
+  font-size: var(--servicespageslisting-hero-section-badge-label-size);
+  line-height: var(--servicespageslisting-hero-section-badge-label-line-height);
+  color: var(--servicespageslisting-hero-section-text-tertiary);
+  text-align: var(--servicespageslisting-hero-section-text-align);
+}
+
+.servicespageslisting-hero-section__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicespageslisting-hero-section-logos-gap);
+}
+
+/* Individual logo containers */
+
+.servicespageslisting-hero-section__logo-docker {
+  width: var(--servicespageslisting-hero-section-logo-docker-w);
+  height: var(--servicespageslisting-hero-section-logo-docker-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-docker img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-google-cloud {
+  width: var(--servicespageslisting-hero-section-logo-google-cloud-w);
+  height: var(--servicespageslisting-hero-section-logo-google-cloud-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-google-cloud img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-langgraph {
+  width: var(--servicespageslisting-hero-section-logo-langgraph-w);
+  height: var(--servicespageslisting-hero-section-logo-langgraph-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-langgraph img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-angular {
+  width: var(--servicespageslisting-hero-section-logo-angular-w);
+  height: var(--servicespageslisting-hero-section-logo-angular-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-angular img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-flutter {
+  position: relative;
+  width: var(--servicespageslisting-hero-section-logo-flutter-w);
+  height: var(--servicespageslisting-hero-section-logo-flutter-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-flutter img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-react {
+  width: var(--servicespageslisting-hero-section-logo-react-w);
+  height: var(--servicespageslisting-hero-section-logo-react-h);
+  flex-shrink: 0;
+}
+
+.servicespageslisting-hero-section__logo-react img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-spring-boot {
+  width: var(--servicespageslisting-hero-section-logo-spring-boot-size);
+  height: var(--servicespageslisting-hero-section-logo-spring-boot-size);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.servicespageslisting-hero-section__logo-spring-boot img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicespageslisting-hero-section__logo-aws {
+  width: var(--servicespageslisting-hero-section-logo-aws-w);
+  height: var(--servicespageslisting-hero-section-logo-aws-h);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.servicespageslisting-hero-section__logo-aws img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Logo hover effects ---- */
+
+[class^="servicespageslisting-hero-section__logo-"] {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+[class^="servicespageslisting-hero-section__logo-"]:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ---- Display heading ---- */
+
+.servicespageslisting-hero-section__heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--servicespageslisting-hero-section-heading-gap);
+  align-items: var(--servicespageslisting-hero-section-align-items);
+  justify-content: center;
+  width: 100%;
+  padding-bottom: var(--servicespageslisting-hero-section-heading-pb);
+}
+
+.servicespageslisting-hero-section__h1 {
+  font-family: var(--servicespageslisting-hero-section-h1-font);
+  font-weight: var(--servicespageslisting-hero-section-h1-weight);
+  font-style: normal;
+  font-size: var(--servicespageslisting-hero-section-h1-size);
+  line-height: var(--servicespageslisting-hero-section-h1-line-height);
+  color: var(--servicespageslisting-hero-section-text-primary);
+  max-width: var(--servicespageslisting-hero-section-h1-max-width);
+  width: 100%;
+  text-align: var(--servicespageslisting-hero-section-text-align);
+}
+
+.servicespageslisting-hero-section__body {
+  font-family: var(--servicespageslisting-hero-section-body-font);
+  font-weight: var(--servicespageslisting-hero-section-body-weight);
+  font-size: var(--servicespageslisting-hero-section-body-size);
+  line-height: var(--servicespageslisting-hero-section-body-line-height);
+  color: var(--servicespageslisting-hero-section-text-tertiary);
+  max-width: var(--servicespageslisting-hero-section-body-max-width);
+  width: 100%;
+  text-align: var(--servicespageslisting-hero-section-text-align);
+}
+
+/* ---- Hero image (Tablet/Mobile — inline, below content) ---- */
+
+.servicespageslisting-hero-section__hero-image-inline {
+  display: none;
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .servicespageslisting-hero-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicespageslisting-hero-section__inner {
+    align-items: center;
+  }
+
+  .servicespageslisting-hero-section__content {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .servicespageslisting-hero-section__badges {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicespageslisting-hero-section__graphic {
+    display: none;
+  }
+
+  .servicespageslisting-hero-section__hero-image-inline {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 908px;
+    flex-shrink: 0;
+  }
+
+  .servicespageslisting-hero-section__hero-image-inline img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .servicespageslisting-hero-section__inner {
+    align-items: center;
+  }
+
+  .servicespageslisting-hero-section__content {
+    align-items: flex-start;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    max-width: 360px;
+  }
+
+  .servicespageslisting-hero-section__badges {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .servicespageslisting-hero-section__logos {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .servicespageslisting-hero-section__logo-langgraph {
+    display: none;
+  }
+
+  .servicespageslisting-hero-section__hero-image-inline {
+    max-width: 660px;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .servicespageslisting-hero-section__graphic {
+    animation: none;
+    opacity: 1;
+  }
+
+  [class^="servicespageslisting-hero-section__logo-"] {
+    transition: none;
+  }
+}

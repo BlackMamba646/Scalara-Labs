@@ -1,0 +1,134 @@
+/* ===== NotFound Hero — Desktop-first ===== */
+
+.notfound-hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--header-height, 54px);
+  background-color: var(--notfound-hero-bg);
+}
+
+/* ---- Inner container ---- */
+
+.notfound-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--notfound-hero-content-gap);
+  padding-top: calc(var(--notfound-hero-padding-top) + var(--notfound-hero-content-padding-top));
+  padding-bottom: var(--notfound-hero-padding-bottom);
+  padding-left: var(--notfound-hero-padding-x);
+  padding-right: var(--notfound-hero-padding-x);
+}
+
+/* ---- Error 404 decorative image ---- */
+
+.notfound-hero__error-image {
+  width: var(--notfound-hero-error-image-width);
+  height: var(--notfound-hero-error-image-height);
+  flex-shrink: 0;
+}
+
+.notfound-hero__error-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Back to homepage button ---- */
+
+.notfound-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--notfound-hero-btn-gap);
+  padding: var(--notfound-hero-btn-padding-y) var(--notfound-hero-btn-padding-x);
+  border: 1px solid var(--notfound-hero-btn-border-color);
+  border-radius: var(--notfound-hero-btn-border-radius);
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease;
+}
+
+.notfound-hero__btn:hover {
+  border-color: rgba(255, 255, 255, 0.48);
+}
+
+.notfound-hero__btn-icon {
+  --fill-0: var(--notfound-hero-btn-text-color);
+  width: var(--notfound-hero-icon-size);
+  height: var(--notfound-hero-icon-size);
+  flex-shrink: 0;
+}
+
+.notfound-hero__btn-icon img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.notfound-hero__btn-text {
+  font-family: var(--notfound-hero-btn-font-family);
+  font-size: var(--notfound-hero-btn-font-size);
+  font-weight: var(--notfound-hero-btn-font-weight);
+  line-height: var(--notfound-hero-btn-line-height);
+  letter-spacing: var(--notfound-hero-btn-letter-spacing);
+  color: var(--notfound-hero-btn-text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* ---- Text block ---- */
+
+.notfound-hero__text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--notfound-hero-text-gap);
+  text-align: center;
+  width: 100%;
+}
+
+.notfound-hero__heading {
+  font-family: var(--notfound-hero-heading-font-family);
+  font-size: var(--notfound-hero-heading-font-size);
+  font-weight: var(--notfound-hero-heading-font-weight);
+  line-height: var(--notfound-hero-heading-line-height);
+  letter-spacing: var(--notfound-hero-heading-letter-spacing);
+  color: var(--notfound-hero-text-primary);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.notfound-hero__description {
+  font-family: var(--notfound-hero-body-font-family);
+  font-size: var(--notfound-hero-body-font-size);
+  font-weight: var(--notfound-hero-body-font-weight);
+  line-height: var(--notfound-hero-body-line-height);
+  color: var(--notfound-hero-text-tertiary);
+  width: 100%;
+}
+
+/* ============================================================
+   Tablet — max-width: 1023px
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  /* Design is identical at tablet — no overrides needed */
+}
+
+/* ============================================================
+   Mobile — max-width: 767px
+   ============================================================ */
+
+@media (max-width: 767px) {
+  /* Design is identical at mobile — no overrides needed */
+}

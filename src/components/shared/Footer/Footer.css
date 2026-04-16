@@ -1,0 +1,413 @@
+/* ===== FOOTER — Desktop-first ===== */
+
+.footer {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--footer-bg-surface) 40%, var(--footer-bg-on-surface));
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Logo row ---------- */
+.footer__logo-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--footer-section-pt) var(--footer-padding-x) 0;
+  background-color: var(--footer-bg-surface);
+}
+
+.footer__logo {
+  position: relative;
+  width: 163px;
+  height: 46px;
+  flex-shrink: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.footer__logo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42.45px;
+  height: 46px;
+}
+
+.footer__logo-scalara {
+  position: absolute;
+  top: 23.56%;
+  left: 30.99%;
+  width: 112.49px;
+  height: 14.59px;
+}
+
+.footer__logo-labs {
+  position: absolute;
+  top: 67.99%;
+  left: 31.03%;
+  width: 31.87px;
+  height: 6.32px;
+}
+
+/* ---------- Main content area — 4 columns on desktop ---------- */
+.footer__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0 var(--footer-padding-x);
+  gap: var(--footer-column-gap);
+}
+
+/* Site column — hidden on desktop */
+.footer__site-column {
+  display: none;
+}
+
+/* --- Col 1: Description + Social --- */
+.footer__description-col {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-contact-gap);
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: var(--footer-content-pt) 0 var(--footer-content-pb);
+}
+
+.footer__tagline {
+  font-family: var(--footer-font-body);
+  font-weight: 400;
+  font-size: var(--footer-body-normal-size);
+  line-height: 1.8;
+  color: var(--footer-text-terciary);
+  max-width: 400px;
+  min-width: 100%;
+}
+
+.footer__social-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: visible;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--footer-social-icon-size) + var(--footer-social-padding) * 2);
+  height: calc(var(--footer-social-icon-size) + var(--footer-social-padding) * 2);
+  padding: var(--footer-social-padding);
+  border-radius: 999px;
+  flex-shrink: 0;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.footer__social-icon {
+  width: var(--footer-social-icon-size);
+  height: var(--footer-social-icon-size);
+  flex-shrink: 0;
+  display: block;
+}
+
+/* --- Cols 2 & 3: Link columns --- */
+.footer__link-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-heading-gap);
+  align-items: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  padding: var(--footer-column-pt) var(--footer-column-pr) var(--footer-column-pb) var(--footer-column-pl);
+}
+
+.footer__column-title {
+  font-family: var(--footer-font-body);
+  font-weight: 700;
+  font-size: var(--footer-caption-small-size);
+  line-height: 1.8;
+  color: var(--footer-text-terciary);
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-link-gap);
+  align-items: flex-start;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.footer__link {
+  font-family: var(--footer-font-body);
+  font-weight: 400;
+  font-size: var(--footer-body-small-size);
+  line-height: 1.8;
+  color: var(--footer-text-terciary);
+  opacity: 0.6;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.footer__link--button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* --- Col 4: Contact info (desktop only) --- */
+.footer__contact-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Contact banner — hidden on desktop, shown on tablet/mobile */
+.footer__contact-col--banner {
+  display: none;
+}
+
+.footer__contact-col--inline {
+  flex: 1 0 0;
+  gap: var(--footer-contact-gap);
+  max-width: 400px;
+  min-height: 1px;
+  min-width: 1px;
+  padding: var(--footer-column-pt) var(--footer-padding-x) var(--footer-contact-gap);
+}
+
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-contact-info-gap);
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  color: var(--footer-text-primary);
+}
+
+.footer__phone {
+  font-family: var(--footer-font-body);
+  font-weight: 500;
+  font-size: var(--footer-caption-xs-size);
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__email {
+  font-family: var(--footer-font-headings);
+  font-weight: 400;
+  font-size: var(--footer-h5-size);
+  line-height: 1.2;
+  letter-spacing: -0.78px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- CTA Button --- */
+.footer__cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--footer-btn-gap);
+  padding: var(--footer-btn-padding-y) var(--footer-btn-padding-x);
+  background-color: var(--footer-btn-bg);
+  border-radius: var(--footer-btn-radius);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer__cta-button:hover {
+  opacity: 0.9;
+}
+
+.footer__cta-text {
+  font-family: var(--footer-font-body);
+  font-weight: 500;
+  font-size: var(--footer-caption-xs-size);
+  line-height: 1.4;
+  color: var(--footer-btn-text);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.footer__cta-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+
+/* ===================================================================
+   TABLET — max-width: 1023px
+   Contact info moves to top as blue banner.
+   Main area becomes: description (full width), then 3 columns
+   (Company, Services, Site). Policy links move to Site column.
+   =================================================================== */
+@media (max-width: 1023px) {
+  .footer {
+    background: var(--footer-bg-on-surface);
+  }
+
+  /* Show the contact banner at the top */
+  .footer__contact-col--banner {
+    display: flex;
+    width: 100%;
+    padding: 40px var(--footer-padding-x);
+    background-color: #4A9BF7;
+    gap: 24px;
+  }
+
+  .footer__contact-col--banner .footer__contact-info {
+    color: var(--footer-text-primary);
+  }
+
+  .footer__contact-col--banner .footer__cta-button {
+    background-color: var(--footer-bg-surface);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__contact-col--banner .footer__cta-text {
+    color: var(--footer-text-primary);
+  }
+
+  .footer__contact-col--banner .footer__cta-icon {
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+  }
+
+  /* Hide inline contact col */
+  .footer__contact-col--inline {
+    display: none;
+  }
+
+  /* Logo row */
+  .footer__logo-row {
+    background-color: transparent;
+    padding-top: var(--footer-section-pt);
+  }
+
+  /* Main area wraps */
+  .footer__main {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  /* Description takes full width */
+  .footer__description-col {
+    flex: 1 0 100%;
+    padding: var(--footer-content-pt) 0 var(--footer-content-pb);
+  }
+
+  /* Link columns share the row evenly */
+  .footer__link-column {
+    flex: 1 1 0;
+    padding: 40px 0;
+  }
+
+  /* Show Site column on tablet */
+  .footer__site-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--footer-heading-gap);
+    align-items: flex-start;
+    flex: 1 1 0;
+    padding: 40px 0;
+  }
+
+  .footer__site-column .footer__column-links {
+    padding-bottom: 20px;
+  }
+
+}
+
+/* ===================================================================
+   MOBILE — max-width: 767px
+   Contact at top (blue). Everything stacks vertically.
+   Company links go horizontal. Site column hidden.
+   Policy links return to bottom bar.
+   =================================================================== */
+@media (max-width: 767px) {
+  .footer__contact-col--banner {
+    padding: 30px 20px;
+  }
+
+  .footer__email {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
+
+  .footer__logo-row {
+    padding: 40px 20px 0;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .footer__description-col {
+    flex: none;
+    width: 100%;
+    padding: 40px 0 var(--footer-content-pb);
+  }
+
+  .footer__tagline {
+    font-size: 14px;
+  }
+
+  /* Link columns stack vertically */
+  .footer__link-column {
+    flex: none;
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  /* Company links go horizontal on mobile */
+  .footer__link-column--company .footer__column-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Hide Site column on mobile */
+  .footer__site-column {
+    display: none;
+  }
+
+}

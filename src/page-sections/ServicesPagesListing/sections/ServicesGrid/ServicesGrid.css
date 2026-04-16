@@ -1,0 +1,317 @@
+/* =============================================
+   ServicesPagesListing — ServicesGrid
+   Desktop-first with tablet/mobile overrides
+   ============================================= */
+
+/* ---------- SECTION ROOT ---------- */
+
+.servicespageslisting-services-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--servicespageslisting-services-grid-bg);
+  width: 100%;
+}
+
+.servicespageslisting-services-grid__inner {
+  padding: var(--servicespageslisting-services-grid-section-padding-y)
+    var(--servicespageslisting-services-grid-section-padding-x);
+}
+
+/* ---------- CARDS GRID ---------- */
+
+.servicespageslisting-services-grid__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--servicespageslisting-services-grid-row-gap);
+  width: 100%;
+}
+
+.servicespageslisting-services-grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  color: #8899B4;
+}
+
+/* ---------- CARD LINK ---------- */
+
+.servicespageslisting-services-grid__card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* ---------- CARD ---------- */
+
+.servicespageslisting-services-grid__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-radius: var(--servicespageslisting-services-grid-card-radius);
+  border: 1px solid var(--servicespageslisting-services-grid-stroke);
+  background-color: var(--servicespageslisting-services-grid-bg);
+  overflow: hidden;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ---------- CARD HOVER (dark state) ---------- */
+
+.servicespageslisting-services-grid__card:hover {
+  background-color: var(--servicespageslisting-services-grid-dark-bg);
+  border-color: transparent;
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__card-title {
+  color: var(--servicespageslisting-services-grid-dark-text-secondary);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__card-description {
+  color: var(--servicespageslisting-services-grid-dark-text-tertiary);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__card-actions {
+  background-color: var(--servicespageslisting-services-grid-dark-actions-bg);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__button-text {
+  color: var(--servicespageslisting-services-grid-dark-text-secondary);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__button-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ---------- CARD IMAGE AREA ---------- */
+
+.servicespageslisting-services-grid__card-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: var(--servicespageslisting-services-grid-img-height);
+  padding: var(--servicespageslisting-services-grid-img-padding-y)
+    var(--servicespageslisting-services-grid-img-padding-x);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.servicespageslisting-services-grid__card-img {
+  overflow: hidden;
+}
+
+.servicespageslisting-services-grid__card-img-element {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__card-img-element {
+  transform: scale(1.05);
+}
+
+/* ---------- TAG ITEMS (over image) ---------- */
+
+.servicespageslisting-services-grid__tags {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: var(--servicespageslisting-services-grid-tags-gap);
+  align-items: center;
+  width: 100%;
+  padding-top: var(--servicespageslisting-services-grid-tags-pt);
+  border-top: 1px solid var(--servicespageslisting-services-grid-img-tag-border);
+}
+
+.servicespageslisting-services-grid__tag-item {
+  display: flex;
+  gap: var(--servicespageslisting-services-grid-tag-item-gap);
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.servicespageslisting-services-grid__tag-dot {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 999px;
+}
+
+.servicespageslisting-services-grid__tag-dot-img {
+  width: var(--servicespageslisting-services-grid-dot-size);
+  height: var(--servicespageslisting-services-grid-dot-size);
+  display: block;
+  flex-shrink: 0;
+}
+
+.servicespageslisting-services-grid__tag-separator-img {
+  width: var(--servicespageslisting-services-grid-separator-size);
+  height: var(--servicespageslisting-services-grid-separator-size);
+  display: block;
+  flex-shrink: 0;
+}
+
+.servicespageslisting-services-grid__tag-label {
+  font-family: var(--servicespageslisting-services-grid-body-font);
+  font-weight: var(--servicespageslisting-services-grid-body-weight);
+  font-size: var(--servicespageslisting-services-grid-tag-size);
+  line-height: var(--servicespageslisting-services-grid-tag-line-height);
+  color: var(--servicespageslisting-services-grid-text-tertiary);
+  white-space: nowrap;
+}
+
+/* ---------- CARD CONTENT ---------- */
+
+.servicespageslisting-services-grid__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--servicespageslisting-services-grid-content-gap);
+  align-items: flex-start;
+  padding: var(--servicespageslisting-services-grid-content-padding);
+  line-height: var(--servicespageslisting-services-grid-body-line-height);
+  width: 100%;
+}
+
+.servicespageslisting-services-grid__card-title {
+  font-family: var(--servicespageslisting-services-grid-title-font);
+  font-weight: var(--servicespageslisting-services-grid-title-weight);
+  font-size: var(--servicespageslisting-services-grid-title-size);
+  line-height: var(--servicespageslisting-services-grid-title-line-height);
+  letter-spacing: var(--servicespageslisting-services-grid-title-letter-spacing);
+  text-transform: capitalize;
+  color: var(--servicespageslisting-services-grid-text-secondary);
+  width: 100%;
+  margin: 0;
+}
+
+.servicespageslisting-services-grid__card-description {
+  font-family: var(--servicespageslisting-services-grid-body-font);
+  font-weight: var(--servicespageslisting-services-grid-body-weight);
+  font-size: var(--servicespageslisting-services-grid-body-size);
+  line-height: var(--servicespageslisting-services-grid-body-line-height);
+  color: var(--servicespageslisting-services-grid-text-tertiary);
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- CARD ACTIONS ---------- */
+
+.servicespageslisting-services-grid__card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--servicespageslisting-services-grid-actions-padding);
+  background-color: var(--servicespageslisting-services-grid-actions-bg);
+  width: 100%;
+  margin-top: auto;
+}
+
+.servicespageslisting-services-grid__button {
+  display: flex;
+  gap: var(--servicespageslisting-services-grid-button-gap);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.servicespageslisting-services-grid__button-text {
+  font-family: var(--servicespageslisting-services-grid-body-font);
+  font-weight: var(--servicespageslisting-services-grid-body-weight);
+  font-size: var(--servicespageslisting-services-grid-button-size);
+  line-height: var(--servicespageslisting-services-grid-button-line-height);
+  color: var(--servicespageslisting-services-grid-text-secondary);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+
+.servicespageslisting-services-grid__button-icon {
+  width: var(--servicespageslisting-services-grid-caret-size);
+  height: var(--servicespageslisting-services-grid-caret-size);
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.servicespageslisting-services-grid__card:hover .servicespageslisting-services-grid__button-icon {
+  transform: translateX(4px);
+}
+
+/* =============================================
+   TABLET — max-width: 1023px
+   2-column grid. Gap changes to 8px.
+   ============================================= */
+
+@media (max-width: 1023px) {
+  .servicespageslisting-services-grid__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
+/* =============================================
+   MOBILE — max-width: 767px
+   Single column. Cards stacked vertically.
+   ============================================= */
+
+@media (max-width: 767px) {
+  .servicespageslisting-services-grid__inner {
+    padding: 40px 20px;
+  }
+
+  .servicespageslisting-services-grid__cards {
+    grid-template-columns: 1fr;
+    gap: var(--servicespageslisting-services-grid-row-gap);
+  }
+
+  .servicespageslisting-services-grid__card-title {
+    font-size: 16px;
+  }
+}
+
+/* ---------- STAGGER REVEAL GRID COMPAT ---------- */
+
+.servicespageslisting-services-grid__card-stagger {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* =============================================
+   Reduced motion
+   ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .servicespageslisting-services-grid__card {
+    transition: none;
+  }
+
+  .servicespageslisting-services-grid__card-img-element {
+    transition: none;
+  }
+
+  .servicespageslisting-services-grid__button-icon {
+    transition: none;
+  }
+}

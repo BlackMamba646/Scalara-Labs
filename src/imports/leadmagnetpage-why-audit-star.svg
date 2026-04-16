@@ -1,0 +1,10 @@
+<svg width="16" height="16" overflow="visible" style="display: block;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Star" clip-path="url(#clip0_0_549)">
+<path id="Star_2" d="M8.00006 0.4L10.1161 5.48754L15.6085 5.92786L11.4239 9.51246L12.7023 14.8721L8.00006 12L3.29778 14.8721L4.57626 9.51246L0.391609 5.92786L5.88403 5.48754L8.00006 0.4Z" fill="var(--fill-0, #FFFFFF)"/>
+</g>
+<defs>
+<clipPath id="clip0_0_549">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

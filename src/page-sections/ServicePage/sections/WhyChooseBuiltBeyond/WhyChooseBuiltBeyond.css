@@ -1,0 +1,224 @@
+/* =============================================
+   ServicePage — WhyChooseBuiltBeyond
+   Desktop-first with tablet/mobile overrides
+   ============================================= */
+
+/* ---------- SECTION ROOT ---------- */
+
+.servicepage-why-choose-built-beyond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-built-beyond-section-gap);
+  padding: var(--servicepage-why-choose-built-beyond-padding-y)
+    var(--servicepage-why-choose-built-beyond-padding-x);
+  width: 100%;
+  position: relative;
+  background-color: var(--servicepage-why-choose-built-beyond-bg);
+}
+
+.servicepage-why-choose-built-beyond__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-built-beyond-section-gap);
+  width: 100%;
+}
+
+/* ---------- TEXT CONTENT (left column on desktop) ---------- */
+
+.servicepage-why-choose-built-beyond__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--servicepage-why-choose-built-beyond-heading-gap);
+  padding: var(--servicepage-why-choose-built-beyond-heading-padding);
+  flex: 1 0 0;
+  min-width: 1px;
+  min-height: 1px;
+  position: relative;
+}
+
+/* ---------- DECORATIVE PATTERN ---------- */
+
+.servicepage-why-choose-built-beyond__pattern {
+  position: absolute;
+  top: -53px;
+  left: 139px;
+  width: var(--servicepage-why-choose-built-beyond-pattern-width);
+  height: var(--servicepage-why-choose-built-beyond-pattern-height);
+  opacity: var(--servicepage-why-choose-built-beyond-pattern-opacity);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.servicepage-why-choose-built-beyond__pattern img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ---------- CAPTION ---------- */
+
+.servicepage-why-choose-built-beyond__caption {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-built-beyond-caption-weight);
+  font-size: var(--servicepage-why-choose-built-beyond-caption-size);
+  line-height: var(--servicepage-why-choose-built-beyond-caption-line-height);
+  letter-spacing: var(--servicepage-why-choose-built-beyond-caption-letter-spacing);
+  color: var(--servicepage-why-choose-built-beyond-accent);
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- HEADING ---------- */
+
+.servicepage-why-choose-built-beyond__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-built-beyond-h4-weight);
+  font-size: var(--servicepage-why-choose-built-beyond-h4-size);
+  line-height: var(--servicepage-why-choose-built-beyond-h4-line-height);
+  letter-spacing: var(--servicepage-why-choose-built-beyond-h4-letter-spacing);
+  color: var(--servicepage-why-choose-built-beyond-foreground);
+  max-width: var(--servicepage-why-choose-built-beyond-h4-max-width);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- BODY TEXT ---------- */
+
+.servicepage-why-choose-built-beyond__body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--servicepage-why-choose-built-beyond-body-weight);
+  font-size: var(--servicepage-why-choose-built-beyond-body-size);
+  line-height: var(--servicepage-why-choose-built-beyond-body-line-height);
+  color: var(--servicepage-why-choose-built-beyond-text-tertiary);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.servicepage-why-choose-built-beyond__body p {
+  margin: 0;
+}
+
+/* ---------- IMAGE (right column on desktop) ---------- */
+
+.servicepage-why-choose-built-beyond__image-wrap {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  align-self: stretch;
+}
+
+.servicepage-why-choose-built-beyond__image {
+  position: relative;
+  flex: 1 0 0;
+  min-width: 1px;
+  min-height: 1px;
+  height: 100%;
+  border-radius: var(--servicepage-why-choose-built-beyond-img-radius);
+  overflow: hidden;
+}
+
+.servicepage-why-choose-built-beyond__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--servicepage-why-choose-built-beyond-img-radius);
+  pointer-events: none;
+  display: block;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  .servicepage-why-choose-built-beyond__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicepage-why-choose-built-beyond__heading {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-built-beyond__image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-built-beyond__image {
+    flex: none;
+    width: 100%;
+    height: var(--servicepage-why-choose-built-beyond-img-height);
+  }
+
+  .servicepage-why-choose-built-beyond__pattern {
+    left: 142px;
+    top: -55px;
+    width: 218px;
+    height: 204px;
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  .servicepage-why-choose-built-beyond {
+    --servicepage-why-choose-built-beyond-padding-x: 20px;
+    --servicepage-why-choose-built-beyond-h4-size: 24px;
+  }
+
+  .servicepage-why-choose-built-beyond__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicepage-why-choose-built-beyond__heading {
+    flex: none;
+    width: 100%;
+    padding: var(--servicepage-why-choose-built-beyond-heading-padding);
+  }
+
+  .servicepage-why-choose-built-beyond__image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .servicepage-why-choose-built-beyond__image {
+    flex: none;
+    width: 100%;
+    height: var(--servicepage-why-choose-built-beyond-img-height);
+  }
+
+  .servicepage-why-choose-built-beyond__pattern {
+    left: 66px;
+    top: -1px;
+    width: var(--servicepage-why-choose-built-beyond-pattern-width);
+    height: var(--servicepage-why-choose-built-beyond-pattern-height);
+  }
+}
+
+/* ===== Decorative pattern float ===== */
+
+@keyframes sp-wc-bb-pattern-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+
+.servicepage-why-choose-built-beyond__pattern {
+  animation: sp-wc-bb-pattern-float 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicepage-why-choose-built-beyond__pattern { animation: none; }
+}

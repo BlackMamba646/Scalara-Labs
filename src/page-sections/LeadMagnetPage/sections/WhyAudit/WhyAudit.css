@@ -1,0 +1,568 @@
+/* ===== WhyAudit Section ===== */
+
+/* Section wrapper — full width */
+.leadmagnetpage-why-audit {
+  width: 100%;
+  background-color: var(--leadmagnetpage-why-audit-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Inner container — centered, max-width */
+.leadmagnetpage-why-audit__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--leadmagnetpage-why-audit-section-gap);
+  padding: var(--leadmagnetpage-why-audit-section-padding-y) var(--leadmagnetpage-why-audit-section-padding-x);
+  width: 100%;
+  max-width: var(--content-max-width, 1440px);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* ===== Decorative background patterns ===== */
+.leadmagnetpage-why-audit__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 0;
+}
+
+.leadmagnetpage-why-audit__pattern-item {
+  position: absolute;
+  opacity: var(--leadmagnetpage-why-audit-pattern-opacity);
+}
+
+/* Desktop pattern positions (from Figma percentage insets) */
+.leadmagnetpage-why-audit__pattern-item--group15 {
+  top: 29.24%;
+  right: 8.71%;
+  width: 163px;
+  height: 152px;
+}
+
+.leadmagnetpage-why-audit__pattern-item--group14 {
+  top: 4.95%;
+  left: 44.1%;
+  width: 163px;
+  height: 152px;
+}
+
+.leadmagnetpage-why-audit__pattern-item--code {
+  top: 18.74%;
+  left: 15.07%;
+  width: 214px;
+  height: 200px;
+}
+
+.leadmagnetpage-why-audit__pattern-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ===== Heading area ===== */
+.leadmagnetpage-why-audit__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--leadmagnetpage-why-audit-heading-gap);
+  padding-left: var(--leadmagnetpage-why-audit-heading-padding-x);
+  padding-right: var(--leadmagnetpage-why-audit-heading-padding-x);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo CTA wrapper */
+.leadmagnetpage-why-audit__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  padding: var(--leadmagnetpage-why-audit-logo-padding-y) 0;
+}
+
+/* Logo container */
+.leadmagnetpage-why-audit__logo {
+  position: relative;
+  width: var(--leadmagnetpage-why-audit-logo-width);
+  height: var(--leadmagnetpage-why-audit-logo-height);
+  flex-shrink: 0;
+}
+
+/* Logo parts — positioned absolutely within the logo container */
+.leadmagnetpage-why-audit__logo-scalara {
+  position: absolute;
+  top: 23.56%;
+  left: 30.99%;
+  right: 0;
+  bottom: 44.73%;
+}
+
+.leadmagnetpage-why-audit__logo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 73.96%;
+  bottom: 0;
+}
+
+.leadmagnetpage-why-audit__logo-labs {
+  position: absolute;
+  top: 67.99%;
+  left: 31.03%;
+  right: 49.42%;
+  bottom: 18.27%;
+}
+
+.leadmagnetpage-why-audit__logo img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main title */
+.leadmagnetpage-why-audit__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--leadmagnetpage-why-audit-h2-weight);
+  font-size: var(--leadmagnetpage-why-audit-h2-size);
+  line-height: var(--leadmagnetpage-why-audit-h2-line-height);
+  letter-spacing: var(--leadmagnetpage-why-audit-h2-letter-spacing);
+  color: var(--leadmagnetpage-why-audit-foreground);
+  text-align: center;
+  max-width: var(--leadmagnetpage-why-audit-title-max-width);
+  width: 100%;
+}
+
+/* ===== Trust counter ===== */
+.leadmagnetpage-why-audit__trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--leadmagnetpage-why-audit-trust-gap);
+}
+
+/* Reviews (5.0 + stars) */
+.leadmagnetpage-why-audit__reviews {
+  display: flex;
+  align-items: center;
+  gap: var(--leadmagnetpage-why-audit-trust-inner-gap);
+}
+
+.leadmagnetpage-why-audit__rating {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--leadmagnetpage-why-audit-trust-rating-weight);
+  font-size: var(--leadmagnetpage-why-audit-trust-rating-size);
+  line-height: 1;
+  color: var(--leadmagnetpage-why-audit-text-secondary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Stars row */
+.leadmagnetpage-why-audit__stars {
+  display: flex;
+  align-items: center;
+}
+
+/* Individual star icon */
+.leadmagnetpage-why-audit__star {
+  position: relative;
+  width: var(--leadmagnetpage-why-audit-star-size);
+  height: var(--leadmagnetpage-why-audit-star-size);
+  border-radius: var(--leadmagnetpage-why-audit-star-radius);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-why-audit__star-bg {
+  position: absolute;
+  inset: 2.5% 0 -2.5% 0;
+}
+
+.leadmagnetpage-why-audit__star-bg img {
+  position: absolute;
+  inset: 0 2.45% 9.55% 2.45%;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.leadmagnetpage-why-audit__star-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--leadmagnetpage-why-audit-star-size);
+  height: var(--leadmagnetpage-why-audit-star-size);
+}
+
+.leadmagnetpage-why-audit__star-icon img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Google label group */
+.leadmagnetpage-why-audit__google-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--leadmagnetpage-why-audit-trust-inner-gap);
+  overflow: hidden;
+}
+
+.leadmagnetpage-why-audit__google-label {
+  font-family: 'Manrope', sans-serif;
+  font-weight: var(--leadmagnetpage-why-audit-trust-label-weight);
+  font-size: var(--leadmagnetpage-why-audit-trust-label-size);
+  line-height: 1;
+  color: var(--leadmagnetpage-why-audit-text-secondary);
+  text-align: center;
+  white-space: nowrap;
+  opacity: var(--leadmagnetpage-why-audit-trust-label-opacity);
+}
+
+/* Google Full Logo (desktop/tablet — multi-vector) */
+.leadmagnetpage-why-audit__google-full-logo {
+  position: relative;
+  width: var(--leadmagnetpage-why-audit-google-logo-width);
+  height: var(--leadmagnetpage-why-audit-google-logo-height);
+  flex-shrink: 0;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part {
+  position: absolute;
+  display: block;
+}
+
+/* Individual Google letter positions — G-o-o-g-l-e from left to right
+   (from Figma insets on 48.606x16 container) */
+.leadmagnetpage-why-audit__google-full-logo-part--capital-g {
+  inset: 0 75.11% 22.4% 0;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part--o1 {
+  inset: 27.64% 57.21% 22.39% 26.29%;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part--o2 {
+  inset: 27.64% 39.4% 22.39% 44.09%;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part--g {
+  inset: 27.64% 22.34% 0 61.89%;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part--l {
+  inset: 2.85% 16.69% 23.92% 79.79%;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part--e {
+  inset: 27.62% 0 22.4% 84.83%;
+}
+
+.leadmagnetpage-why-audit__google-full-logo-part img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Google icon (mobile — colored G icon, 4 parts) — hidden by default */
+.leadmagnetpage-why-audit__google-icon {
+  display: none;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.leadmagnetpage-why-audit__google-icon-part {
+  position: absolute;
+}
+
+/* Mobile Google icon part positions (from Figma insets on 12x12 container) */
+.leadmagnetpage-why-audit__google-icon-part--1 {
+  inset: 27.01% 77.84% 26.31% 0;
+}
+
+.leadmagnetpage-why-audit__google-icon-part--2 {
+  inset: 40.66% 0 11.01% 51.1%;
+}
+
+.leadmagnetpage-why-audit__google-icon-part--3 {
+  inset: 60.43% 18.7% 0 5.96%;
+}
+
+.leadmagnetpage-why-audit__google-icon-part--4 {
+  inset: 0 18.09% 59.66% 5.59%;
+}
+
+.leadmagnetpage-why-audit__google-icon-part img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== Banner ===== */
+.leadmagnetpage-why-audit__banner {
+  overflow: hidden;
+  padding: var(--leadmagnetpage-why-audit-banner-padding-y) var(--leadmagnetpage-why-audit-banner-padding-x);
+  border-radius: var(--leadmagnetpage-why-audit-banner-radius);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: radial-gradient(46.24% 89.71% at 85.87% 89.36%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), radial-gradient(58.11% 51.41% at 53.02% 50%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), radial-gradient(213.91% 116.18% at 9.06% -1.85%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), var(--Background-Surface-container, #0A162C);
+}
+
+/* Banner gradient glow (blurred ellipses) */
+.leadmagnetpage-why-audit__banner-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.leadmagnetpage-why-audit__banner-glow-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Banner background image (parallelogram overlay) */
+.leadmagnetpage-why-audit__banner-img {
+  position: absolute;
+  width: var(--leadmagnetpage-why-audit-banner-img-width);
+  height: var(--leadmagnetpage-why-audit-banner-img-height);
+  left: 284px;
+  top: -13px;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+.leadmagnetpage-why-audit__banner-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Banner grid — CSS Grid: 4 columns on desktop, 2 on tablet */
+.leadmagnetpage-why-audit__banner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--leadmagnetpage-why-audit-trust-gap);
+  padding-top: var(--leadmagnetpage-why-audit-card-padding-top);
+  position: relative;
+  z-index: 2;
+}
+
+/* Individual card */
+.leadmagnetpage-why-audit__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--leadmagnetpage-why-audit-card-gap);
+  align-items: flex-start;
+  max-width: var(--leadmagnetpage-why-audit-card-max-width);
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Card number (01/, 02/, etc.) */
+.leadmagnetpage-why-audit__card-number {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: var(--leadmagnetpage-why-audit-quote-size);
+  line-height: var(--leadmagnetpage-why-audit-quote-line-height);
+  letter-spacing: var(--leadmagnetpage-why-audit-quote-letter-spacing);
+  color: var(--leadmagnetpage-why-audit-accent);
+  width: 100%;
+}
+
+/* Card text content */
+.leadmagnetpage-why-audit__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--leadmagnetpage-why-audit-card-text-gap);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.leadmagnetpage-why-audit__card-description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: var(--leadmagnetpage-why-audit-quote-size);
+  line-height: var(--leadmagnetpage-why-audit-quote-line-height);
+  letter-spacing: var(--leadmagnetpage-why-audit-quote-letter-spacing);
+  color: var(--leadmagnetpage-why-audit-text-secondary);
+  width: 100%;
+}
+
+/* Mobile cards container — hidden by default */
+.leadmagnetpage-why-audit__mobile-cards {
+  display: none;
+}
+
+/* ============================================================
+   Tablet: max-width 1023px
+   ============================================================ */
+@media (max-width: 1023px) {
+  /* Banner image: reposition for tablet */
+  .leadmagnetpage-why-audit__banner-img {
+    width: 746px;
+    height: 741.5px;
+    left: -85px;
+    top: -37.5px;
+  }
+
+  /* Banner grid: 2 columns on tablet */
+  .leadmagnetpage-why-audit__banner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Each card row has fixed height on tablet */
+  .leadmagnetpage-why-audit__card {
+    min-height: 256px;
+  }
+
+  /* Pattern adjustments for tablet */
+  .leadmagnetpage-why-audit__pattern-item--group15 {
+    top: 19.35%;
+    right: -76.69%;
+  }
+
+  .leadmagnetpage-why-audit__pattern-item--group14 {
+    top: 3.27%;
+    left: 85.35%;
+  }
+
+  .leadmagnetpage-why-audit__pattern-item--code {
+    top: 17.2%;
+    left: 15.07%;
+  }
+}
+
+/* ============================================================
+   Mobile: max-width 767px
+   ============================================================ */
+@media (max-width: 767px) {
+  /* Section padding reduced on mobile */
+  .leadmagnetpage-why-audit__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Heading: left-aligned on mobile */
+  .leadmagnetpage-why-audit__heading {
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Logo: smaller on mobile, left-aligned */
+  .leadmagnetpage-why-audit__logo-wrapper {
+    justify-content: flex-start;
+  }
+
+  .leadmagnetpage-why-audit__logo {
+    width: 106px;
+    height: 30px;
+  }
+
+  /* Title: left-aligned, smaller on mobile */
+  .leadmagnetpage-why-audit__title {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  /* Trust: left-aligned */
+  .leadmagnetpage-why-audit__trust {
+    justify-content: flex-start;
+  }
+
+  /* Google full logo hidden on mobile, replaced by single icon */
+  .leadmagnetpage-why-audit__google-full-logo {
+    display: none;
+  }
+
+  .leadmagnetpage-why-audit__google-icon {
+    display: block;
+  }
+
+  /* Stars: show only 1 star on mobile */
+  .leadmagnetpage-why-audit__star:not(:first-child) {
+    display: none;
+  }
+
+  /* Banner: hidden on mobile */
+  .leadmagnetpage-why-audit__banner {
+    display: none;
+  }
+
+  /* Mobile cards container: visible */
+  .leadmagnetpage-why-audit__mobile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .leadmagnetpage-why-audit__mobile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 40px 26px;
+    border-radius: var(--leadmagnetpage-why-audit-banner-radius);
+    width: 100%;
+    background: radial-gradient(46.24% 89.71% at 85.87% 89.36%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), radial-gradient(58.11% 51.41% at 53.02% 50%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), radial-gradient(213.91% 116.18% at 9.06% -1.85%, var(--Color-Shades-General-800, #0C1B3B) 0%, var(--Color-stops-Gray-0, rgba(0, 0, 0, 0.00)) 100%), var(--Background-Surface-container, #0A162C);
+    position: relative;
+  }
+
+  .leadmagnetpage-why-audit__mobile-card .leadmagnetpage-why-audit__card {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Pattern adjustments for mobile */
+  .leadmagnetpage-why-audit__pattern-item--group15 {
+    top: 14.52%;
+    right: -88.66%;
+  }
+
+  .leadmagnetpage-why-audit__pattern-item--group14 {
+    top: 2.46%;
+    left: 91.13%;
+  }
+
+  .leadmagnetpage-why-audit__pattern-item--code {
+    top: 13.15%;
+    left: 15.07%;
+  }
+}

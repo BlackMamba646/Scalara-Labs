@@ -1,0 +1,39 @@
+/* Google Fonts — Manrope (body text + headings) */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Results Letter (accent font) — self-hosted */
+@font-face {
+  font-family: 'Results Letter';
+  src: url('../assets/fonts/ResultsLetter-Thin.woff2') format('woff2'),
+       url('../assets/fonts/ResultsLetter-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Results Letter';
+  src: url('../assets/fonts/ResultsLetter-Extralight.woff2') format('woff2'),
+       url('../assets/fonts/ResultsLetter-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Results Letter';
+  src: url('../assets/fonts/ResultsLetter-Light.woff2') format('woff2'),
+       url('../assets/fonts/ResultsLetter-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Results Letter';
+  src: url('../assets/fonts/ResultsLetter-Regular.woff2') format('woff2'),
+       url('../assets/fonts/ResultsLetter-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
